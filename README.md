@@ -49,3 +49,7 @@ const matched = rules.find(rule =>
 ## 貢献
 
 [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。根拠URLのないルールは受け付けません。
+
+---
+
+このプロジェクトは [Zeimu AI](https://zeimu.ai) が開発・メンテナンスしています。
