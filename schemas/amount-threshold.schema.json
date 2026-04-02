@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "required": ["id", "rule", "sourceUrl", "notes"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^threshold-\\d+$" },
+    "minAmount": { "type": "integer", "minimum": 0 },
+    "maxAmount": { "type": "integer", "minimum": 0 },
+    "rule": { "type": "string", "minLength": 1 },
+    "sourceUrl": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

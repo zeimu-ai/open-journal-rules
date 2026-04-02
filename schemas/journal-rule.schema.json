@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": ["id", "name", "patterns", "matchType", "accountName", "taxCategory", "confidence", "sourceUrl", "citations"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^rule-\\d+$" },
+    "name": { "type": "string", "minLength": 1 },
+    "patterns": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+    "matchType": { "type": "string", "enum": ["exact", "prefix", "partial"] },
+    "accountName": { "type": "string", "minLength": 1 },
+    "taxCategory": { "type": "string", "minLength": 1 },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "sourceUrl": { "type": "string" },
+    "notes": { "type": "string" },
+    "citations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source", "number", "url", "verified_at"],
+        "properties": {
+          "source": { "type": "string", "minLength": 1 },
+          "number": { "type": "string", "minLength": 1 },
+          "title": { "type": "string" },
+          "url": { "type": "string" },
+          "verified_at": { "type": "string", "format": "date" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
