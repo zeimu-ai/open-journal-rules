@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tmpl-construction-01",
+    "name": "完成工事高",
+    "patterns": ["工事完成", "完成引渡", "工事売上", "請負完成"],
+    "matchType": "partial",
+    "accountName": "完成工事高",
+    "taxCategory": "課税売上10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "建設業の売上。工事完成基準",
+    "citations": [{
+      "source": "国税庁",
+      "number": "青色申告決算書",
+      "title": "必要経費の科目一覧",
+      "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+      "verified_at": "2026-04-02"
+    }]
+  },
+  {
+    "id": "tmpl-construction-02",
+    "name": "未成工事支出金",
+    "patterns": ["工事前払", "着手金", "工事着手", "手付金"],
+    "matchType": "partial",
+    "accountName": "未成工事支出金",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "notes": "工事完成前の支出金。完成時に原価振替",
+    "citations": [{
+      "source": "国税庁タックスアンサー",
+      "number": "No.6209",
+      "title": "非課税と不課税の違い",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+      "verified_at": "2026-04-02"
+    }]
+  },
+  {
+    "id": "tmpl-construction-03",
+    "name": "外注費（下請工事）",
+    "patterns": ["下請工事", "建設", "工務店", "左官", "電気工事", "設備工事"],
+    "matchType": "partial",
+    "accountName": "外注費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "下請業者への工事外注費",
+    "citations": [{
+      "source": "国税庁",
+      "number": "青色申告決算書",
+      "title": "必要経費の科目一覧",
+      "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+      "verified_at": "2026-04-02"
+    }]
+  }
+]

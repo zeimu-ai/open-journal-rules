@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.3] - 2026-04-02
+
+### Added
+
+- 業種別テンプレート3種追加: 建設業(3ルール)・製造業(2ルール)・小売業(2ルール)
+- 業種別テンプレート合計: 4→7業種、9→16ルール
+
 ## [0.2.2] - 2026-04-02
 
 ### Added

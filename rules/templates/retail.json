@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tmpl-retail-01",
+    "name": "商品仕入（標準税率）",
+    "patterns": ["商品仕入", "問屋", "卸売", "仕入代金"],
+    "matchType": "partial",
+    "accountName": "仕入高",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "小売業の商品仕入（標準税率）",
+    "citations": [{
+      "source": "国税庁",
+      "number": "青色申告決算書",
+      "title": "必要経費の科目一覧",
+      "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+      "verified_at": "2026-04-02"
+    }]
+  },
+  {
+    "id": "tmpl-retail-02",
+    "name": "商品仕入（軽減税率）",
+    "patterns": ["食品仕入", "飲料仕入", "食料品", "菓子仕入"],
+    "matchType": "partial",
+    "accountName": "仕入高",
+    "taxCategory": "課税仕入8%（軽減税率）",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6103.htm",
+    "notes": "飲食料品の仕入は軽減税率8%対象。酒類は標準税率10%",
+    "citations": [{
+      "source": "国税庁タックスアンサー",
+      "number": "No.6103",
+      "title": "軽減税率の対象品目",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6103.htm",
+      "verified_at": "2026-04-02"
+    }]
+  }
+]

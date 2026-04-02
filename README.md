@@ -10,7 +10,7 @@
 | `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 31科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 5段階 |
-| `rules/templates/*.json` | 業種別テンプレート | 4業種 |
+| `rules/templates/*.json` | 業種別テンプレート | 7業種 |
 
 ## 使い方
 
@@ -57,6 +57,9 @@ const matched = rules.find(rule =>
 | `medical.json` | 医療業（診療報酬・医薬品仕入） | 3 |
 | `realestate.json` | 不動産業（管理費・賃貸収入） | 2 |
 | `it-saas.json` | IT/SaaS（ソフトウェア・インフラ） | 2 |
+| `construction.json` | 建設業（完成工事高・外注費） | 3 |
+| `manufacturing.json` | 製造業（材料費・外注加工費） | 2 |
+| `retail.json` | 小売業（商品仕入・軽減税率） | 2 |
 
 ```typescript
 // 業種別テンプレートの読み込み

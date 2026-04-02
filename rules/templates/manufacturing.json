@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tmpl-manufacturing-01",
+    "name": "材料費",
+    "patterns": ["材料仕入", "原材料", "素材仕入", "部品仕入"],
+    "matchType": "partial",
+    "accountName": "材料費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "製造業の原材料仕入",
+    "citations": [{
+      "source": "国税庁",
+      "number": "青色申告決算書",
+      "title": "必要経費の科目一覧",
+      "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+      "verified_at": "2026-04-02"
+    }]
+  },
+  {
+    "id": "tmpl-manufacturing-02",
+    "name": "外注加工費",
+    "patterns": ["外注加工", "加工委託", "加工費", "委託加工"],
+    "matchType": "partial",
+    "accountName": "外注加工費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "外部への加工委託費",
+    "citations": [{
+      "source": "国税庁",
+      "number": "青色申告決算書",
+      "title": "必要経費の科目一覧",
+      "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+      "verified_at": "2026-04-02"
+    }]
+  }
+]
