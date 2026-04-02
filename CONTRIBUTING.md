@@ -1,5 +1,11 @@
 # 貢献ガイドライン
 
+## Contributor License Agreement (CLA)
+
+本プロジェクトへの初めてのプルリクエスト時に、[CLA（Contributor License Agreement）](CLA.md) への同意が求められます。
+
+CLA は、あなたの著作権を保持したまま、プロジェクトにコントリビューションの使用権をライセンス付与する合意です。CLA Assistant Bot が PR 上で自動的に同意を求めますので、指示に従って署名してください。
+
 ## ルール追加のルール
 
 新しい仕訳ルールを追加する場合、以下を守ってください:
