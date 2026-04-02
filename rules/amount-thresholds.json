@@ -1,0 +1,7 @@
+[
+  {"id":"threshold-01","maxAmount":100000,"rule":"全額経費（消耗品費）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm","notes":"少額減価償却資産"},
+  {"id":"threshold-02","minAmount":100000,"maxAmount":200000,"rule":"一括償却資産（3年均等償却）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm","notes":"全事業者対象"},
+  {"id":"threshold-03","minAmount":200000,"maxAmount":300000,"rule":"少額減価償却資産特例（青色申告者・年間300万円上限）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5408.htm","notes":"令和8年3月31日まで"},
+  {"id":"threshold-04","minAmount":300000,"rule":"固定資産として減価償却（法定耐用年数に従う）","sourceUrl":"","notes":""},
+  {"id":"threshold-05","minAmount":1000000,"rule":"強制要判断（高額取引リスク管理）","sourceUrl":"","notes":"Zeimu AI独自ルール"}
+]

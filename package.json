@@ -1,0 +1,20 @@
+{
+  "name": "@zeimu-ai/open-journal-rules",
+  "version": "0.1.0",
+  "description": "Japanese accounting journal entry rules dataset",
+  "main": "rules/journal-rules.json",
+  "files": ["rules/"],
+  "license": "CC-BY-4.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zeimu-ai/open-journal-rules"
+  },
+  "keywords": ["accounting", "journal-entry", "japan", "tax", "freee"],
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0",
+    "typescript": "^5.0.0"
+  }
+}
