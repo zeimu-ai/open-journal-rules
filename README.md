@@ -31,9 +31,17 @@ const matched = rules.find(rule =>
 - ルールデータ（`rules/`）: [CC BY 4.0](LICENSE)
 - コード（`tests/`）: [MIT](LICENSE-CODE)
 
-## 根拠
+## 根拠・リサーチ
 
-全ルールは国税庁等の公式ドキュメントに基づいています。詳細は [docs/sources.md](docs/sources.md) を参照。
+全ルールは国税庁等の公式ドキュメントに基づいています。
+
+- [根拠URL一覧](docs/sources.md)
+- [国税庁・弥生・freee・MF公式調査](docs/research/nta-research.md)
+- [freee勘定科目マッピング](docs/research/freee-mapping.md)
+- [ファクトチェック結果](docs/research/factcheck.md)
+- [プリセット拡充調査](docs/research/expansion.md)
+- [税理士の実務パターン調査](docs/research/practitioner-insights.md)
+- [OpenTax等の参考プロジェクト](docs/research/opentax-reference.md)
 
 ## 貢献
 
