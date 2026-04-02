@@ -1,19 +1,240 @@
 [
-  {"accountName":"消耗品費","taxDefault":"課税仕入10%"},
-  {"accountName":"通信費","taxDefault":"課税仕入10%"},
-  {"accountName":"旅費交通費","taxDefault":"課税仕入10%"},
-  {"accountName":"水道光熱費","taxDefault":"課税仕入10%"},
-  {"accountName":"荷造運賃","taxDefault":"課税仕入10%"},
-  {"accountName":"広告宣伝費","taxDefault":"課税仕入10%"},
-  {"accountName":"支払手数料","taxDefault":"課税仕入10%"},
-  {"accountName":"外注工賃","taxDefault":"課税仕入10%"},
-  {"accountName":"支払報酬","taxDefault":"課税仕入10%"},
-  {"accountName":"研修費","taxDefault":"課税仕入10%"},
-  {"accountName":"新聞図書費","taxDefault":"課税仕入10%"},
-  {"accountName":"地代家賃","taxDefault":"非課税"},
-  {"accountName":"損害保険料","taxDefault":"非課税"},
-  {"accountName":"法定福利費","taxDefault":"不課税"},
-  {"accountName":"租税公課","taxDefault":"不課税"},
-  {"accountName":"諸会費","taxDefault":"不課税"},
-  {"accountName":"給料手当","taxDefault":"不課税"}
+  {
+    "accountName": "消耗品費",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "通信費",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "旅費交通費",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "水道光熱費",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "荷造運賃",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "広告宣伝費",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "支払手数料",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "外注工賃",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "支払報酬",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "研修費",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "新聞図書費",
+    "taxDefault": "課税仕入10%",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6101",
+        "title": "課税の対象となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6101.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "地代家賃",
+    "taxDefault": "非課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "損害保険料",
+    "taxDefault": "非課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "法定福利費",
+    "taxDefault": "不課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6209",
+        "title": "非課税と不課税の違い",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "租税公課",
+    "taxDefault": "不課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6209",
+        "title": "非課税と不課税の違い",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "諸会費",
+    "taxDefault": "不課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6209",
+        "title": "非課税と不課税の違い",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  },
+  {
+    "accountName": "給料手当",
+    "taxDefault": "不課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6209",
+        "title": "非課税と不課税の違い",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "verified_at": "2026-04-03"
+      }
+    ]
+  }
 ]

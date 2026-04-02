@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.5] - 2026-04-03
+
+### Fixed
+
+- tax-categories.json: 全17件にsourceUrl+citations追加（0/17→17/17）
+- Issue #1 クローズ
+
 ## [0.2.4] - 2026-04-03
 
 ### Added
