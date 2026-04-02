@@ -5,8 +5,8 @@ import taxes from "../rules/tax-categories.json";
 import thresholds from "../rules/amount-thresholds.json";
 
 describe("journal-rules.json", () => {
-  it("should have 28 rules", () => {
-    expect(rules).toHaveLength(28);
+  it("should have 33 rules", () => {
+    expect(rules).toHaveLength(33);
   });
 
   it("each rule should have required fields", () => {
@@ -28,8 +28,8 @@ describe("journal-rules.json", () => {
 });
 
 describe("account-master.json", () => {
-  it("should have 28 accounts", () => {
-    expect(accounts).toHaveLength(28);
+  it("should have 31 accounts", () => {
+    expect(accounts).toHaveLength(31);
   });
 
   it("each account should have name and valid category", () => {
@@ -47,7 +47,7 @@ describe("tax-categories.json", () => {
 });
 
 describe("amount-thresholds.json", () => {
-  it("should have 5 thresholds", () => {
-    expect(thresholds).toHaveLength(5);
+  it("should have 7 thresholds", () => {
+    expect(thresholds).toHaveLength(7);
   });
 });

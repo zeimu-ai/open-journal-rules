@@ -26,5 +26,8 @@
   {"id":40,"name":"工具器具備品","category":"asset","taxDefault":"課税仕入10%","description":"10万円以上の備品","examples":["PC","家具","機械"],"sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm"},
   {"id":50,"name":"普通預金","category":"asset","taxDefault":"不課税","description":"銀行口座","examples":["みずほ","三菱UFJ","三井住友"],"sourceUrl":null},
   {"id":51,"name":"売掛金","category":"asset","taxDefault":"不課税","description":"売上の未回収分","examples":["未入金売上"],"sourceUrl":null},
-  {"id":60,"name":"短期借入金","category":"liability","taxDefault":"不課税","description":"1年以内返済の借入","examples":["銀行借入","事業ローン"],"sourceUrl":null}
+  {"id":60,"name":"短期借入金","category":"liability","taxDefault":"不課税","description":"1年以内返済の借入","examples":["銀行借入","事業ローン"],"sourceUrl":null},
+  {"id":33,"name":"車両費","category":"expense","taxDefault":"課税仕入10%","description":"ガソリン・高速道路・駐車場","examples":["ENEOS","ETC","タイムズ"],"sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm"},
+  {"id":34,"name":"リース料","category":"expense","taxDefault":"課税仕入10%","description":"リース契約の賃借料","examples":["複合機リース","車両リース"],"sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm"},
+  {"id":35,"name":"賞与","category":"expense","taxDefault":"不課税","description":"従業員・役員賞与","examples":["夏季賞与","冬季賞与"],"sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm"}
 ]
