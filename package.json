@@ -12,6 +12,9 @@
   "keywords": ["accounting", "journal-entry", "japan", "tax", "freee"],
   "scripts": {
     "test": "vitest run",
+    "test:urls": "vitest run tests/urls.test.ts",
+    "test:freshness": "vitest run tests/freshness.test.ts",
+    "test:all": "vitest run",
     "generate-docs": "tsx scripts/generate-sources.ts"
   },
   "devDependencies": {
