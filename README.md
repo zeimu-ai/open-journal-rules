@@ -6,10 +6,11 @@
 
 | ファイル | 内容 | 件数 |
 |---------|------|------|
-| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 33パターン |
+| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 36パターン |
 | `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 31科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 5段階 |
+| `rules/templates/*.json` | 業種別テンプレート | 4業種 |
 
 ## 使い方
 
@@ -45,6 +46,23 @@ const matched = rules.find(rule =>
 - [プリセット拡充調査](docs/research/expansion.md)
 - [税理士の実務パターン調査](docs/research/practitioner-insights.md)
 - [OpenTax等の参考プロジェクト](docs/research/opentax-reference.md)
+
+## 業種別テンプレート
+
+`rules/templates/` に業種別の追加ルールを収録しています。
+
+| テンプレート | 業種 | ルール数 |
+|------------|------|:-------:|
+| `restaurant.json` | 飲食業（食材仕入・酒類仕入） | 2 |
+| `medical.json` | 医療業（診療報酬・医薬品仕入） | 3 |
+| `realestate.json` | 不動産業（管理費・賃貸収入） | 2 |
+| `it-saas.json` | IT/SaaS（ソフトウェア・インフラ） | 2 |
+
+```typescript
+// 業種別テンプレートの読み込み
+import restaurant from "@zeimu-ai/open-journal-rules/rules/templates/restaurant.json";
+const allRules = [...rules, ...restaurant];
+```
 
 ## 貢献
 

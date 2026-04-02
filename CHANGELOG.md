@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.2] - 2026-04-02
+
+### Added
+
+- 業種別テンプレート4種（rules/templates/）: 飲食業・医療業・不動産業・IT/SaaS
+- 福利厚生費サブルール2件: 健康診断（課税）・慶弔見舞金（不課税）
+- 前払費用ルール（資産科目・短期前払費用特例注記付き）
+- ルール数 33→36 に拡大
+- 全テンプレートにcitations必須（v0.2.0スキーマ準拠）
+
 ## [0.2.0] - 2026-04-02
 
 ### Added
