@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tmpl-wholesale-01",
+    "name": "商品仕入（標準税率）",
+    "patterns": ["商品仕入", "問屋", "仕入代金", "メーカー直送"],
+    "matchType": "partial",
+    "accountName": "仕入高",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "卸売業の商品仕入（標準税率）",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  },
+  {
+    "id": "tmpl-wholesale-02",
+    "name": "荷造運賃",
+    "patterns": ["ヤマト運輸", "佐川急便", "日本郵便", "配送料", "送料"],
+    "matchType": "partial",
+    "accountName": "荷造運賃",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "商品発送にかかる運賃",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  }
+]

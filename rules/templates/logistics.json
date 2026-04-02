@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tmpl-logistics-01",
+    "name": "燃料費",
+    "patterns": ["燃料", "軽油", "ガソリン", "ENEOS", "出光", "コスモ"],
+    "matchType": "partial",
+    "accountName": "燃料費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "運輸業の車両燃料費",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  },
+  {
+    "id": "tmpl-logistics-02",
+    "name": "車両修繕費",
+    "patterns": ["車検", "タイヤ交換", "車両修理", "オイル交換"],
+    "matchType": "partial",
+    "accountName": "修繕費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5402.htm",
+    "notes": "車両の維持修繕。20万円以上は資本的支出の判定が必要",
+    "citations": [{"source": "国税庁タックスアンサー", "number": "No.5402", "title": "修繕費とならないものの判定", "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5402.htm", "verified_at": "2026-04-03"}]
+  }
+]

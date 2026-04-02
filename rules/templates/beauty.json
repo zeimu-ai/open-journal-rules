@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tmpl-beauty-01",
+    "name": "美容材料費",
+    "patterns": ["シャンプー", "カラー剤", "パーマ液", "美容材料", "ネイル材料"],
+    "matchType": "partial",
+    "accountName": "消耗品費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "美容業の施術用材料費",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  },
+  {
+    "id": "tmpl-beauty-02",
+    "name": "技術講習費",
+    "patterns": ["講習", "セミナー", "技術研修", "ディプロマ"],
+    "matchType": "partial",
+    "accountName": "研修費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "美容師のスキルアップ講習費",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  }
+]

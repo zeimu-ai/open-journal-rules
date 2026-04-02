@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tmpl-agri-01",
+    "name": "種苗費",
+    "patterns": ["種苗", "種子", "苗木", "球根"],
+    "matchType": "partial",
+    "accountName": "種苗費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "農業所得の必要経費（青色申告決算書 農業所得用）",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書（農業所得用）", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  },
+  {
+    "id": "tmpl-agri-02",
+    "name": "肥料費",
+    "patterns": ["肥料", "堆肥", "石灰"],
+    "matchType": "partial",
+    "accountName": "肥料費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "農業所得の必要経費",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書（農業所得用）", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  },
+  {
+    "id": "tmpl-agri-03",
+    "name": "農薬衛生費",
+    "patterns": ["農薬", "除草剤", "殺虫剤"],
+    "matchType": "partial",
+    "accountName": "農薬衛生費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "農業所得の必要経費",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書（農業所得用）", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  }
+]

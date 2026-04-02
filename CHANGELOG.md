@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.4] - 2026-04-03
+
+### Added
+
+- 業種別テンプレート6種追加: 農業(3)/運輸・物流(2)/卸売(2)/金融・保険(2)/教育(2)/美容・サービス(2)
+- 業種別テンプレート合計: 7→13業種、16→29ルール
+
 ## [0.2.3] - 2026-04-02
 
 ### Added

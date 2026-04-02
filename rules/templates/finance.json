@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tmpl-finance-01",
+    "name": "支払利息",
+    "patterns": ["利息", "金利", "借入利息"],
+    "matchType": "partial",
+    "accountName": "支払利息",
+    "taxCategory": "非課税",
+    "confidence": 0.95,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "notes": "貸付金・預金の利子は非課税取引",
+    "citations": [{"source": "国税庁タックスアンサー", "number": "No.6201", "title": "非課税となる取引", "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm", "verified_at": "2026-04-03"}]
+  },
+  {
+    "id": "tmpl-finance-02",
+    "name": "保険料（事業用）",
+    "patterns": ["損害保険", "火災保険", "賠償責任保険", "動産保険"],
+    "matchType": "partial",
+    "accountName": "損害保険料",
+    "taxCategory": "非課税",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "notes": "保険料は非課税取引",
+    "citations": [{"source": "国税庁タックスアンサー", "number": "No.6201", "title": "非課税となる取引", "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm", "verified_at": "2026-04-03"}]
+  }
+]

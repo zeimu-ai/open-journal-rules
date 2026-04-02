@@ -1,0 +1,26 @@
+[
+  {
+    "id": "tmpl-edu-01",
+    "name": "教材費",
+    "patterns": ["教材", "テキスト", "教科書", "参考書", "問題集"],
+    "matchType": "partial",
+    "accountName": "消耗品費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "教育業の教材購入費。10万円以上は備品",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  },
+  {
+    "id": "tmpl-edu-02",
+    "name": "施設使用料",
+    "patterns": ["会場使用料", "教室賃料", "レンタルスペース"],
+    "matchType": "partial",
+    "accountName": "地代家賃",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "教室・会場の使用料。事業用施設は課税",
+    "citations": [{"source": "国税庁", "number": "青色申告決算書", "title": "必要経費の科目一覧", "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html", "verified_at": "2026-04-03"}]
+  }
+]

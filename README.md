@@ -10,7 +10,7 @@
 | `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 31科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 5段階 |
-| `rules/templates/*.json` | 業種別テンプレート | 7業種 |
+| `rules/templates/*.json` | 業種別テンプレート | 13業種 |
 
 ## 使い方
 
@@ -60,6 +60,12 @@ const matched = rules.find(rule =>
 | `construction.json` | 建設業（完成工事高・外注費） | 3 |
 | `manufacturing.json` | 製造業（材料費・外注加工費） | 2 |
 | `retail.json` | 小売業（商品仕入・軽減税率） | 2 |
+| `agriculture.json` | 農業（種苗費・肥料費・農薬） | 3 |
+| `logistics.json` | 運輸・物流（燃料費・車両修繕） | 2 |
+| `wholesale.json` | 卸売業（商品仕入・荷造運賃） | 2 |
+| `finance.json` | 金融・保険（支払利息・保険料） | 2 |
+| `education.json` | 教育（教材費・施設使用料） | 2 |
+| `beauty.json` | 美容・サービス（美容材料・講習費） | 2 |
 
 ```typescript
 // 業種別テンプレートの読み込み
