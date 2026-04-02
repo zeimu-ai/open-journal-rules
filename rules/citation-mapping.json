@@ -28,5 +28,7 @@
   "修繕費": { "tax": "課税仕入10%", "expectedNumbers": ["No.5402"] },
   "利子割引料": { "tax": "非課税", "expectedNumbers": ["No.6201"] },
   "普通預金": { "tax": "不課税", "expectedNumbers": ["No.2200", "帳簿の記帳"] },
-  "未払金": { "tax": "不課税", "expectedNumbers": ["帳簿の記帳"] }
+  "未払金": { "tax": "不課税", "expectedNumbers": ["帳簿の記帳"] },
+  "福利厚生費": { "tax": "課税仕入10%", "expectedNumbers": ["法人税基本通達9-7-3", "No.6157"] },
+  "前払費用": { "tax": "不課税", "expectedNumbers": ["法人税基本通達2-2-14"] }
 }
