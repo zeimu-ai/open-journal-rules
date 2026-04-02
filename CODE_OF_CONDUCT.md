@@ -1,60 +1,22 @@
-# Contributor Covenant Code of Conduct
+# 行動規範
 
-## Our Pledge
+## 約束
 
-We as members, contributors, and leaders pledge to make participation in our
-community a welcoming experience for everyone.
+私たちはメンバー、コントリビューター、リーダーとして、コミュニティへの参加を全ての人にとって歓迎される体験にすることを誓います。
 
-## Our Standards
+## 行動基準
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+ポジティブな環境に貢献する行動の例:
+- 他者に対する共感と優しさ
+- 異なる意見や経験への敬意
+- 建設的なフィードバックの提供と受容
+- 間違いに対する責任の受容と謝罪
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+容認されない行動の例:
+- ハラスメント、侮辱的なコメント
+- 個人情報の無断公開
+- その他の非倫理的・非専門的な行為
 
-Examples of unacceptable behavior include:
+## 適用範囲
 
-* The use of inappropriate language or imagery
-* Trolling or insulting/derogatory comments
-* Public or private inappropriate behavior
-* Publishing others' private information without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
-
-## Enforcement Responsibilities
-
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
-
-## Scope
-
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
-
-## Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
-reported to the community leaders responsible for enforcement via X (Twitter):
-[@3chhe](https://x.com/3chhe).
-
-All complaints will be reviewed and investigated promptly and fairly.
-
-All community leaders are obligated to respect the privacy and security of the
-reporter of any incident.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage],
-version 2.1, available at
-[https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
-
-[homepage]: https://www.contributor-covenant.org
-[v2.1]: https://www.contributor-covenant.org/version/2/1/code_of_conduct.html
+この行動規範は、個人がコミュニティを代表する全ての場所で適用されます。

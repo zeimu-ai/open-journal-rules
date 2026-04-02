@@ -1,27 +1,29 @@
-# Contributing
+# 貢献ガイドライン
 
-## Adding Rules
+## ルール追加のルール
 
-1. **Source URL required**: Every rule must reference an official document (NTA, etc.)
-2. **JSON format**: Follow the existing format in `rules/journal-rules.json`
-3. **Add tests**: Add test cases in `tests/rules.test.ts`
+新しい仕訳ルールを追加する場合、以下を守ってください:
 
-## Rule Format
+1. **根拠URL必須**: 国税庁・公式ドキュメントのURLを必ず記載
+2. **JSON形式**: `rules/journal-rules.json` の既存フォーマットに従う
+3. **テスト追加**: `tests/rules.test.ts` にテストケースを追加
+
+## ルールのフォーマット
 
 ```json
 {
   "id": "rule-29",
-  "name": "Rule name",
-  "patterns": ["keyword1", "keyword2"],
+  "name": "ルール名",
+  "patterns": ["キーワード1", "キーワード2"],
   "matchType": "partial",
-  "accountName": "Account name",
-  "taxCategory": "Tax category",
+  "accountName": "勘定科目名",
+  "taxCategory": "課税仕入10%",
   "confidence": 0.90,
   "sourceUrl": "https://...",
-  "notes": ""
+  "notes": "補足事項"
 }
 ```
 
-## Rules without sources will not be accepted
+## 根拠のないルールは受け付けません
 
-"This is how it's generally done" is not sufficient. Please always include a URL to an official document.
+「一般的にこう処理する」だけでは不十分です。必ず公式ドキュメントのURLを添えてください。

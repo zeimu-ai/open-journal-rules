@@ -1,27 +1,40 @@
 # Open Journal Rules
 
-Open-source Japanese accounting journal entry rules dataset.
+日本の税務仕訳ルールのオープンソースデータセットです。
 
-## What's included
+## 収録データ
 
-| File | Description | Count |
-|------|-------------|-------|
-| `rules/journal-rules.json` | Description pattern to account mapping | 28 rules |
-| `rules/account-master.json` | Account items master (NTA blue return) | 28 accounts |
-| `rules/tax-categories.json` | Consumption tax category mapping | 17 entries |
-| `rules/amount-thresholds.json` | Amount-based classification rules | 5 thresholds |
+| ファイル | 内容 | 件数 |
+|---------|------|------|
+| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 28パターン |
+| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 28科目 |
+| `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
+| `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 5段階 |
 
-## Data License
+## 使い方
 
-Rule data (`rules/`) is licensed under [CC BY 4.0](LICENSE).
-Code (`tests/`, scripts) is licensed under [MIT](LICENSE-CODE).
+```bash
+npm install @zeimu-ai/open-journal-rules
+```
 
-## Sources
+```typescript
+import rules from "@zeimu-ai/open-journal-rules/rules/journal-rules.json";
 
-All rules are based on official Japanese National Tax Agency (NTA) documents. See [docs/sources.md](docs/sources.md).
+// 摘要からルールを検索
+const matched = rules.find(rule =>
+  rule.patterns.some(p => description.includes(p))
+);
+```
 
-## Contributing
+## ライセンス
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). Every rule must include a source URL.
+- ルールデータ（`rules/`）: [CC BY 4.0](LICENSE)
+- コード（`tests/`）: [MIT](LICENSE-CODE)
 
-[README.ja.md](README.ja.md)
+## 根拠
+
+全ルールは国税庁等の公式ドキュメントに基づいています。詳細は [docs/sources.md](docs/sources.md) を参照。
+
+## 貢献
+
+[CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。根拠URLのないルールは受け付けません。

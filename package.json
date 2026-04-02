@@ -1,7 +1,7 @@
 {
   "name": "@zeimu-ai/open-journal-rules",
   "version": "0.1.0",
-  "description": "Japanese accounting journal entry rules dataset",
+  "description": "日本の税務仕訳ルール オープンソースデータセット",
   "main": "rules/journal-rules.json",
   "files": ["rules/"],
   "license": "CC-BY-4.0",
