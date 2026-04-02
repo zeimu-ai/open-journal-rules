@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.0] - 2026-04-02
+
+### Added
+
+- `citations` フィールドを全33ルール・31科目に追加（構造化エビデンス管理）
+- テストで citations の存在・整合性を自動検証（4テスト追加）
+- `scripts/generate-sources.ts` — docs/sources.md をJSONから自動生成
+- `npm run generate-docs` コマンド追加
+
+### Changed
+
+- docs/sources.md を手動管理から自動生成に移行（DRY原則）
+
 ## [0.1.2] - 2026-04-02
 
 ### Fixed

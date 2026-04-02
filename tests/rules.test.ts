@@ -25,6 +25,30 @@ describe("journal-rules.json", () => {
     const ids = rules.map((r) => r.id);
     expect(new Set(ids).size).toBe(ids.length);
   });
+
+  it("each rule should have citations array", () => {
+    for (const rule of rules) {
+      expect(Array.isArray(rule.citations)).toBe(true);
+    }
+  });
+
+  it("rules with sourceUrl should have non-empty citations", () => {
+    for (const rule of rules) {
+      if (rule.sourceUrl) {
+        expect(rule.citations.length).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it("each citation should have url and number", () => {
+    for (const rule of rules) {
+      for (const c of rule.citations) {
+        expect(c.url).toMatch(/^https:\/\//);
+        expect(c.source).toBeDefined();
+        expect(c.verified_at).toBeDefined();
+      }
+    }
+  });
 });
 
 describe("account-master.json", () => {
@@ -36,6 +60,16 @@ describe("account-master.json", () => {
     for (const acc of accounts) {
       expect(acc.name).toBeDefined();
       expect(["income", "expense", "asset", "liability"]).toContain(acc.category);
+    }
+  });
+
+  it("each account should have citations array with at least 1 entry", () => {
+    for (const acc of accounts) {
+      expect(Array.isArray(acc.citations)).toBe(true);
+      expect(acc.citations.length).toBeGreaterThan(0);
+      for (const c of acc.citations) {
+        expect(c.url).toMatch(/^https:\/\//);
+      }
     }
   });
 });

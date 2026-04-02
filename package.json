@@ -1,6 +1,6 @@
 {
   "name": "@zeimu-ai/open-journal-rules",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "日本の税務仕訳ルール オープンソースデータセット",
   "main": "rules/journal-rules.json",
   "files": ["rules/"],
@@ -11,7 +11,8 @@
   },
   "keywords": ["accounting", "journal-entry", "japan", "tax", "freee"],
   "scripts": {
-    "test": "vitest run"
+    "test": "vitest run",
+    "generate-docs": "tsx scripts/generate-sources.ts"
   },
   "devDependencies": {
     "vitest": "^3.0.0",
