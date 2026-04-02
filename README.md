@@ -26,10 +26,13 @@ const matched = rules.find(rule =>
 );
 ```
 
+## 免責事項
+
+本データセットは税務アドバイスを構成するものではありません。詳細は [DISCLAIMER.md](DISCLAIMER.md) を参照してください。
+
 ## ライセンス
 
-- ルールデータ（`rules/`）: [CC BY 4.0](LICENSE)
-- コード（`tests/`）: [MIT](LICENSE-CODE)
+[Apache License 2.0](LICENSE)
 
 ## 根拠・リサーチ
 

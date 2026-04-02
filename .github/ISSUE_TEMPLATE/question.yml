@@ -1,0 +1,24 @@
+name: 質問
+description: ルールの使い方や仕訳の判断について質問してください
+labels: ["question"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ご質問ありがとうございます。
+        ルールの使い方や税務上の判断に迷う場合にご利用ください。
+
+        **注意**: 本プロジェクトは税務アドバイスを提供するものではありません。
+        最終的な税務判断は税理士にご確認ください。
+  - type: textarea
+    id: question
+    attributes:
+      label: 質問内容
+      placeholder: "例: 通信費のルールで、インターネット回線料金とVPN費用は同じ勘定科目でよいですか？"
+    validations:
+      required: true
+  - type: input
+    id: related-rule
+    attributes:
+      label: 関連するルール（あれば）
+      placeholder: "例: rules/expense/communication.json"

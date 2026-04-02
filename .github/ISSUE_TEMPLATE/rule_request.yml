@@ -1,0 +1,51 @@
+name: ルール追加リクエスト
+description: 新しい仕訳ルールの追加を提案してください
+labels: ["enhancement", "ルール追加"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        新しいルールの追加リクエストありがとうございます。
+        業種・取引パターンの情報をご記入ください。
+  - type: input
+    id: rule-name
+    attributes:
+      label: ルール名
+      placeholder: "例: 飲食業の食材仕入れ（軽減税率対応）"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: カテゴリ
+      options:
+        - 経費（expense）
+        - 売上（revenue）
+        - 資産（asset）
+        - 負債（liability）
+        - 業種別プリセット
+        - その他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: ルールの内容
+      description: 借方科目・貸方科目・消費税区分・適用条件を記載してください
+      placeholder: |
+        借方: 仕入高
+        貸方: 買掛金
+        消費税: 軽減税率8%
+        条件: 取引先が食品卸業者、摘要に「食材」を含む
+    validations:
+      required: true
+  - type: input
+    id: legal-reference
+    attributes:
+      label: 根拠となる法令・通達
+      placeholder: "例: 消費税法第29条、軽減税率Q&A"
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 想定される利用シーン
+      placeholder: "飲食業の顧問先で、食材仕入れの仕訳を自動化したい"

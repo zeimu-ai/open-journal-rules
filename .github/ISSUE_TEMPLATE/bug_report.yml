@@ -1,0 +1,42 @@
+name: ルールの誤り報告
+description: 仕訳ルールの誤りや不正確な内容を報告してください
+labels: ["bug", "ルール修正"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ルールの誤りを報告いただきありがとうございます。
+        以下の情報をできるだけ詳しくご記入ください。
+  - type: input
+    id: rule-id
+    attributes:
+      label: 対象ルールID / ファイル名
+      placeholder: "例: rules/expense/communication.json"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 誤りの内容
+      description: 現在の内容と、正しいと考えられる内容を記載してください
+      placeholder: |
+        現在の内容: 通信費は課税仕入れ10%
+        正しい内容: NHK受信料は不課税取引
+    validations:
+      required: true
+  - type: input
+    id: legal-reference
+    attributes:
+      label: 根拠となる法令・通達
+      description: 国税庁Q&A、所得税法、法人税法等の条文番号があれば記載してください
+      placeholder: "例: 消費税法別表第一、国税庁Q&A No.6201"
+  - type: dropdown
+    id: severity
+    attributes:
+      label: 影響度
+      options:
+        - 軽微（表記の揺れ等）
+        - 中（勘定科目の誤り）
+        - 重大（消費税区分の誤り）
+    validations:
+      required: true
