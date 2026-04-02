@@ -27,3 +27,7 @@
 ## 根拠のないルールは受け付けません
 
 「一般的にこう処理する」だけでは不十分です。必ず公式ドキュメントのURLを添えてください。
+
+## バージョニング
+
+本リポジトリは [Semantic Versioning 2.0.0](https://github.com/zeimu-ai/.github/blob/main/VERSIONING.md) に準拠しています。ルール追加・修正はPATCH、新フィールド追加はMINOR、破壊的変更はMAJORバージョンを上げます。

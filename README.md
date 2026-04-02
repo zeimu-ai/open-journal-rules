@@ -50,6 +50,10 @@ const matched = rules.find(rule =>
 
 [CONTRIBUTING.md](CONTRIBUTING.md) を参照してください。根拠URLのないルールは受け付けません。
 
+## バージョニング
+
+[Semantic Versioning 2.0.0](https://github.com/zeimu-ai/.github/blob/main/VERSIONING.md) に準拠しています。
+
 ---
 
 このプロジェクトは [Zeimu AI](https://zeimu.ai) が開発・メンテナンスしています。
