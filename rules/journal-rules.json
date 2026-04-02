@@ -272,14 +272,14 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.95,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
     "notes": "",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6209",
-        "title": "非課税と不課税の違い",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "number": "No.6201",
+        "title": "非課税となる取引（社会保険料）",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
         "verified_at": "2026-04-02"
       }
     ]
@@ -473,14 +473,14 @@
     "accountName": "給料手当",
     "taxCategory": "不課税",
     "confidence": 0.95,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2508.htm",
     "notes": "",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6209",
-        "title": "非課税と不課税の違い",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "number": "No.2508",
+        "title": "給与所得となるもの",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2508.htm",
         "verified_at": "2026-04-02"
       }
     ]
@@ -496,14 +496,14 @@
     "accountName": "役員報酬",
     "taxCategory": "不課税",
     "confidence": 0.95,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm",
     "notes": "",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6209",
-        "title": "非課税と不課税の違い",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "number": "No.5211",
+        "title": "役員に対する給与（報酬・賞与）",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm",
         "verified_at": "2026-04-02"
       }
     ]
@@ -520,14 +520,14 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.9,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
     "notes": "",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6209",
-        "title": "非課税と不課税の違い",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "number": "No.6201",
+        "title": "非課税となる取引（社会保険料）",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
         "verified_at": "2026-04-02"
       }
     ]
@@ -544,14 +544,14 @@
     "accountName": "預り金",
     "taxCategory": "不課税",
     "confidence": 0.9,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2502.htm",
     "notes": "",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6209",
-        "title": "非課税と不課税の違い",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+        "number": "No.2502",
+        "title": "源泉徴収義務者とは",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2502.htm",
         "verified_at": "2026-04-02"
       }
     ]
@@ -823,6 +823,81 @@
         "number": "No.6201",
         "title": "非課税となる取引",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-04-02"
+      }
+    ]
+  },
+  {
+    "id": "rule-34",
+    "name": "福利厚生費（健康診断）",
+    "patterns": [
+      "健康診断",
+      "人間ドック",
+      "定期健診"
+    ],
+    "matchType": "partial",
+    "accountName": "福利厚生費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/09/09_07.htm",
+    "notes": "法人が負担する従業員の健康診断費用",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "法人税基本通達9-7-3",
+        "title": "福利厚生費",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/09/09_07.htm",
+        "verified_at": "2026-04-02"
+      }
+    ]
+  },
+  {
+    "id": "rule-35",
+    "name": "福利厚生費（慶弔見舞金）",
+    "patterns": [
+      "慶弔",
+      "見舞金",
+      "香典",
+      "祝金",
+      "弔慰金"
+    ],
+    "matchType": "partial",
+    "accountName": "福利厚生費",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+    "notes": "慶弔見舞金は対価性なし→不課税",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの（不課税）の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-04-02"
+      }
+    ]
+  },
+  {
+    "id": "rule-36",
+    "name": "前払費用",
+    "patterns": [
+      "年払い",
+      "前払",
+      "一括払い",
+      "年間契約"
+    ],
+    "matchType": "partial",
+    "accountName": "前払費用",
+    "taxCategory": "不課税",
+    "confidence": 0.8,
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_02.htm",
+    "notes": "資産科目。役務提供時に経費振替。短期前払費用の特例（法人税法基本通達2-2-14）で1年以内なら支払時に損金算入可",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "法人税基本通達2-2-14",
+        "title": "短期の前払費用",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_02.htm",
         "verified_at": "2026-04-02"
       }
     ]

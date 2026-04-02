@@ -1,6 +1,6 @@
 {
   "name": "@zeimu-ai/open-journal-rules",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "日本の税務仕訳ルール オープンソースデータセット",
   "main": "rules/journal-rules.json",
   "files": ["rules/"],

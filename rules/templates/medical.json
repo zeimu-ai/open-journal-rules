@@ -1,0 +1,56 @@
+[
+  {
+    "id": "tmpl-medical-01",
+    "name": "診療報酬入金（社保）",
+    "patterns": ["社会保険診療報酬支払基金", "支払基金", "社保支払基金"],
+    "matchType": "partial",
+    "accountName": "売上高",
+    "taxCategory": "非課税",
+    "confidence": 0.95,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "notes": "社会保険医療の給付等は非課税取引",
+    "citations": [{
+      "source": "国税庁タックスアンサー",
+      "number": "No.6201",
+      "title": "非課税となる取引",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+      "verified_at": "2026-04-02"
+    }]
+  },
+  {
+    "id": "tmpl-medical-02",
+    "name": "診療報酬入金（国保）",
+    "patterns": ["国民健康保険団体連合会", "国保連合会", "国保連"],
+    "matchType": "partial",
+    "accountName": "売上高",
+    "taxCategory": "非課税",
+    "confidence": 0.95,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "notes": "社会保険医療の給付等は非課税取引",
+    "citations": [{
+      "source": "国税庁タックスアンサー",
+      "number": "No.6201",
+      "title": "非課税となる取引",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+      "verified_at": "2026-04-02"
+    }]
+  },
+  {
+    "id": "tmpl-medical-03",
+    "name": "医薬品仕入",
+    "patterns": ["医薬品", "薬品卸", "メディセオ", "アルフレッサ", "スズケン"],
+    "matchType": "partial",
+    "accountName": "仕入高",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "医薬品は課税仕入",
+    "citations": [{
+      "source": "国税庁",
+      "number": "青色申告決算書",
+      "title": "必要経費の科目一覧",
+      "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+      "verified_at": "2026-04-02"
+    }]
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tmpl-it-01",
+    "name": "ソフトウェア開発（20万円以上）",
+    "patterns": ["ソフトウェア開発", "システム構築", "アプリ開発"],
+    "matchType": "partial",
+    "accountName": "ソフトウェア",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5461.htm",
+    "notes": "20万円以上のソフトウェアは資産計上。取得価額に含める",
+    "citations": [{
+      "source": "国税庁タックスアンサー",
+      "number": "No.5461",
+      "title": "ソフトウエアの取得価額と耐用年数",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5461.htm",
+      "verified_at": "2026-04-02"
+    }]
+  },
+  {
+    "id": "tmpl-it-02",
+    "name": "サーバー・インフラ費用",
+    "patterns": ["AWS", "Google Cloud", "Azure", "Heroku", "Vercel", "Cloudflare"],
+    "matchType": "partial",
+    "accountName": "通信費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.90,
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "notes": "クラウドインフラは通信費。月額利用料ベース",
+    "citations": [{
+      "source": "国税庁",
+      "number": "青色申告決算書",
+      "title": "必要経費の科目一覧",
+      "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+      "verified_at": "2026-04-02"
+    }]
+  }
+]
