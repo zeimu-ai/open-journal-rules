@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-04-02
+
+### Fixed
+
+- journal-rules.json: 残り2ルール（売掛金回収・クレカ引落）のsourceUrl充足（31/33→33/33）
+- amount-thresholds.json: 残り2閾値（固定資産・高額取引）のsourceUrl充足（5/7→7/7）
+- sourceUrl設定率: journal-rules 100%、account-master 100%、amount-thresholds 100%
+
 ## [0.1.1] - 2026-04-02
 
 ### Added
