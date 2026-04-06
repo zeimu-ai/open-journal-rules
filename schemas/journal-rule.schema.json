@@ -22,7 +22,8 @@
           "number": { "type": "string", "minLength": 1 },
           "title": { "type": "string" },
           "url": { "type": "string" },
-          "verified_at": { "type": "string", "format": "date" }
+          "verified_at": { "type": "string", "format": "date" },
+          "reason": { "type": "string" }
         }
       }
     }
