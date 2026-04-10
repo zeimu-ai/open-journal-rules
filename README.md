@@ -85,3 +85,10 @@ const allRules = [...rules, ...restaurant];
 ---
 
 このプロジェクトは [Zeimu AI](https://zeimu.ai) が開発・メンテナンスしています。
+
+### 関連プロジェクト
+
+| プロジェクト | 内容 |
+|------------|------|
+| [open-freee-demo-kit](https://github.com/zeimu-ai/open-freee-demo-kit) | freeeサンドボックスにデモデータを一括投入するCLIツール |
+| [open-industry-support-guide](https://github.com/zeimu-ai/open-industry-support-guide) | 金融庁『業種別支援の着眼点』のMarkdown + JSONデータセット |
