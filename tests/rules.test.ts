@@ -5,8 +5,8 @@ import taxes from "../rules/tax-categories.json";
 import thresholds from "../rules/amount-thresholds.json";
 
 describe("journal-rules.json", () => {
-  it("should have 36 rules", () => {
-    expect(rules).toHaveLength(36);
+  it("should have 37 rules", () => {
+    expect(rules).toHaveLength(37);
   });
 
   it("each rule should have required fields", () => {
