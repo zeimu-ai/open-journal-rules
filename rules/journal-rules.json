@@ -172,6 +172,7 @@
     "accountName": "地代家賃",
     "taxCategory": "非課税",
     "confidence": 0.9,
+    "priority": 1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
     "notes": "住宅の貸付けは消費税非課税（貸付期間1か月未満等を除く）",
     "citations": [
@@ -197,6 +198,7 @@
     "accountName": "地代家賃",
     "taxCategory": "課税仕入10%",
     "confidence": 0.85,
+    "priority": -1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
     "notes": "事業用（事務所・店舗・駐車場）は課税仕入10%。住宅用賃料は非課税（rule-38）",
     "citations": [
@@ -305,6 +307,7 @@
     "accountName": "損害保険料",
     "taxCategory": "非課税",
     "confidence": 0.9,
+    "priority": -1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
     "notes": "",
     "citations": [
@@ -331,6 +334,7 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.95,
+    "priority": 1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
     "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
     "citations": [
@@ -589,6 +593,7 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.9,
+    "priority": 1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
     "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
     "citations": [
