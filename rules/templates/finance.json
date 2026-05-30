@@ -2,7 +2,7 @@
   {
     "id": "tmpl-finance-01",
     "name": "支払利息",
-    "patterns": ["利息", "金利", "借入利息"],
+    "patterns": ["金利", "借入利息"],
     "matchType": "partial",
     "accountName": "支払利息",
     "taxCategory": "非課税",
