@@ -26,7 +26,7 @@
 | B-00 | **mini-corpus（20-30件）を `tests/golden/mini-corpus.json` に作成**し精度ベースラインを確立（全変更の前後比較の前提） | S |
 | B-12 | 件数ハードコード（`toHaveLength(37/31/17/7)`）を不変条件テストに置換（**B-01 より先に実施しないと CI failure**） | S |
 | B-01 | rule-06 地代家賃 → 課税仕入10%、住宅用を別ルール分離、citation を No.6225 に。`account-master` id:25 / `citation-mapping` も同時修正 | S |
-| B-02 | rule-11/21 の citation を No.6201 → **No.6209**、`citation-mapping` の法定福利費も修正 | S |
+| B-02 | rule-11/21 の citation を No.6201 → **No.6157**、`citation-mapping` の法定福利費も修正 | S |
 | B-03 | rule-14 研修費の citation を No.1410 → 青色申告決算書に差替 | S |
 | B-05 | tmpl-construction-02 未成工事支出金の税区分修正 + notes に「支払側/受取側」区別注意 | S |
 | B-14 | rule-37 の notes と **citations[0].reason 両方**の「5,000円」を「1万円」に統一（R6.4.1改正） | S |
@@ -105,8 +105,8 @@ TDD（Red→Green→Refactor）厳守。行番号は 2026-05-31 時点の実測�
 - **DoD**: 事業用賃料が課税仕入10%で解決。住宅用が非課税で解決。citation-integrity green
 
 #### B-02 法定福利費 citation（P0）
-- rule-11 / rule-21 の citation `No.6201`（非課税となる取引）→ `No.6209`（非課税と不課税の違い・`…/shohi/6209.htm`）。両ルールとも `taxCategory:不課税` は維持
-- `citation-mapping.json:11`: `expectedNumbers ["No.6201"]`→`["No.6209"]`
+- rule-11 / rule-21 の citation `No.6201`（非課税となる取引＝概念違い）→ `No.6157`（課税の対象とならないもの（不課税）の具体例・`…/shohi/6157.htm`）。両ルールとも `taxCategory:不課税` は維持。notes に `社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税` を追記。※当初案 No.6209 は「非課税と不課税の違い」の概念説明のみで社会保険料に非言及のため不採用（一次確認済み）
+- `citation-mapping.json:11`: `expectedNumbers ["No.6201"]`→`["No.6157"]`
 - **DoD**: 不課税科目が非課税ページを参照しない。citation-integrity green
 
 #### B-03 研修費 citation（P0）
@@ -257,3 +257,4 @@ TDD（Red→Green→Refactor）厳守。行番号は 2026-05-31 時点の実測�
 | 2026-05-31 | 初版作成（多角レビュー workflow の成果を統合） |
 | 2026-05-31 | Open Questions 8件をユーザー確定（決定事項テーブル追加）。Phase 0-3 を実装着手レベルに精緻化（file:line・before→after・DoD・TDD テスト表明・工数サマリ・リスク登録簿を追加） |
 | 2026-05-31 | B-01 の citation を No.6229→**No.6225「地代、家賃や権利金、敷金など」**に訂正（レビューエージェントが提示した No.6229 は実際には「商品券やプリペイドカードなど」で別内容。国税庁ページを一次確認して訂正）。No.5408 従業員数要件を500人で一次確認 |
+| 2026-05-31 | B-02 の citation を No.6209→**No.6157「不課税の具体例」**に訂正（No.6209 は概念説明のみで社会保険料に非言及。実装前に国税庁ページを一次確認）。実装は worktree `fix/phase0-tax-corrections` で workflow 着手 |
