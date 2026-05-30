@@ -624,14 +624,14 @@
       "ETC",
       "タイムズ"
     ],
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "citations": [
       {
         "source": "国税庁",
-        "number": "",
-        "title": "",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
-        "verified_at": "2026-04-02"
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
       }
     ]
   },
@@ -645,14 +645,14 @@
       "複合機リース",
       "車両リース"
     ],
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "citations": [
       {
         "source": "国税庁",
-        "number": "",
-        "title": "",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
-        "verified_at": "2026-04-02"
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
       }
     ]
   },
@@ -666,14 +666,14 @@
       "夏季賞与",
       "冬季賞与"
     ],
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "citations": [
       {
         "source": "国税庁",
-        "number": "",
-        "title": "",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm",
-        "verified_at": "2026-04-02"
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
       }
     ]
   },
