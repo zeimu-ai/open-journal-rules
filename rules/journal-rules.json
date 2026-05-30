@@ -331,15 +331,15 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.95,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+    "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6201",
-        "title": "非課税となる取引（社会保険料）",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-        "verified_at": "2026-04-02",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの（不課税）の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-05-31",
         "reason": "健康保険・厚生年金・雇用保険等の事業主負担分の社会保険料を計上する科目"
       }
     ]
@@ -589,15 +589,15 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.9,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+    "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6201",
-        "title": "非課税となる取引（社会保険料）",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-        "verified_at": "2026-04-02",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの（不課税）の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-05-31",
         "reason": "雇用保険・労災保険等の労働保険の事業主負担分を計上する科目"
       }
     ]
