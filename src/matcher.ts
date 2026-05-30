@@ -33,7 +33,11 @@ export interface MatchResult {
   rule: MatchRule;
   /** マッチした patterns エントリ（normalizeText 済み） */
   matchedPattern: string;
-  /** スコア: matchedPattern.length * confidence */
+  /**
+   * 相対スコア = matchedPattern.length * confidence（ルール単体の関連度ヒューリスティック）。
+   * 注意: 最終順位は priority → matchedPattern.length → confidence で決まり score は順位に直接使わない。
+   * 呼び出し側はソート済み配列の先頭(results[0])をベストマッチとして使うこと（score の最大値ではない）。
+   */
   score: number;
 }
 
