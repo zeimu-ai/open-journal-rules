@@ -74,6 +74,27 @@ URLが存在しない場合・到達不能な場合はマージ不可です。
 
 ---
 
+## インボイス制度・経過措置フィールド
+
+### invoiceRequired / transitionalDeductionRate
+
+免税事業者等からの課税仕入に関して、インボイス制度の対応が必要なルールには以下のフィールドを付与します。
+
+| フィールド | 型 | 意味 |
+|---|---|---|
+| `invoiceRequired` | `boolean` | `true` のとき、仕入先のインボイス登録番号確認が必要 |
+| `transitionalDeductionRate` | `number \| null` | 現時点の経過措置控除割合。`0.8`（80%）/ `0.5`（50%）/ `null`（控除不可） |
+
+### 免税事業者からの課税仕入の経過措置（消費税法附則第52条・第53条）
+
+- 2023-10-01 〜 2026-09-30: **80%控除**（`transitionalDeductionRate: 0.8`）
+- 2026-10-01 〜 2029-09-30: **50%控除**（`transitionalDeductionRate: 0.5`）
+- 2029-10-01 以降: **控除不可**（`transitionalDeductionRate: null`）
+
+`transitionalDeductionRate` は「現在（ルール更新時点）の控除割合」を示します。経過措置期間が変わるたびに値を更新してください。
+
+---
+
 ## バージョニング（SemVer）
 
 本リポジトリは [Semantic Versioning 2.0.0](https://github.com/zeimu-ai/.github/blob/main/VERSIONING.md) に準拠しています。

@@ -474,7 +474,9 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
-    "notes": "",
+    "notes": "免税事業者からの課税仕入はインボイス制度の経過措置対象。2023-10-01〜2026-09-30は80%控除、2026-10-01〜2029-09-30は50%控除。",
+    "invoiceRequired": true,
+    "transitionalDeductionRate": 0.8,
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -555,7 +557,9 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
-    "notes": "",
+    "notes": "免税事業者からの課税仕入はインボイス制度の経過措置対象。2023-10-01〜2026-09-30は80%控除、2026-10-01〜2029-09-30は50%控除。クラウドワークス・ランサーズ等のフリーランス・免税個人事業主比率が高い。",
+    "invoiceRequired": true,
+    "transitionalDeductionRate": 0.8,
     "citations": [
       {
         "source": "国税庁タックスアンサー",
