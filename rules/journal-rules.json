@@ -50,6 +50,7 @@
       "東京ガス",
       "大阪ガス"
     ],
+    "excludePatterns": ["ガスター", "ガスコンロ", "ガスケット"],
     "matchType": "partial",
     "accountName": "水道光熱費",
     "taxCategory": "課税仕入10%",
@@ -78,6 +79,7 @@
       "カウネット",
       "モノタロウ"
     ],
+    "excludePatterns": ["Amazon Web Services", "AWS", "Kindle"],
     "matchType": "partial",
     "accountName": "消耗品費",
     "taxCategory": "課税仕入10%",
@@ -107,6 +109,7 @@
       "鉄道",
       "バス"
     ],
+    "excludePatterns": ["バスタオル", "バスマット", "バスソルト", "バスケット"],
     "matchType": "partial",
     "accountName": "旅費交通費",
     "taxCategory": "課税仕入10%",
