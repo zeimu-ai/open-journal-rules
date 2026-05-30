@@ -1,4 +1,5 @@
 import { describe, it, expect } from "vitest";
+import { globSync, readFileSync } from "node:fs";
 import rules from "../rules/journal-rules.json";
 import accounts from "../rules/account-master.json";
 import taxes from "../rules/tax-categories.json";
@@ -85,6 +86,47 @@ describe("account-master.json", () => {
       for (const c of acc.citations) {
         expect(c.url).toMatch(/^https:\/\//);
       }
+    }
+  });
+});
+
+describe("accountName 参照整合性", () => {
+  const masterNames = new Set(accounts.map((a) => a.name));
+
+  it("journal-rules.json の全 accountName が account-master.json に存在すること", () => {
+    const missing: string[] = [];
+    for (const rule of rules) {
+      if (!masterNames.has(rule.accountName)) {
+        missing.push(`rule[${rule.id}] "${rule.accountName}"`);
+      }
+    }
+    if (missing.length > 0) {
+      expect.fail(
+        `account-master.json に存在しない accountName:\n${missing.join("\n")}`,
+      );
+    }
+  });
+
+  it("templates/*.json の全 accountName が account-master.json に存在すること", () => {
+    const templateFiles = globSync(
+      new URL("../rules/templates/*.json", import.meta.url).pathname,
+    );
+    const missing: string[] = [];
+    for (const f of templateFiles) {
+      const entries = JSON.parse(readFileSync(f, "utf-8")) as Array<
+        Record<string, unknown>
+      >;
+      for (const entry of entries) {
+        const name = entry["accountName"] as string | undefined;
+        if (name && !masterNames.has(name)) {
+          missing.push(`${f}: "${name}"`);
+        }
+      }
+    }
+    if (missing.length > 0) {
+      expect.fail(
+        `account-master.json に存在しない accountName (templates):\n${missing.join("\n")}`,
+      );
     }
   });
 });
