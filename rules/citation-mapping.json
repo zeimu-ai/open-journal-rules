@@ -11,7 +11,7 @@
   "法定福利費": { "tax": "不課税", "expectedNumbers": ["No.6157"] },
   "租税公課": { "tax": "不課税", "expectedNumbers": ["No.6209", "No.6157"] },
   "新聞図書費": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },
-  "研修費": { "tax": "課税仕入10%", "expectedNumbers": ["No.1410"] },
+  "研修費": { "tax": "課税仕入10%", "expectedNumbers": ["青色申告決算書"] },
   "支払報酬": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },
   "諸会費": { "tax": "不課税", "expectedNumbers": ["No.5262"] },
   "外注工賃": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },

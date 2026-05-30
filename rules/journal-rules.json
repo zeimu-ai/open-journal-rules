@@ -411,16 +411,16 @@
     "accountName": "研修費",
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "notes": "",
     "citations": [
       {
-        "source": "国税庁タックスアンサー",
-        "number": "No.1410",
-        "title": "給与所得者の特定支出控除 > 研修費",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm",
-        "verified_at": "2026-04-02",
-        "reason": "業務に必要な研修・セミナー・講座の受講費用を計上する科目"
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31",
+        "reason": "事業者の研修費は必要経費"
       }
     ]
   },
