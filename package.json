@@ -9,6 +9,7 @@
     "dist/"
   ],
   "exports": {
+    ".": "./rules/journal-rules.json",
     "./rules/*": "./rules/*",
     "./schemas/*": "./schemas/*"
   },
@@ -35,6 +36,7 @@
     "generate-docs": "tsx scripts/generate-sources.ts"
   },
   "devDependencies": {
+    "@types/node": "^20.0.0",
     "ajv": "^8.18.0",
     "ajv-formats": "^3.0.1",
     "tsx": "^4.0.0",

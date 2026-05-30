@@ -1,8 +1,8 @@
 import { describe, it, expect } from "vitest";
 import Ajv from "ajv";
 import addFormats from "ajv-formats";
-import { globSync } from "node:fs";
-import { readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import rules from "../rules/journal-rules.json";
 import accounts from "../rules/account-master.json";
 import thresholds from "../rules/amount-thresholds.json";
@@ -35,9 +35,10 @@ describe("JSON Schema validation", () => {
 
   describe("templates/*.json", () => {
     const validate = ajv.compile(ruleSchema);
-    const templateFiles = globSync(
-      new URL("../rules/templates/*.json", import.meta.url).pathname,
-    );
+    const templatesDir = new URL("../rules/templates/", import.meta.url).pathname;
+    const templateFiles = readdirSync(templatesDir)
+      .filter((f) => f.endsWith(".json"))
+      .map((f) => join(templatesDir, f));
 
     it(`テンプレートファイルが29件存在すること`, () => {
       const totalEntries = templateFiles.flatMap((f) => {

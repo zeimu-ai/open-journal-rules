@@ -1,5 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { globSync, readFileSync } from "node:fs";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import rules from "../rules/journal-rules.json";
 import accounts from "../rules/account-master.json";
 
@@ -34,9 +35,10 @@ function collectCitations(): { label: string; citation: Citation }[] {
   }
 
   // templates/*.json
-  const templateFiles = globSync(
-    new URL("../rules/templates/*.json", import.meta.url).pathname,
-  );
+  const templatesDir = new URL("../rules/templates/", import.meta.url).pathname;
+  const templateFiles = readdirSync(templatesDir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => join(templatesDir, f));
   for (const f of templateFiles) {
     const entries = JSON.parse(readFileSync(f, "utf-8")) as Array<{
       id: string;
