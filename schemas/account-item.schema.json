@@ -5,7 +5,7 @@
     "id": { "type": "integer" },
     "name": { "type": "string", "minLength": 1 },
     "category": { "type": "string", "enum": ["income", "expense", "asset", "liability"] },
-    "taxDefault": { "type": "string", "minLength": 1 },
+    "taxDefault": { "type": "string", "enum": ["課税仕入10%", "課税仕入8%（軽減税率）", "課税売上10%", "非課税", "不課税", "免税"] },
     "description": { "type": "string" },
     "examples": { "type": "array", "items": { "type": "string" } },
     "sourceUrl": { "type": ["string", "null"] },

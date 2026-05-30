@@ -7,7 +7,7 @@
     "patterns": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
     "matchType": { "type": "string", "enum": ["exact", "prefix", "partial"] },
     "accountName": { "type": "string", "minLength": 1 },
-    "taxCategory": { "type": "string", "minLength": 1 },
+    "taxCategory": { "type": "string", "enum": ["課税仕入10%", "課税仕入8%（軽減税率）", "課税売上10%", "非課税", "不課税", "免税"] },
     "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
     "sourceUrl": { "type": "string" },
     "notes": { "type": "string" },
