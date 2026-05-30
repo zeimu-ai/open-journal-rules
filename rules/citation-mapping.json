@@ -3,7 +3,7 @@
   "水道光熱費": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },
   "消耗品費": { "tax": "課税仕入10%", "expectedNumbers": ["No.5403"] },
   "旅費交通費": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },
-  "地代家賃": { "tax": "非課税", "expectedNumbers": ["No.6201"] },
+  "地代家賃": { "tax": "課税仕入10%", "expectedNumbers": ["No.6225"] },
   "荷造運賃": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },
   "広告宣伝費": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },
   "支払手数料": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },

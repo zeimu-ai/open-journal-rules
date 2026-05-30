@@ -159,6 +159,33 @@
     ]
   },
   {
+    "id": "rule-38",
+    "name": "地代家賃（住宅用）",
+    "patterns": [
+      "住宅",
+      "アパート",
+      "マンション家賃",
+      "社宅",
+      "賃貸住宅"
+    ],
+    "matchType": "partial",
+    "accountName": "地代家賃",
+    "taxCategory": "非課税",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+    "notes": "住宅の貸付けは消費税非課税（貸付期間1か月未満等を除く）",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6225",
+        "title": "地代、家賃や権利金、敷金など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+        "verified_at": "2026-05-31",
+        "reason": "住宅の貸付けは非課税"
+      }
+    ]
+  },
+  {
     "id": "rule-06",
     "name": "地代家賃",
     "patterns": [
@@ -168,18 +195,18 @@
     ],
     "matchType": "partial",
     "accountName": "地代家賃",
-    "taxCategory": "非課税",
+    "taxCategory": "課税仕入10%",
     "confidence": 0.85,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "住宅は非課税、事務所は課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+    "notes": "事業用（事務所・店舗・駐車場）は課税仕入10%。住宅用賃料は非課税（rule-38）",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6201",
-        "title": "非課税となる取引",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-        "verified_at": "2026-04-02",
-        "reason": "事務所・店舗等の家賃や土地の賃借料を計上する科目"
+        "number": "No.6225",
+        "title": "地代、家賃や権利金、敷金など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+        "verified_at": "2026-05-31",
+        "reason": "事務所・店舗・駐車場等の事業用建物の貸付けは課税対象"
       }
     ]
   },
