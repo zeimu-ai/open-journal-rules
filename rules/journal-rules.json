@@ -301,10 +301,13 @@
   },
   {
     "id": "rule-10",
-    "name": "保険料",
+    "name": "損害保険料",
     "patterns": [
-      "保険",
-      "共済"
+      "損害保険",
+      "火災保険",
+      "自動車保険",
+      "賠償責任保険",
+      "共済掛金"
     ],
     "matchType": "partial",
     "accountName": "損害保険料",
@@ -312,15 +315,15 @@
     "confidence": 0.9,
     "priority": -1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "",
+    "notes": "広すぎる「保険」「共済」単体は法定福利費（健康保険・雇用保険等）との誤マッチを防ぐため削除。損害保険・火災保険・自動車保険等の具体的パターンのみ使用",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
         "number": "No.6201",
         "title": "非課税となる取引",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-        "verified_at": "2026-04-02",
-        "reason": "火災保険・自動車保険等の損害保険料を計上する科目。生命保険料は含まない"
+        "verified_at": "2026-05-31",
+        "reason": "火災保険・自動車保険・賠償責任保険等の損害保険料を計上する科目。生命保険料・社会保険料は含まない"
       }
     ]
   },
