@@ -34,7 +34,8 @@
         "title": "必要経費 > 通信費",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "電話料金・インターネット接続費・郵便代等の通信に関する費用を計上する科目"
+        "reason": "電話料金・インターネット接続費・郵便代等の通信に関する費用を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -68,7 +69,8 @@
         "title": "必要経費 > 水道光熱費",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "電気・ガス・水道等の光熱費および水道料金を計上する科目"
+        "reason": "電気・ガス・水道等の光熱費および水道料金を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -101,7 +103,8 @@
         "title": "少額の減価償却資産の取得価額の損金算入",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm",
         "verified_at": "2026-04-02",
-        "reason": "使用可能期間1年未満または取得価額10万円未満の消耗品の購入費を計上する科目"
+        "reason": "使用可能期間1年未満または取得価額10万円未満の消耗品の購入費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -136,7 +139,8 @@
         "title": "必要経費 > 旅費交通費",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "電車・バス・タクシー等の交通費、出張旅費を計上する科目"
+        "reason": "電車・バス・タクシー等の交通費、出張旅費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -170,7 +174,8 @@
         "title": "必要経費 > 通信費",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "サーバー・ドメイン・クラウドサービス等のIT通信関連費用を計上する科目"
+        "reason": "サーバー・ドメイン・クラウドサービス等のIT通信関連費用を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -198,7 +203,8 @@
         "title": "地代、家賃や権利金、敷金など",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
         "verified_at": "2026-05-31",
-        "reason": "住宅の貸付けは非課税"
+        "reason": "住宅の貸付けは非課税",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -223,7 +229,8 @@
         "title": "地代、家賃や権利金、敷金など",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
         "verified_at": "2026-05-31",
-        "reason": "事務所・店舗・駐車場等の事業用建物の貸付けは課税対象"
+        "reason": "事務所・店舗・駐車場等の事業用建物の貸付けは課税対象",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -250,7 +257,8 @@
         "title": "必要経費 > 荷造運賃",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "商品の梱包資材費や発送運賃を計上する科目"
+        "reason": "商品の梱包資材費や発送運賃を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -277,7 +285,8 @@
         "title": "必要経費 > 広告宣伝費",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "チラシ・Web広告・看板等の広告宣伝に関する費用を計上する科目"
+        "reason": "チラシ・Web広告・看板等の広告宣伝に関する費用を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -307,7 +316,8 @@
         "title": "必要経費 > 支払手数料",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "銀行振込手数料・仲介手数料等の各種手数料を計上する科目"
+        "reason": "銀行振込手数料・仲介手数料等の各種手数料を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -334,7 +344,8 @@
         "title": "非課税となる取引",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
         "verified_at": "2026-05-31",
-        "reason": "火災保険・自動車保険・賠償責任保険等の損害保険料を計上する科目。生命保険料・社会保険料は含まない"
+        "reason": "火災保険・自動車保険・賠償責任保険等の損害保険料を計上する科目。生命保険料・社会保険料は含まない",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -361,7 +372,8 @@
         "title": "課税の対象とならないもの（不課税）の具体例",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
         "verified_at": "2026-05-31",
-        "reason": "健康保険・厚生年金・雇用保険等の事業主負担分の社会保険料を計上する科目"
+        "reason": "健康保険・厚生年金・雇用保険等の事業主負担分の社会保険料を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -388,7 +400,8 @@
         "title": "非課税と不課税の違い",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
         "verified_at": "2026-04-02",
-        "reason": "固定資産税・印紙税・自動車税等の税金および公的負担金を計上する科目"
+        "reason": "固定資産税・印紙税・自動車税等の税金および公的負担金を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -415,7 +428,8 @@
         "title": "必要経費 > 新聞図書費",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "業務に必要な書籍・新聞・雑誌・電子書籍等の購入費を計上する科目"
+        "reason": "業務に必要な書籍・新聞・雑誌・電子書籍等の購入費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -441,7 +455,8 @@
         "title": "必要経費の科目一覧",
         "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
         "verified_at": "2026-05-31",
-        "reason": "事業者の研修費は必要経費"
+        "reason": "事業者の研修費は必要経費",
+        "authority_level": "administrative_form"
       }
     ]
   },
@@ -467,7 +482,8 @@
         "title": "必要経費 > 支払報酬",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "税理士・弁護士・社労士等の専門家への報酬を計上する科目"
+        "reason": "税理士・弁護士・社労士等の専門家への報酬を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -494,7 +510,8 @@
         "title": "少額の減価償却資産の取得価額の損金算入",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm",
         "verified_at": "2026-04-02",
-        "reason": "事務用品・備品等の10万円未満の消耗品購入費を計上する科目"
+        "reason": "事務用品・備品等の10万円未満の消耗品購入費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -519,7 +536,8 @@
         "title": "交際費等と会費及び入会金",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5262.htm",
         "verified_at": "2026-04-02",
-        "reason": "業界団体・商工会議所等の会費・年会費を計上する科目"
+        "reason": "業界団体・商工会議所等の会費・年会費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -545,7 +563,8 @@
         "title": "必要経費 > 外注工賃",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "業務の一部を外部に委託した場合の加工賃・外注費を計上する科目"
+        "reason": "業務の一部を外部に委託した場合の加工賃・外注費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -570,7 +589,8 @@
         "title": "給与所得となるもの",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2508.htm",
         "verified_at": "2026-04-02",
-        "reason": "従業員に支払う給与・手当を計上する科目。源泉徴収の対象となる"
+        "reason": "従業員に支払う給与・手当を計上する科目。源泉徴収の対象となる",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -594,7 +614,8 @@
         "title": "役員に対する給与（報酬・賞与）",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm",
         "verified_at": "2026-04-02",
-        "reason": "取締役等の役員に支払う報酬を計上する科目。定期同額給与等の要件に注意"
+        "reason": "取締役等の役員に支払う報酬を計上する科目。定期同額給与等の要件に注意",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -620,7 +641,8 @@
         "title": "課税の対象とならないもの（不課税）の具体例",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
         "verified_at": "2026-05-31",
-        "reason": "雇用保険・労災保険等の労働保険の事業主負担分を計上する科目"
+        "reason": "雇用保険・労災保険等の労働保険の事業主負担分を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -645,7 +667,8 @@
         "title": "源泉徴収義務者とは",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2502.htm",
         "verified_at": "2026-04-02",
-        "reason": "源泉所得税・住民税等の従業員から預かった金額を計上する科目"
+        "reason": "源泉所得税・住民税等の従業員から預かった金額を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -669,7 +692,8 @@
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2200.htm",
         "verified_at": "2026-04-02",
         "source": "国税庁タックスアンサー",
-        "reason": "銀行の普通預金口座への入出金を記録する勘定科目"
+        "reason": "銀行の普通預金口座への入出金を記録する勘定科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -694,7 +718,8 @@
         "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/kojin_jigyo/index.htm",
         "verified_at": "2026-04-02",
         "source": "国税庁タックスアンサー",
-        "reason": "代金の支払義務が確定しているが未払いの金額を計上する科目"
+        "reason": "代金の支払義務が確定しているが未払いの金額を計上する科目",
+        "authority_level": "administrative_form"
       }
     ]
   },
@@ -723,7 +748,8 @@
         "title": "交際費等の範囲と損金不算入額の計算",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
         "verified_at": "2026-05-29",
-        "reason": "1人1万円超の社外飲食は損金算入対象 (法人税基本通達9-7-15-2)。高級飲食店ブランドは通常閾値超過のため、原則 接待交際費 に分類。"
+        "reason": "1人1万円超の社外飲食は損金算入対象 (法人税基本通達9-7-15-2)。高級飲食店ブランドは通常閾値超過のため、原則 接待交際費 に分類。",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -748,7 +774,8 @@
         "title": "交際費等の範囲と損金不算入額の計算",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
         "verified_at": "2026-04-02",
-        "reason": "社内打ち合わせの茶菓・弁当代等、会議に関連する少額の飲食費を計上する科目"
+        "reason": "社内打ち合わせの茶菓・弁当代等、会議に関連する少額の飲食費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -773,7 +800,8 @@
         "title": "交際費等の範囲と損金不算入額の計算",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
         "verified_at": "2026-04-02",
-        "reason": "取引先との飲食・贈答・慶弔等の接待に関する費用を計上する科目"
+        "reason": "取引先との飲食・贈答・慶弔等の接待に関する費用を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -798,7 +826,8 @@
         "title": "収入金額とその計算",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2200.htm",
         "verified_at": "2026-04-02",
-        "reason": "本業の商品販売・サービス提供による収益を計上する科目"
+        "reason": "本業の商品販売・サービス提供による収益を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -823,7 +852,8 @@
         "title": "必要経費 > 仕入高",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "販売目的の商品や原材料の仕入れに関する費用を計上する科目"
+        "reason": "販売目的の商品や原材料の仕入れに関する費用を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -857,7 +887,8 @@
         "title": "やさしい必要経費の知識",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
         "verified_at": "2026-04-02",
-        "reason": "ガソリン代・車検費用・駐車場代等の車両に関する費用を計上する科目"
+        "reason": "ガソリン代・車検費用・駐車場代等の車両に関する費用を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -882,7 +913,8 @@
         "title": "リース取引についての消費税の取扱い",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
         "verified_at": "2026-04-02",
-        "reason": "リース契約に基づく機器・車両等のリース料を計上する科目"
+        "reason": "リース契約に基づく機器・車両等のリース料を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -907,7 +939,8 @@
         "title": "賞与に対する源泉徴収",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm",
         "verified_at": "2026-04-02",
-        "reason": "従業員に支給する賞与（ボーナス）を計上する科目。源泉徴収の対象となる"
+        "reason": "従業員に支給する賞与（ボーナス）を計上する科目。源泉徴収の対象となる",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -934,7 +967,8 @@
         "title": "修繕費とならないものの判定",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5402.htm",
         "verified_at": "2026-04-02",
-        "reason": "建物・機械等の修理・メンテナンス費用を計上する科目。資本的支出との区分に注意"
+        "reason": "建物・機械等の修理・メンテナンス費用を計上する科目。資本的支出との区分に注意",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -960,7 +994,8 @@
         "title": "非課税となる取引",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
         "verified_at": "2026-04-02",
-        "reason": "借入金の利息や手形の割引料を計上する科目。消費税は非課税取引"
+        "reason": "借入金の利息や手形の割引料を計上する科目。消費税は非課税取引",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -985,7 +1020,8 @@
         "title": "福利厚生費",
         "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/09/09_07.htm",
         "verified_at": "2026-04-02",
-        "reason": "社員旅行・慶弔見舞金・社内行事等の福利厚生に関する費用を計上する科目"
+        "reason": "社員旅行・慶弔見舞金・社内行事等の福利厚生に関する費用を計上する科目",
+        "authority_level": "notice"
       }
     ]
   },
@@ -1012,7 +1048,8 @@
         "title": "課税の対象とならないもの（不課税）の具体例",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
         "verified_at": "2026-04-02",
-        "reason": "社宅の賃料・食事の提供等の現物給与に伴う福利厚生費を計上する科目"
+        "reason": "社宅の賃料・食事の提供等の現物給与に伴う福利厚生費を計上する科目",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -1038,7 +1075,8 @@
         "title": "短期の前払費用",
         "url": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_02.htm",
         "verified_at": "2026-04-02",
-        "reason": "翌期以降のサービスに対して前払いした費用を計上する科目。期間按分で費用化する"
+        "reason": "翌期以降のサービスに対して前払いした費用を計上する科目。期間按分で費用化する",
+        "authority_level": "notice"
       }
     ]
   }

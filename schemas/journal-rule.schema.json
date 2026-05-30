@@ -25,7 +25,8 @@
           "title": { "type": "string" },
           "url": { "type": "string" },
           "verified_at": { "type": "string", "format": "date" },
-          "reason": { "type": "string" }
+          "reason": { "type": "string" },
+          "authority_level": { "type": "string", "enum": ["statute", "ministerial_ordinance", "notice", "tax_answer", "administrative_form"] }
         }
       }
     }
