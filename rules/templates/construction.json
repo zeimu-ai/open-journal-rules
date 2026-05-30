@@ -23,10 +23,10 @@
     "patterns": ["工事前払", "着手金", "工事着手", "手付金"],
     "matchType": "partial",
     "accountName": "未成工事支出金",
-    "taxCategory": "不課税",
+    "taxCategory": "課税仕入10%",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
-    "notes": "工事完成前の支出金。完成時に原価振替",
+    "notes": "工事完成前の支出金。完成時に原価振替。本ルールは支払側（発注者）の処理を対象。受取側（受注者）が受け取る着手金は前受金として処理する",
     "citations": [{
       "source": "国税庁タックスアンサー",
       "number": "No.6209",
