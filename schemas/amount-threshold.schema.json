@@ -9,7 +9,12 @@
     "sourceUrl": { "type": "string" },
     "notes": { "type": "string" },
     "category": { "type": "string", "enum": ["asset_acquisition", "repair", "meeting"] },
-    "inclusive": { "type": "boolean" }
+    "inclusive": { "type": "boolean" },
+    "accountName": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "この閾値の判定対象となる『マッチした入力科目名』(=トリガー科目。結果として計上すべき資産科目ではない)。例: asset_acquisition の各閾値は [\"消耗品費\"]（消耗品費でマッチした取引が高額なら資産計上を要する、という金額帯判定に使う）。エンジンはマッチした科目がこの配列に含まれる場合のみ当該カテゴリの閾値を適用する。資産計上時の振替先科目(工具器具備品等)はこのフィールドではなくエンジン/閾値の rule 文言で表現する。"
+    }
   },
   "additionalProperties": false
 }

@@ -1,6 +1,6 @@
 {
   "name": "@zeimu-ai/open-journal-rules",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "description": "日本の税務仕訳ルール オープンソースデータセット",
   "main": "rules/journal-rules.json",
   "files": [
@@ -27,6 +27,10 @@
     "./entity": {
       "types": "./dist/entity.d.ts",
       "default": "./dist/entity.js"
+    },
+    "./invoice-number": {
+      "types": "./dist/invoice-number.d.ts",
+      "default": "./dist/invoice-number.js"
     }
   },
   "engines": {

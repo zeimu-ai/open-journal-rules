@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.14.0] - 2026-05-31
+
+#20（外注費 vs 給与）と、`~/dev/pitto`（領収書・請求書OCR→AI仕訳）ユースケース向けの実務拡充。
+
+### Added
+
+- **#20 外注費 vs 給与の判定**: `rule-18`（外注費）に消費税法基本通達1-1-1の判定4要素（①代替性②指揮監督③危険負担④材料用具の供与）と給与認定リスク（源泉漏れ＋仕入控除否認）を notes 付与。通達本文は `curl | iconv -f SHIFT_JIS` で逐語確認
+- **適格請求書登録番号ユーティリティ** `src/invoice-number.ts`（export `./invoice-number`）: OCRテキストからの登録番号(T+13桁)抽出・形式判定・法人番号の検査用数字検証。OCRインボイス判定の一次フィルタ
+- **`amount-thresholds.json` に `accountName` フィールド**: 各閾値が適用される科目（asset_acquisition→消耗品費 等）を明示し、コンシューマ側のハードコードを不要に
+- **`account-master` に `withholdingRequired` フラグ**: 支払報酬（士業等の報酬・料金、所得税法204条）に付与。源泉徴収対象の自動判定に利用可
+- `tests/phase5-pitto.test.ts`
+
 ## [0.13.0] - 2026-05-31
 
 消費税の拡充（軽減税率境界・非課税/不課税の通達網羅）。**国税庁の法令解釈通達（Shift_JIS）を `curl | iconv -f SHIFT_JIS` で取得し、実装者が条番号本文を逐語確認**（WebFetchの文字化けを回避）。
