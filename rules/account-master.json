@@ -1505,5 +1505,53 @@
         "authority_level": "tax_answer"
       }
     ]
+  },
+  {
+    "id": 93,
+    "name": "固定資産売却損益",
+    "category": "income",
+    "taxDefault": "課税売上10%",
+    "description": "固定資産(有形・無形固定資産)の売却損益。事業用資産の譲渡は課税売上10%(No.6105)。土地の売却は非課税(別)",
+    "examples": [
+      "車両売却",
+      "機械売却"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6105.htm",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6105",
+        "title": "課税の対象",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6105.htm",
+        "verified_at": "2026-05-31",
+        "reason": "資産には棚卸資産・固定資産等の有形資産や権利等の無形資産が含まれ、事業者が事業として対価を得て行う譲渡は課税対象",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "name": "有価証券売却損益",
+    "category": "income",
+    "taxDefault": "非課税",
+    "description": "株式・国債・社債・投資信託等の有価証券の譲渡損益。譲渡は非課税(No.6201)。課税売上割合の計算では対価の5%を分母算入(No.6405)",
+    "examples": [
+      "株式売却",
+      "国債売却"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-05-31",
+        "reason": "国債・株券などの有価証券等の譲渡は非課税",
+        "authority_level": "tax_answer"
+      }
+    ]
   }
 ]
