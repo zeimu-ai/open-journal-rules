@@ -176,6 +176,15 @@
         "verified_at": "2026-04-02",
         "reason": "サーバー・ドメイン・クラウドサービス等のIT通信関連費用を計上する科目",
         "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6118",
+        "title": "国境を越えた役務の提供に係る消費税の課税関係",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6118.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "国外事業者の電気通信利用役務(クラウドSaaS)はリバースチャージ方式の対象となる場合がある"
       }
     ]
   },
@@ -522,15 +531,14 @@
     "name": "会費",
     "patterns": [
       "税理士会",
-      "商工会",
-      "資格更新"
+      "商工会"
     ],
     "matchType": "partial",
     "accountName": "諸会費",
     "taxCategory": "不課税",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5262.htm",
-    "notes": "",
+    "notes": "資格更新料は対価性により区分が分かれるため本ルールでは一律分類しない: (A)行政・法定団体への登録更新/法定講習は租税公課・非課税(消費税法別表第一5号, 基通6-5-1) (B)民間資格(FP・簿記検定等)の更新手数料は支払手数料・課税(基通5-5-3) (C)同業者団体の通常会費は諸会費・不課税。摘要だけで判別できないため本ルールの対象は税理士会・商工会等の団体会費に限定する。",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -569,6 +577,15 @@
         "verified_at": "2026-04-02",
         "reason": "業務の一部を外部に委託した場合の加工賃・外注費を計上する科目",
         "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6498",
+        "title": "適格請求書等保存方式（インボイス制度）",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6498.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "外注先に免税事業者が多く、免税事業者等からの課税仕入の経過措置(80%/50%控除)が適用される"
       }
     ]
   },
@@ -744,7 +761,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
-    "notes": "高級飲食店ブランド(ステーキハウス/鉄板焼/高級寿司/懐石/会員制クラブ等)は1人1万円超の蓋然性が高く、原則 接待交際費。法人税基本通達9-7-15-2の1人1万円基準を満たさない場合のみ 会議費 に振替する想定。",
+    "notes": "高級飲食店ブランド(ステーキハウス/鉄板焼/高級寿司/懐石/会員制クラブ等)は1人1万円超の蓋然性が高く、原則 接待交際費。租税特別措置法61の4(措令37の5)の1人1万円基準を満たさない場合のみ 会議費 に振替する想定。",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -752,7 +769,7 @@
         "title": "交際費等の範囲と損金不算入額の計算",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
         "verified_at": "2026-05-29",
-        "reason": "1人1万円超の社外飲食は損金算入対象 (法人税基本通達9-7-15-2)。高級飲食店ブランドは通常閾値超過のため、原則 接待交際費 に分類。",
+        "reason": "1人1万円超の社外飲食は損金算入対象 (租税特別措置法61の4・措令37の5。詳細はNo.5265)。高級飲食店ブランドは通常閾値超過のため、原則 接待交際費 に分類。",
         "authority_level": "tax_answer"
       }
     ]
