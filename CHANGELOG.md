@@ -7,6 +7,39 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2026-05-31
+
+### Added
+
+- 正典マッチャー（`src/matcher.ts`）: 正規化・matchType 判定・衝突解決ロジック
+- `src/normalize.ts`: NFKC-lower 正規化ユーティリティ
+- `src/resolver.ts`: 複数候補からの最終勘定科目解決ロジック
+- ルールフィールド拡張: `priority` / `excludePatterns` / `authority_level` / `invoiceRequired` / `transitionalDeductionRate`
+- `schemas/tax-category-enum.json`: 消費税区分の enum スキーマ定義
+- ゴールデンコーパス 78 件（`tests/corpus/golden/`）
+- 衝突テスト（`tests/collision.test.ts`）・ゴールデンコーパステスト（`tests/golden.test.ts`）
+- 配布用ビルド（`dist/`）と `matcher` / `normalize` / `resolver` のパッケージ exports
+
+### Changed
+
+- **破壊的変更**: `taxCategory` / `taxDefault` フィールドを文字列から enum に変更
+- **破壊的変更**: `patterns` を NFKC-lower 正規化前提の文字列に変更
+- テンプレート間の重複パターンを解消
+- 損害保険料パターンを具体化（「保険料」汎用マッチを廃止）
+- 地代家賃を事業用課税ルールと住宅用（rule-38）に分離
+- SemVer ポリシー明文化: パターン追加 = MINOR、意味変更 = MAJOR
+
+### Fixed
+
+- citation 是正: 地代家賃（No.6225）/ 法定福利費（No.6157）/ 研修費（青色申告決算書）/ 未成工事支出金（No.6451）/ 会議費（措置法61の4・No.5265）/ 外注工賃（No.6498）/ SaaS（No.6118）
+- 会議費の非課税基準を 5,000 円から 1 万円に修正（法改正対応）
+- 件数のハードコードを撤廃し、データ駆動に変更
+- テンプレート 29 件のスキーマ・鮮度検証を追加
+- 参照整合性チェックを強化（account-master との整合確認）
+- 空 citation の補完（0 件 → 全件補完）
+- `schema.test` の TypeScript 型エラーを修正
+- `node_modules` の symlink 誤追跡を解消
+
 ## [0.2.5] - 2026-04-03
 
 ### Fixed
