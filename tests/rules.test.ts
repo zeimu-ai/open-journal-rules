@@ -76,7 +76,7 @@ describe("account-master.json", () => {
   it("each account should have name and valid category", () => {
     for (const acc of accounts) {
       expect(acc.name).toBeDefined();
-      expect(["income", "expense", "asset", "liability"]).toContain(acc.category);
+      expect(["income", "expense", "asset", "liability", "equity"]).toContain(acc.category);
     }
   });
 
