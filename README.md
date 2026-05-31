@@ -21,7 +21,7 @@ npm install @zeimu-ai/open-journal-rules
 
 ### 正典マッチャー（推奨）
 
-v1.0.0 以降は組み込みの `match()` / `resolveJournalEntry()` を使ってください。
+v0.4.0 以降は組み込みの `match()` / `resolveJournalEntry()` を使ってください。
 正規化・最長マッチ・優先度解決・除外パターンを自動で処理します。
 
 ```typescript
