@@ -2535,5 +2535,133 @@
         "reason": "純資産の部「株主資本」の控除項目として自己株式を掲げる"
       }
     ]
+  },
+  {
+    "id": 129,
+    "name": "労務費",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "製造現場の工員・作業員に支払う賃金・給与。雇用契約に基づく労働の対価のため消費税不課税。外注・派遣への支払は外注加工費・外注工賃（課税仕入10%）で処理。",
+    "examples": [
+      "工場作業員賃金",
+      "製造部門給与",
+      "組立工賃金"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（製造原価の計算）",
+        "title": "所得税青色申告決算書（一般用）製造原価の計算／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "製造原価の計算欄に『労務費』が存在"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの(不課税)の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": 130,
+    "name": "仕掛品",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "製造途中で期末時点に完成していない製品。棚卸資産として流動資産に計上。様式FA3076では「期首/期末半製品・仕掛品棚卸高」として製造原価計算に使用。棚卸振替仕訳自体は不課税。",
+    "examples": [
+      "期末仕掛品棚卸",
+      "期首仕掛品棚卸"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（製造原価の計算）",
+        "title": "所得税青色申告決算書（一般用）製造原価の計算／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "製造原価の計算欄に『期首半製品・仕掛品棚卸高』『期末半製品・仕掛品棚卸高』が存在"
+      }
+    ]
+  },
+  {
+    "id": 131,
+    "name": "半製品",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "一定の加工が終了し独立して販売可能だが、さらに加工して完成品とする中間製品。棚卸資産。様式FA3076では仕掛品と合算して扱う。",
+    "examples": [
+      "半完成品棚卸",
+      "中間製品在庫"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（製造原価の計算）",
+        "title": "所得税青色申告決算書（一般用）製造原価の計算／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "製造原価の計算欄に『期首半製品・仕掛品棚卸高』が存在"
+      }
+    ]
+  },
+  {
+    "id": 132,
+    "name": "製品製造原価",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "当期に完成した製品の総製造費用。材料費・労務費・製造経費の合計に期首・期末仕掛品棚卸高を調整して算出（様式FA3076「製品製造原価」欄）。損益計算書の売上原価区分。構成要素の消費税は各費用計上段階で判定済みのため振替集計自体は不課税。",
+    "examples": [
+      "当期製品製造原価振替",
+      "製造原価集計"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（製造原価の計算）",
+        "title": "所得税青色申告決算書（一般用）製造原価の計算／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "製造原価の計算欄に『製品製造原価』が存在"
+      }
+    ]
+  },
+  {
+    "id": 133,
+    "name": "完成工事原価",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "建設業の売上原価。材料費・労務費・外注費・経費の4区分で構成（建設業法施行規則別記様式16号 完成工事原価報告書）。工事進行中は未成工事支出金に累計し、完成・引渡時に完成工事原価へ振替。法人税法22条3項1号に「完成工事原価」として明記。集計振替自体は不課税。",
+    "examples": [
+      "完成工事原価振替",
+      "工事売上原価"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項第1号",
+        "title": "各事業年度の所得の金額の計算（損金の額）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-06-01",
+        "authority_level": "statute"
+      }
+    ]
   }
 ]
