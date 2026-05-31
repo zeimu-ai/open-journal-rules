@@ -20,6 +20,10 @@ interface ThresholdEntry {
   notes: string;
   minAmount?: number;
   maxAmount?: number;
+  /** 閾値カテゴリ。汎用の金額→処理判定には asset_acquisition のみ使用する */
+  category?: string;
+  /** maxAmount を含む(以下)か。未指定は exclusive(未満) */
+  inclusive?: boolean;
 }
 
 /** 型安全なキャスト: amount-thresholds.json は配列として読み込まれる */
@@ -67,18 +71,27 @@ export function resolveJournalEntry(
   }
 
   // 3. 金額に対応する閾値ルールを検索
-  // 優先順位: 配列に登場する順番で最初にマッチしたエントリを採用
-  // (amount-thresholds.json は threshold-01〜05 が資産耐用年数系、
-  //  threshold-06以降がカテゴリ専用系として並んでいる)
+  //   asset_acquisition カテゴリ(threshold-01〜05)のみを「金額→資産処理」判定に使う。
+  //   repair(修繕費)/meeting(会議費)カテゴリは勘定科目の文脈に依存するため汎用パスから除外する。
+  //   さらに、資産取得の閾値は購入資産系の科目(消耗品費 等)でのみ意味を持つため、
+  //   該当科目にマッチした場合のみ閾値を付加する(通信費/会議費等への誤付与を防止)。
+  //   asset_acquisition の各閾値は「未満」境界(exclusive)なので belowMax は amount < maxAmount。
+  const ASSET_RELEVANT_ACCOUNTS = new Set(["消耗品費"]);
+  const assetThresholds = ASSET_RELEVANT_ACCOUNTS.has(best.rule.accountName)
+    ? thresholds.filter((t) => t.category === "asset_acquisition")
+    : [];
   let matchedThreshold: ThresholdEntry | null = null;
 
-  for (const entry of thresholds) {
+  for (const entry of assetThresholds) {
     const hasMin = entry.minAmount !== undefined;
     const hasMax = entry.maxAmount !== undefined;
 
-    // 範囲チェック
     const aboveMin = hasMin ? amount >= (entry.minAmount as number) : true;
-    const belowMax = hasMax ? amount < (entry.maxAmount as number) : true;
+    const belowMax = hasMax
+      ? entry.inclusive
+        ? amount <= (entry.maxAmount as number)
+        : amount < (entry.maxAmount as number)
+      : true;
 
     if (aboveMin && belowMax) {
       matchedThreshold = entry;

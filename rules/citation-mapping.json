@@ -19,7 +19,7 @@
   "役員報酬": { "tax": "不課税", "expectedNumbers": ["No.5211", "No.2508"] },
   "賞与": { "tax": "不課税", "expectedNumbers": ["No.2523"] },
   "預り金": { "tax": "不課税", "expectedNumbers": ["No.2502"] },
-  "会議費": { "tax": "課税仕入10%", "expectedNumbers": ["No.5265", "法人税基本通達9-7-15-2"] },
+  "会議費": { "tax": "課税仕入10%", "expectedNumbers": ["No.5265"] },
   "接待交際費": { "tax": "課税仕入10%", "expectedNumbers": ["No.5265"] },
   "売上高": { "tax": "課税売上10%", "expectedNumbers": ["No.2200"] },
   "仕入高": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },

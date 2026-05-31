@@ -780,15 +780,6 @@
         "verified_at": "2026-04-02",
         "reason": "社内打ち合わせの茶菓・弁当代等、会議に関連する少額の飲食費を計上する科目",
         "authority_level": "tax_answer"
-      },
-      {
-        "source": "国税庁",
-        "number": "法人税基本通達9-7-15-2",
-        "title": "交際費等の範囲から除かれる飲食費",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
-        "verified_at": "2026-05-31",
-        "reason": "1人1万円以下の飲食費は交際費から除外でき会議費計上が可能(令和6年4月1日改正)",
-        "authority_level": "notice"
       }
     ]
   },
