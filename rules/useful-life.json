@@ -1,0 +1,23 @@
+{
+  "description": "主な減価償却資産の法定耐用年数（抜粋）。出典: 国税庁「主な減価償却資産の耐用年数表」（減価償却資産の耐用年数等に関する省令 別表第一・別表第二）。実装者が国税庁PDF（2100_01.pdf）を直接開いて確認した項目のみ収録。",
+  "assets": [
+    { "category": "車両・運搬具", "item": "普通自動車（一般用・小型車以外の自動車）", "usefulLifeYears": 6 },
+    { "category": "車両・運搬具", "item": "軽自動車（総排気量0.66リットル以下の小型車）", "usefulLifeYears": 4 },
+    { "category": "車両・運搬具", "item": "貨物自動車（一般用・ダンプ式以外）", "usefulLifeYears": 5 },
+    { "category": "器具・備品", "item": "パーソナルコンピュータ（サーバー用を除く）", "usefulLifeYears": 4 },
+    { "category": "器具・備品", "item": "事務机・事務いす・キャビネット（主として金属製）", "usefulLifeYears": 15 },
+    { "category": "器具・備品", "item": "事務机・事務いす・キャビネット（その他＝木製等）", "usefulLifeYears": 8 },
+    { "category": "器具・備品", "item": "複写機・計算機（電子計算機を除く）・金銭登録機・タイムレコーダー等", "usefulLifeYears": 5 },
+    { "category": "器具・備品", "item": "冷房用・暖房用機器", "usefulLifeYears": 6 },
+    { "category": "建物附属設備", "item": "給排水・衛生設備・ガス設備", "usefulLifeYears": 15 },
+    { "category": "建物附属設備", "item": "電気設備（蓄電池電源設備）", "usefulLifeYears": 6 }
+  ],
+  "citation": {
+    "source": "国税庁",
+    "number": "耐用年数省令別表第一・別表第二",
+    "title": "主な減価償却資産の耐用年数表",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/pdf/2100_01.pdf",
+    "verified_at": "2026-05-31",
+    "authority_level": "ministerial_ordinance"
+  }
+}

@@ -983,16 +983,25 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
-    "notes": "オペレーティングリース",
+    "notes": "リース料。所有権移転外ファイナンス・リース取引は売買があったものとして取り扱い、リース期間定額法で償却する（法人税。No.5704）。オペレーティング・リース取引の賃借料は、賃貸借期間の経過に応じて対応する金額を損金算入する（No.5705）。消費税は原則として課税仕入れ10%。",
     "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
         "number": "No.5704",
-        "title": "リース取引についての消費税の取扱い",
+        "title": "所有権移転外リース取引",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
-        "verified_at": "2026-04-02",
-        "reason": "リース契約に基づく機器・車両等のリース料を計上する科目",
+        "verified_at": "2026-05-31",
+        "reason": "所有権移転外ファイナンス・リース取引は売買があったものとして取り扱い、リース期間定額法で償却する（法人税）",
+        "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5705",
+        "title": "賃貸借取引（オペレーティング・リース取引）についての取扱いの概要",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5705.htm",
+        "verified_at": "2026-05-31",
+        "reason": "オペレーティング・リース取引の賃借料は賃貸借期間の経過に応じて損金算入する",
         "authority_level": "tax_answer"
       }
     ]
