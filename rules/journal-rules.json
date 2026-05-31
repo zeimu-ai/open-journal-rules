@@ -321,7 +321,12 @@
       "G-Search",
       "Ｇ-Ｓｅａｒｃｈ",
       "Gサーチ",
-      "ジーサーチ"
+      "ジーサーチ",
+      "Stripe",
+      "ストライプ",
+      "PayPal",
+      "ペイパル",
+      "ＰａｙＰａｌ"
     ],
     "matchType": "partial",
     "accountName": "支払手数料",
@@ -408,14 +413,19 @@
       "自動車税",
       "印紙",
       "住民税",
-      "事業税"
+      "事業税",
+      "事業所税",
+      "不動産取得税",
+      "都市計画税",
+      "軽自動車税",
+      "償却資産税"
     ],
     "matchType": "partial",
     "accountName": "租税公課",
     "taxCategory": "不課税",
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
-    "notes": "",
+    "notes": " 固定資産税・自動車税・軽自動車税・償却資産税・事業所税・不動産取得税・都市計画税等の地方税、および印紙税・登録免許税等は租税公課に計上し消費税は不課税。住民税・所得税は事業主個人の税で必要経費にならない(事業主貸)点に注意。",
     "applicableEntity": "both",
     "citations": [
       {
