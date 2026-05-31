@@ -5,5 +5,6 @@
   {"id":"threshold-04","minAmount":300000,"rule":"固定資産として減価償却（法定耐用年数に従う）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2100.htm","notes":"No.2100 減価償却のあらまし"},
   {"id":"threshold-05","minAmount":1000000,"rule":"強制要判断（高額取引リスク管理）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2100.htm","notes":"安全ルール（高額取引）。法的根拠はなくリスク管理上の閾値"},
   {"id":"threshold-06","maxAmount":200000,"rule":"修繕費（周期基準・少額基準）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5402.htm","notes":"修繕費 vs 資本的支出の判定。20万円未満は修繕費"},
-  {"id":"threshold-07","minAmount":200000,"maxAmount":600000,"rule":"修繕費（不明瞭でも可）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5402.htm","notes":"60万円未満または前期末取得価額の10%以下は修繕費"}
+  {"id":"threshold-07","minAmount":200000,"maxAmount":600000,"rule":"修繕費（不明瞭でも可）","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5402.htm","notes":"60万円未満または前期末取得価額の10%以下は修繕費"},
+  {"id":"threshold-08","maxAmount":10000,"rule":"会議費(1人1万円以下の社内飲食)","sourceUrl":"https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm","notes":"1人1万円以下は交際費から除外可(法基通9-7-15-2, R6.4.1改正)"}
 ]
