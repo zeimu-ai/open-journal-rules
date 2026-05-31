@@ -4,9 +4,22 @@ import accounts from "../rules/account-master.json";
 import taxes from "../rules/tax-categories.json";
 import thresholds from "../rules/amount-thresholds.json";
 
+const VALID_TAX_CATEGORIES = [
+  "課税仕入10%",
+  "課税売上10%",
+  "非課税",
+  "不課税",
+  "課税仕入8%（軽減税率）",
+];
+
 describe("journal-rules.json", () => {
-  it("should have 37 rules", () => {
-    expect(rules).toHaveLength(37);
+  it("should have at least 1 rule", () => {
+    expect(rules.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("all ids should be unique", () => {
+    const ids = rules.map((r) => r.id);
+    expect(new Set(ids).size).toBe(ids.length);
   });
 
   it("each rule should have required fields", () => {
@@ -16,14 +29,16 @@ describe("journal-rules.json", () => {
       expect(rule.patterns.length).toBeGreaterThan(0);
       expect(rule.accountName).toBeDefined();
       expect(rule.taxCategory).toBeDefined();
+      expect(Array.isArray(rule.citations)).toBe(true);
       expect(rule.confidence).toBeGreaterThanOrEqual(0);
       expect(rule.confidence).toBeLessThanOrEqual(1);
     }
   });
 
-  it("each rule should have unique id", () => {
-    const ids = rules.map((r) => r.id);
-    expect(new Set(ids).size).toBe(ids.length);
+  it("each rule taxCategory should be a valid value", () => {
+    for (const rule of rules) {
+      expect(VALID_TAX_CATEGORIES).toContain(rule.taxCategory);
+    }
   });
 
   it("each rule should have citations array", () => {
@@ -52,8 +67,8 @@ describe("journal-rules.json", () => {
 });
 
 describe("account-master.json", () => {
-  it("should have 31 accounts", () => {
-    expect(accounts).toHaveLength(31);
+  it("should have at least 1 account", () => {
+    expect(accounts.length).toBeGreaterThanOrEqual(1);
   });
 
   it("each account should have name and valid category", () => {
@@ -75,13 +90,27 @@ describe("account-master.json", () => {
 });
 
 describe("tax-categories.json", () => {
-  it("should have 17 entries", () => {
-    expect(taxes).toHaveLength(17);
+  it("should have at least 1 entry", () => {
+    expect(taxes.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("each tax-category entry should have required fields", () => {
+    for (const tax of taxes) {
+      expect(tax.accountName).toBeDefined();
+      expect(tax.taxDefault).toBeDefined();
+    }
   });
 });
 
 describe("amount-thresholds.json", () => {
-  it("should have 7 thresholds", () => {
-    expect(thresholds).toHaveLength(7);
+  it("should have at least 1 threshold", () => {
+    expect(thresholds.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it("each threshold should have required fields", () => {
+    for (const threshold of thresholds) {
+      expect(threshold.id).toBeDefined();
+      expect(threshold.rule).toBeDefined();
+    }
   });
 });

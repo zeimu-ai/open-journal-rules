@@ -159,6 +159,33 @@
     ]
   },
   {
+    "id": "rule-38",
+    "name": "地代家賃（住宅用）",
+    "patterns": [
+      "住宅",
+      "アパート",
+      "マンション家賃",
+      "社宅",
+      "賃貸住宅"
+    ],
+    "matchType": "partial",
+    "accountName": "地代家賃",
+    "taxCategory": "非課税",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+    "notes": "住宅の貸付けは消費税非課税（貸付期間1か月未満等を除く）",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6225",
+        "title": "地代、家賃や権利金、敷金など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+        "verified_at": "2026-05-31",
+        "reason": "住宅の貸付けは非課税"
+      }
+    ]
+  },
+  {
     "id": "rule-06",
     "name": "地代家賃",
     "patterns": [
@@ -168,18 +195,18 @@
     ],
     "matchType": "partial",
     "accountName": "地代家賃",
-    "taxCategory": "非課税",
+    "taxCategory": "課税仕入10%",
     "confidence": 0.85,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "住宅は非課税、事務所は課税",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+    "notes": "事業用（事務所・店舗・駐車場）は課税仕入10%。住宅用賃料は非課税（rule-38）",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6201",
-        "title": "非課税となる取引",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-        "verified_at": "2026-04-02",
-        "reason": "事務所・店舗等の家賃や土地の賃借料を計上する科目"
+        "number": "No.6225",
+        "title": "地代、家賃や権利金、敷金など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+        "verified_at": "2026-05-31",
+        "reason": "事務所・店舗・駐車場等の事業用建物の貸付けは課税対象"
       }
     ]
   },
@@ -304,15 +331,15 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.95,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+    "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6201",
-        "title": "非課税となる取引（社会保険料）",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-        "verified_at": "2026-04-02",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの（不課税）の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-05-31",
         "reason": "健康保険・厚生年金・雇用保険等の事業主負担分の社会保険料を計上する科目"
       }
     ]
@@ -384,16 +411,16 @@
     "accountName": "研修費",
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "notes": "",
     "citations": [
       {
-        "source": "国税庁タックスアンサー",
-        "number": "No.1410",
-        "title": "給与所得者の特定支出控除 > 研修費",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/1410.htm",
-        "verified_at": "2026-04-02",
-        "reason": "業務に必要な研修・セミナー・講座の受講費用を計上する科目"
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31",
+        "reason": "事業者の研修費は必要経費"
       }
     ]
   },
@@ -562,15 +589,15 @@
     "accountName": "法定福利費",
     "taxCategory": "不課税",
     "confidence": 0.9,
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+    "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
-        "number": "No.6201",
-        "title": "非課税となる取引（社会保険料）",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-        "verified_at": "2026-04-02",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの（不課税）の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-05-31",
         "reason": "雇用保険・労災保険等の労働保険の事業主負担分を計上する科目"
       }
     ]
@@ -666,7 +693,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
-    "notes": "高級飲食店ブランド(ステーキハウス/鉄板焼/高級寿司/懐石/会員制クラブ等)は1人5,000円超の蓋然性が高く、原則 接待交際費。法人税基本通達9-7-15-2の1人5,000円基準を満たさない場合のみ 会議費 に振替する想定。",
+    "notes": "高級飲食店ブランド(ステーキハウス/鉄板焼/高級寿司/懐石/会員制クラブ等)は1人1万円超の蓋然性が高く、原則 接待交際費。法人税基本通達9-7-15-2の1人1万円基準を満たさない場合のみ 会議費 に振替する想定。",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -674,7 +701,7 @@
         "title": "交際費等の範囲と損金不算入額の計算",
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
         "verified_at": "2026-05-29",
-        "reason": "1人5,000円超の社外飲食は損金算入対象 (法人税基本通達9-7-15-2)。高級飲食店ブランドは通常閾値超過のため、原則 接待交際費 に分類。"
+        "reason": "1人1万円超の社外飲食は損金算入対象 (法人税基本通達9-7-15-2)。高級飲食店ブランドは通常閾値超過のため、原則 接待交際費 に分類。"
       }
     ]
   },
