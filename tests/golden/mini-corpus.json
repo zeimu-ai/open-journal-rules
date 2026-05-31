@@ -21,5 +21,82 @@
   {"input": "AWS クラウド利用料 5月分", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
   {"input": "車両 ガソリン代 5月分", "expectedAccountName": "車両費", "expectedTaxCategory": "課税仕入10%"},
   {"input": "来客 会議費 昼食代", "expectedAccountName": "会議費", "expectedTaxCategory": "課税仕入10%"},
-  {"input": "固定資産税 5月分", "expectedAccountName": "租税公課", "expectedTaxCategory": "不課税"}
+  {"input": "固定資産税 5月分", "expectedAccountName": "租税公課", "expectedTaxCategory": "不課税"},
+
+  {"input": "docomo 携帯電話代 6月分", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "SoftBank スマートフォン月額 田中", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "KDDI 法人回線 7月分", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "Slack Business+ 月次利用料", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "Zoom Pro 月額 6月分", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "Notion Team 年間契約", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "Adobe Creative Cloud 月次", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "Google Cloud 利用料 7月分", "expectedAccountName": "通信費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "関西電力 電気代 6月分", "expectedAccountName": "水道光熱費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "東京ガス 都市ガス代 5月分", "expectedAccountName": "水道光熱費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "大阪ガス 月次請求", "expectedAccountName": "水道光熱費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "楽天 事務用品 一括購入", "expectedAccountName": "消耗品費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "アスクル コピー用紙 10箱", "expectedAccountName": "消耗品費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "コクヨ ノート 文具セット", "expectedAccountName": "消耗品費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "事務用品 文具 購入", "expectedAccountName": "消耗品費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "コピー用紙 A4 500枚", "expectedAccountName": "消耗品費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "PASMO 定期代 通勤 山田", "expectedAccountName": "旅費交通費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "JR 出張旅費 東京名古屋", "expectedAccountName": "旅費交通費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "タクシー 深夜帰宅代", "expectedAccountName": "旅費交通費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "Meta Ads 広告費 6月分", "expectedAccountName": "広告宣伝費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "Twitter Ads 広告出稿費", "expectedAccountName": "広告宣伝費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "リスティング広告代理店手数料", "expectedAccountName": "広告宣伝費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "銀行 振込料 支払代行", "expectedAccountName": "支払手数料", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "火災保険料 事務所 年払", "expectedAccountName": "損害保険料", "expectedTaxCategory": "非課税"},
+  {"input": "賠償責任保険 年次更新", "expectedAccountName": "損害保険料", "expectedTaxCategory": "非課税"},
+
+  {"input": "厚生年金保険料 事業主分 6月", "expectedAccountName": "法定福利費", "expectedTaxCategory": "不課税"},
+  {"input": "社会保険 健保 会社負担 7月", "expectedAccountName": "法定福利費", "expectedTaxCategory": "不課税"},
+
+  {"input": "自動車税 普通車 5月分", "expectedAccountName": "租税公課", "expectedTaxCategory": "不課税"},
+  {"input": "収入印紙 5千円×10枚", "expectedAccountName": "租税公課", "expectedTaxCategory": "不課税"},
+
+  {"input": "Udemy ビジネス 月次受講料", "expectedAccountName": "研修費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "資格取得 講習費", "expectedAccountName": "研修費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "税理士 月次顧問料 6月", "expectedAccountName": "支払報酬", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "弁護士 顧問料 5月分", "expectedAccountName": "支払報酬", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "社労士 給与計算代行", "expectedAccountName": "支払報酬", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "ヤマト運輸 発送代 一括", "expectedAccountName": "荷造運賃", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "佐川急便 集荷代", "expectedAccountName": "荷造運賃", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "ENEOS ガソリン代 5月分", "expectedAccountName": "車両費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "ETC 高速道路代 出張", "expectedAccountName": "車両費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "タイムズ コインパーキング 渋谷", "expectedAccountName": "車両費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "健康診断 全社員 6月実施", "expectedAccountName": "福利厚生費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "人間ドック 役員 年次受診", "expectedAccountName": "福利厚生費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "クラウドワークス デザイン業務委託", "expectedAccountName": "外注工賃", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "外注 ライター業務委託 田中", "expectedAccountName": "外注工賃", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "Kindle ビジネス書 購入", "expectedAccountName": "新聞図書費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "書籍 会計入門 購入", "expectedAccountName": "新聞図書費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "接待 懇親会 取引先 夕食", "expectedAccountName": "接待交際費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "高級寿司 接待 5名", "expectedAccountName": "接待交際費", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "借入金利息 銀行 6月分", "expectedAccountName": "利子割引料", "expectedTaxCategory": "非課税"},
+
+  {"input": "給与振込 6月分 全社員", "expectedAccountName": "給料手当", "expectedTaxCategory": "不課税"},
+  {"input": "役員報酬 6月分 代表取締役", "expectedAccountName": "役員報酬", "expectedTaxCategory": "不課税"},
+  {"input": "賞与 夏季 6月支給", "expectedAccountName": "賞与", "expectedTaxCategory": "不課税"},
+
+  {"input": "商工会 年会費 2026年度", "expectedAccountName": "諸会費", "expectedTaxCategory": "不課税"},
+
+  {"input": "リース料 複合機 6月分", "expectedAccountName": "リース料", "expectedTaxCategory": "課税仕入10%"},
+
+  {"input": "PCモニター 修理費用", "expectedAccountName": "修繕費", "expectedTaxCategory": "課税仕入10%"},
+  {"input": "事務所 エアコン 修繕 メンテナンス", "expectedAccountName": "修繕費", "expectedTaxCategory": "課税仕入10%"}
 ]

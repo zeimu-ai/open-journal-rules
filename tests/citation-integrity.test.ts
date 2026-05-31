@@ -72,6 +72,20 @@ describe("citation integrity", () => {
     }
   });
 
+  it("No.2210 汎用流用の現状を可視化する(警告のみ・expect.fail しない)", () => {
+    const no2210Rules = rules.filter((r) => r.citations?.[0]?.number === "No.2210");
+    const accountNames = [...new Set(no2210Rules.map((r) => r.accountName))].sort();
+    if (no2210Rules.length > 0) {
+      console.warn(
+        `[B-25 CI警告] No.2210(必要経費の概説)を citations[0] に使用しているルール: ${no2210Rules.length}件\n` +
+          `科目一覧(${accountNames.length}科目): ${accountNames.join(", ")}\n` +
+          "→ 将来の段階対応で科目固有の根拠番号へ置換予定",
+      );
+    }
+    // 警告のみ。テストは常にパス。
+    expect(true).toBe(true);
+  });
+
   it("taxCategory が1種類のみの accountName は citation-mapping の tax と一致すること", () => {
     // accountName ごとに taxCategory の集合を収集
     const accTaxMap = new Map<string, Set<string>>();

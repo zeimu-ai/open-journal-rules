@@ -7,7 +7,9 @@
     "maxAmount": { "type": "integer", "minimum": 0 },
     "rule": { "type": "string", "minLength": 1 },
     "sourceUrl": { "type": "string" },
-    "notes": { "type": "string" }
+    "notes": { "type": "string" },
+    "category": { "type": "string", "enum": ["asset_acquisition", "repair", "meeting"] },
+    "inclusive": { "type": "boolean" }
   },
   "additionalProperties": false
 }
