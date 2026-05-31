@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.15.0] - 2026-05-31
+
+#29（繰延資産）と #37（判例・裁決）を一次資料で拡充。全エビデンスは e-Gov 法令API・国税庁通達・国税不服審判所 公表裁決(kfs.go.jp)から逐語確認済み。
+
+### Added
+
+- **#29 繰延資産科目（5科目, id 97-101）**: 創立費・開業費・開発費・株式交付費・社債等発行費を `account-master.json` に追加（category=asset, taxDefault=不課税）。典拠は法人税法施行令第14条各号・第64条第1項第1号（任意償却）、所得税法施行令第7条各号・第137条第3項（個人の任意償却）。e-Gov法令API URL を citation に付与
+- **#37 判例・裁決 補強**: `journal-rules.json` の notes を拡充
+  - `rule-18`（外注費）: 消費税法基本通達1-1-1の4要素判定 + 給与/事業者認定の公表裁決6件（平成11-26年）
+  - `rule-26`（接待交際費）: 措置法通達61の4(1)-1/-10/-12/-21、飲食費1人1万円基準（旧5千円）+ 公表裁決4件
+  - `rule-20`（役員報酬）: 法人税法34条2項・施行令70条（実質/形式基準）+ 過大役員給与・みなし役員の公表裁決4件
+- `tests/phase6-29-37.test.ts`
+
+### Changed
+
+- `schemas/account-item.schema.json`: `authority_level` enum に `cabinet_order`（政令）を追加し、各値の規範強度を description で明文化
+- README: 勘定科目マスタ 67→72科目、citation-mapping 38→49科目（実数に同期）
+
 ## [0.14.0] - 2026-05-31
 
 #20（外注費 vs 給与）と、`~/dev/pitto`（領収書・請求書OCR→AI仕訳）ユースケース向けの実務拡充。

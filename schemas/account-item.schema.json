@@ -25,7 +25,7 @@
         "type": "object",
         "properties": {
           "number": { "type": "string", "minLength": 1 },
-          "authority_level": { "type": "string", "enum": ["statute", "ministerial_ordinance", "notice", "tax_answer", "administrative_form"] }
+          "authority_level": { "type": "string", "enum": ["statute", "cabinet_order", "ministerial_ordinance", "notice", "tax_answer", "administrative_form"], "description": "規範強度。statute=法律 / cabinet_order=政令(施行令) / ministerial_ordinance=省令(施行規則) / notice=通達 / tax_answer=タックスアンサー / administrative_form=申告書様式等" }
         }
       }
     }
