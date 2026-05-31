@@ -1,0 +1,53 @@
+{
+  "description": "製造業の製造原価報告書・建設業の完成工事原価報告書の原価区分（材料費/労務費/(外注費)/経費）と所属科目・計算構造。製造原価は所得税青色申告決算書（一般用）様式FA3076「製造原価の計算」欄、完成工事原価は建設業法施行規則別記様式第16号・法人税法22条3項1号に基づく。原価区分は journal-rule / account-item スキーマに独自フィールドとして付与できないため本ファイルで構造化する。",
+  "manufacturingCost": {
+    "title": "製造原価（製造原価報告書・様式FA3076 製造原価の計算欄）",
+    "formula": "製品製造原価 = 差引原材料費 + 労務費 + 製造経費 + 期首半製品・仕掛品棚卸高 − 期末半製品・仕掛品棚卸高",
+    "structure": [
+      { "costCategory": "材料費", "label": "差引原材料費", "accounts": ["材料費"], "tax": "課税仕入10%", "formItems": ["期首原材料棚卸高", "原材料仕入高", "期末原材料棚卸高", "差引原材料費"] },
+      { "costCategory": "労務費", "label": "労務費", "accounts": ["労務費"], "tax": "不課税（雇用契約に基づく賃金・給与・No.6157）", "formItems": ["労務費"] },
+      { "costCategory": "製造経費", "label": "製造経費（様式上は個別科目として印字）", "accounts": ["外注工賃", "外注加工費", "水道光熱費", "修繕費", "減価償却費"], "tax": "外注・水道光熱・修繕は課税仕入10%、減価償却費は不課税", "formItems": ["外注工賃", "電力費", "水道光熱費", "修繕費", "減価償却費", "雑費"] }
+    ],
+    "inventoryAccounts": ["仕掛品", "半製品", "製品製造原価"]
+  },
+  "constructionCost": {
+    "title": "完成工事原価（建設業・完成工事原価報告書 建設業法施行規則別記様式第16号）",
+    "note": "工事進行中は未成工事支出金（資産）に累計し、工事完成・引渡時に完成工事原価（費用）へ振り替える。法人税法22条3項1号に「完成工事原価」として明記。",
+    "structure": [
+      { "costCategory": "材料費", "accounts": ["材料費"], "tax": "課税仕入10%", "description": "工事に直接使用する材料・資材の費用" },
+      { "costCategory": "労務費", "accounts": ["労務費"], "tax": "不課税", "description": "工事現場の作業員への賃金（雇用契約に基づく労働対価・No.6157）" },
+      { "costCategory": "外注費", "accounts": ["外注費"], "tax": "課税仕入10%", "description": "下請業者・一人親方への工事外注費" },
+      { "costCategory": "経費", "accounts": ["完成工事原価"], "tax": "取引実態で判定", "description": "現場経費（仮設・運搬・動力用水光熱・機械等経費）" }
+    ],
+    "aggregateAccount": "完成工事原価"
+  },
+  "citations": [
+    {
+      "source": "国税庁",
+      "number": "青色申告決算書（製造原価の計算）",
+      "title": "所得税青色申告決算書（一般用）製造原価の計算／様式FA3076",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+      "verified_at": "2026-06-01",
+      "authority_level": "administrative_form",
+      "reason": "製造原価の計算欄に 差引原材料費・労務費・電力費・水道光熱費・修繕費・減価償却費・雑費・総製造費・期首半製品仕掛品棚卸高・期末半製品仕掛品棚卸高・製品製造原価 が印字されている"
+    },
+    {
+      "source": "国税庁タックスアンサー",
+      "number": "No.6157",
+      "title": "課税の対象とならないもの(不課税)の具体例",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+      "verified_at": "2026-06-01",
+      "authority_level": "tax_answer",
+      "reason": "給与・賃金（労務費）が不課税"
+    },
+    {
+      "source": "法人税法",
+      "number": "法人税法第22条第3項第1号",
+      "title": "各事業年度の所得の金額の計算（損金の額）",
+      "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+      "verified_at": "2026-06-01",
+      "authority_level": "statute",
+      "reason": "「売上原価、完成工事原価その他これらに準ずる原価の額」として完成工事原価を明記"
+    }
+  ]
+}

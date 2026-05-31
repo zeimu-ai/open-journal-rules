@@ -6,13 +6,14 @@
 
 | ファイル | 内容 | 件数 |
 |---------|------|------|
-| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 93パターン |
-| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 99科目 |
+| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 99パターン |
+| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 104科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 7段階 |
-| `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 62科目 |
+| `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 66科目 |
 | `rules/depreciation-methods.json` | 減価償却の償却方法（定額/定率・主体別）・中古資産簡便法（国税庁 No.2106/No.5404） | — |
 | `rules/home-proration.json` | 家事按分（家事関連費）の必要経費算入要件（所法45・所基通45-2） | — |
+| `rules/cost-accounting.json` | 製造原価・完成工事原価の原価区分（材料費/労務費/経費）と科目体系（様式FA3076・法法22③一） | — |
 | `rules/dataset-meta.json` | データセットの前提メタ（対象主体・課税方式） | 1件 |
 | `rules/simplified-tax-rates.json` | 簡易課税の事業区分・みなし仕入率（国税庁 No.6505） | 6区分 |
 | `rules/invoice-transitional.json` | インボイス経過措置（80%/50%控除・国税庁 No.6498） | — |

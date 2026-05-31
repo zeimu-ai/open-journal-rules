@@ -503,5 +503,25 @@
     "input": "車両費 按分",
     "expectedAccountName": "車両費",
     "expectedTaxCategory": "課税仕入10%"
+  },
+  {
+    "input": "工場賃金 5月",
+    "expectedAccountName": "労務費",
+    "expectedTaxCategory": "不課税"
+  },
+  {
+    "input": "仕掛品振替 期末",
+    "expectedAccountName": "仕掛品",
+    "expectedTaxCategory": "不課税"
+  },
+  {
+    "input": "完成工事原価振替",
+    "expectedAccountName": "完成工事原価",
+    "expectedTaxCategory": "不課税"
+  },
+  {
+    "input": "工事材料費 鉄骨",
+    "expectedAccountName": "材料費",
+    "expectedTaxCategory": "課税仕入10%"
   }
 ]
