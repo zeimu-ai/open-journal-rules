@@ -30,6 +30,24 @@
     "applicableEntity": "both",
     "citations": [
       {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
+      {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
         "title": "必要経費 > 通信費",
@@ -65,6 +83,24 @@
     "notes": "",
     "applicableEntity": "both",
     "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
       {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
@@ -139,6 +175,24 @@
     "applicableEntity": "both",
     "citations": [
       {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
+      {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
         "title": "必要経費 > 旅費交通費",
@@ -175,6 +229,24 @@
     "reverseChargeApplicable": true,
     "applicableEntity": "both",
     "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
       {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
@@ -271,6 +343,24 @@
     "applicableEntity": "both",
     "citations": [
       {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
+      {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
         "title": "必要経費 > 荷造運賃",
@@ -299,6 +389,24 @@
     "notes": "",
     "applicableEntity": "both",
     "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
       {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
@@ -337,6 +445,24 @@
     "applicableEntity": "both",
     "citations": [
       {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
+      {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
         "title": "必要経費 > 支払手数料",
@@ -344,6 +470,15 @@
         "verified_at": "2026-04-02",
         "reason": "銀行振込手数料・仲介手数料等の各種手数料を計上する科目",
         "authority_level": "tax_answer"
+      },
+      {
+        "source": "所得税基本通達",
+        "number": "所得税基本通達37-2",
+        "title": "必要経費の債務確定の判定",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/05/05.htm",
+        "verified_at": "2026-05-31",
+        "reason": "債務確定の3要件(年末までに債務成立/給付原因事実発生/金額を合理的に算定可能)",
+        "authority_level": "notice"
       }
     ]
   },
@@ -458,6 +593,24 @@
     "applicableEntity": "both",
     "citations": [
       {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
+      {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
         "title": "必要経費 > 新聞図書費",
@@ -520,6 +673,24 @@
     },
     "citations": [
       {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
+      {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
         "title": "必要経費 > 支払報酬",
@@ -536,6 +707,15 @@
         "verified_at": "2026-05-31",
         "authority_level": "tax_answer",
         "reason": "弁護士・税理士等の特定資格者への報酬は源泉徴収の対象（所得税法204条）"
+      },
+      {
+        "source": "所得税法",
+        "number": "所得税法第204条第1項第2号",
+        "title": "報酬・料金等の源泉徴収",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "弁護士・税理士等への報酬・料金は支払時に源泉徴収義務(科目固有の補助根拠)",
+        "authority_level": "statute"
       }
     ]
   },
@@ -625,6 +805,24 @@
       "to": "2026-09"
     },
     "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
       {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
@@ -949,6 +1147,24 @@
     "applicableEntity": "both",
     "citations": [
       {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
+      {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",
         "title": "必要経費 > 仕入高",
@@ -956,6 +1172,15 @@
         "verified_at": "2026-04-02",
         "reason": "販売目的の商品や原材料の仕入れに関する費用を計上する科目",
         "authority_level": "tax_answer"
+      },
+      {
+        "source": "所得税基本通達",
+        "number": "所得税基本通達37-1",
+        "title": "売上原価等の費用の範囲",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shotoku/05/05.htm",
+        "verified_at": "2026-05-31",
+        "reason": "『売上原価その他当該総収入金額を得るため直接に要した費用』は債務の確定しているものに限る",
+        "authority_level": "notice"
       }
     ]
   },
@@ -986,6 +1211,24 @@
     "notes": "ガソリン・高速道路・駐車場",
     "applicableEntity": "both",
     "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第37条第1項",
+        "title": "必要経費",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-05-31",
+        "reason": "必要経費の通則。No.2210(タックスアンサー)に代わる法令上の一次根拠。逐語『総収入金額に係る売上原価その他当該総収入金額を得るため直接に要した費用の額及びその年における販売費、一般管理費その他これらの所得を生ずべき業務について生じた費用…の額』",
+        "authority_level": "statute"
+      },
+      {
+        "source": "法人税法",
+        "number": "法人税法第22条第3項",
+        "title": "各事業年度の損金の額",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000034",
+        "verified_at": "2026-05-31",
+        "reason": "法人の損金算入の通則(一号:売上原価・完成工事原価/二号:販売費・一般管理費その他の費用)。逐語確認済み",
+        "authority_level": "statute"
+      },
       {
         "source": "国税庁タックスアンサー",
         "number": "No.2210",

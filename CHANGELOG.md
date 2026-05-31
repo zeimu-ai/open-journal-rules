@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.16.0] - 2026-05-31
+
+#47（No.2210 catch-all）と #36（タックスアンサー偏重の是正）を法令へ遡及し、#29 繰延資産6号系を追加。全エビデンスは e-Gov 法令API・国税庁通達(curl+iconv で Shift_JIS 逐語確認)から取得し、実装者が一次資料で最終確認。
+
+### Changed
+
+- **#47/#36 No.2210 → 法令へ格上げ**: No.2210（必要経費の概説・tax_answer）を catch-all の citations[0] に使っていた12ルール（rule-01/02/04/05/07/08/09/13/15/18/28/29）を再構成。
+  - citations[0] を **所得税法第37条第1項**（必要経費・statute）に格上げ、citations[1] に **法人税法第22条第3項**（損金・statute）を併記（個人・法人の二本立て）
+  - No.2210 は削除せず補助根拠として保持（catch-all の段階的削減）
+  - 科目固有の補助根拠を追加: 支払報酬→所得税法204条1項2号（源泉）、仕入高→所得税基本通達37-1、支払手数料→所得税基本通達37-2
+  - `citation-mapping.json` の対象11科目の expectedNumbers に法令番号を追加（コンパクト形式維持）
+  - statute 根拠を持つルールが12件以上に底上げ（#36 の authority_level 分布改善）
+
+### Added
+
+- **#29 繰延資産6号系（3科目, id 102-104）**: 公共的施設等負担金・建物賃借権利金・ノウハウ役務提供権利金を `account-master.json` に追加（category=asset, taxDefault=不課税, applicableEntity=corporation）。均等償却（法人税法施行令第64条第1項第2号）＋償却期間（法人税基本通達8-2-3）を典拠に付与
+- `tests/phase7-47-36-29.test.ts`
+
+### Notes
+
+- citation URL は機械可読な e-Gov 法令API 形式（`/api/1/lawdata/`）で統一。条文アンカー付き permalink への統一は将来の enhancement 候補
+
 ## [0.15.0] - 2026-05-31
 
 #29（繰延資産）と #37（判例・裁決）を一次資料で拡充。全エビデンスは e-Gov 法令API・国税庁通達・国税不服審判所 公表裁決(kfs.go.jp)から逐語確認済み。
