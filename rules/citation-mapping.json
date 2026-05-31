@@ -24,7 +24,7 @@
   "売上高": { "tax": "課税売上10%", "expectedNumbers": ["No.2200", "No.6359", "No.6551"] },
   "仕入高": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210", "No.6102"] },
   "車両費": { "tax": "課税仕入10%", "expectedNumbers": ["No.2210"] },
-  "リース料": { "tax": "課税仕入10%", "expectedNumbers": ["No.5704"] },
+  "リース料": { "tax": "課税仕入10%", "expectedNumbers": ["No.5704", "No.5705"] },
   "修繕費": { "tax": "課税仕入10%", "expectedNumbers": ["No.5402"] },
   "利子割引料": { "tax": "非課税", "expectedNumbers": ["No.6201"] },
   "普通預金": { "tax": "不課税", "expectedNumbers": ["No.2200", "帳簿の記帳"] },

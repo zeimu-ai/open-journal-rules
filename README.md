@@ -14,6 +14,7 @@
 | `rules/dataset-meta.json` | データセットの前提メタ（対象主体・課税方式） | 1件 |
 | `rules/simplified-tax-rates.json` | 簡易課税の事業区分・みなし仕入率（国税庁 No.6505） | 6区分 |
 | `rules/invoice-transitional.json` | インボイス経過措置（80%/50%控除・国税庁 No.6498） | — |
+| `rules/useful-life.json` | 主な減価償却資産の法定耐用年数（国税庁 耐用年数表） | 10項目 |
 | `rules/templates/*.json` | 業種別テンプレート | 13業種 |
 
 ### 適用主体・課税方式の前提（v0.5.0〜）
