@@ -1583,5 +1583,139 @@
         "reason": "貸借対照表 負債『前受金』"
       }
     ]
+  },
+  {
+    "id": "rule-53",
+    "name": "輸出売上（免税）",
+    "patterns": [
+      "輸出売上",
+      "輸出取引",
+      "輸出代金"
+    ],
+    "matchType": "partial",
+    "accountName": "売上高",
+    "taxCategory": "免税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6551.htm",
+    "notes": "輸出取引等は消費税が免税(0%課税)。輸出許可書等の輸出証明書類を7年間保存する必要がある(No.6551)。課税売上割合の計算では課税売上に含める。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6551",
+        "title": "輸出取引の免税",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6551.htm",
+        "verified_at": "2026-05-31",
+        "reason": "輸出取引等は消費税が免除される。輸出許可書等の証明書類を7年間保存",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-54",
+    "name": "寄附金",
+    "patterns": [
+      "寄附金",
+      "寄付金",
+      "義援金"
+    ],
+    "matchType": "partial",
+    "accountName": "寄附金",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5281.htm",
+    "notes": "国・地方公共団体・公益法人等への寄附。対価性がなく消費税は不課税。法人は寄附金の区分(一般/公益法人等/指定寄附金等)に応じ損金算入限度額の計算が必要(No.5281)、個人事業主は事業所得の必要経費にならず寄附金控除(所得控除)で処理。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5281",
+        "title": "寄附金の損金算入限度額の計算",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5281.htm",
+        "verified_at": "2026-05-31",
+        "reason": "法人の寄附金は一般寄附金/公益法人等/指定寄附金等の区分で損金算入限度額を計算",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-55",
+    "name": "貸倒損失",
+    "patterns": [
+      "貸倒損失",
+      "貸倒れ",
+      "貸倒"
+    ],
+    "matchType": "partial",
+    "accountName": "貸倒金",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5320.htm",
+    "notes": "回収不能債権の損失。①法律上の貸倒れ(会社更生法・民事再生法等による切捨て)②事実上の貸倒れ(資産状況等から全額回収不能が明らか)③形式上の貸倒れ(取引停止後1年以上経過、備忘価額を残す)の3区分で損金算入(No.5320)。課税売上に係る債権の貸倒れは消費税の貸倒れに係る税額控除の対象。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5320",
+        "title": "貸倒損失として処理できる場合",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5320.htm",
+        "verified_at": "2026-05-31",
+        "reason": "貸倒損失は法律上の貸倒れ・事実上の貸倒れ・形式上の貸倒れの3区分で損金算入",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-56",
+    "name": "貸倒引当金繰入",
+    "patterns": [
+      "貸倒引当金",
+      "貸倒引当金繰入"
+    ],
+    "matchType": "partial",
+    "accountName": "貸倒引当金繰入額",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5501.htm",
+    "notes": "金銭債権の貸倒れに備える引当金の繰入（借方:貸倒引当金繰入額〔費用〕／貸方:貸倒引当金〔資産のマイナス〕）。個別評価金銭債権と一括評価金銭債権に区分して繰入限度額を計算。中小法人等は実績繰入率に代えて業種別の法定繰入率(1000分の3〜10)を選択可(No.5501)。会計上の見積りで消費税不課税。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5501",
+        "title": "一括評価金銭債権に係る貸倒引当金の設定",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5501.htm",
+        "verified_at": "2026-05-31",
+        "reason": "貸倒引当金は個別評価・一括評価に区分。中小法人等は法定繰入率(業種別1000分の3〜10)が選択可",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-57",
+    "name": "収入印紙・印紙税",
+    "patterns": [
+      "収入印紙",
+      "印紙税",
+      "印紙代"
+    ],
+    "matchType": "partial",
+    "accountName": "租税公課",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7141.htm",
+    "notes": "課税文書(契約書・第17号の領収書等)に貼付する収入印紙=印紙税。租税公課に計上し消費税は不課税(郵便局等での収入印紙の購入自体は非課税)。領収書(第17号文書)は記載受取金額5万円未満が非課税、5万円以上は段階的に課税(No.7141)。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.7141",
+        "title": "印紙税額の一覧表（その2）第5号文書から第20号文書まで",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7141.htm",
+        "verified_at": "2026-05-31",
+        "reason": "第17号文書(売上代金の受取書・領収書)は記載受取金額5万円未満が非課税",
+        "authority_level": "tax_answer"
+      }
+    ]
   }
 ]
