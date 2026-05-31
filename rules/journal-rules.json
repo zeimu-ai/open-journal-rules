@@ -27,6 +27,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -62,6 +63,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -96,6 +98,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm",
     "notes": "10万円以上は工具器具備品を検討",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -132,6 +135,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -167,6 +171,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "国外事業者から購入する電気通信利用役務(事業者向け)はリバースチャージ方式の対象になる場合がある(消費税法第5条2項)。国内登録国外事業者経由は通常の課税仕入10%。",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -205,6 +210,7 @@
     "priority": 1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
     "notes": "住宅の貸付けは消費税非課税（貸付期間1か月未満等を除く）",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -231,6 +237,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
     "notes": "事業用（事務所・店舗・駐車場）は課税仕入10%。住宅用賃料は非課税（rule-38）",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -259,6 +266,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -287,6 +295,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -318,6 +327,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -346,6 +356,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
     "notes": "広すぎる「保険」「共済」単体は法定福利費（健康保険・雇用保険等）との誤マッチを防ぐため削除。損害保険・火災保険・自動車保険等の具体的パターンのみ使用",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -374,6 +385,7 @@
     "priority": 1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
     "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -402,6 +414,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -430,6 +443,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "Amazon.co.jp経由のKindle購入は課税仕入10%。海外Kindleストア等の外国法人直接請求は要検討。",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -457,6 +471,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -486,6 +501,11 @@
     "notes": "免税事業者からの課税仕入はインボイス制度の経過措置対象。2023-10-01〜2026-09-30は80%控除、2026-10-01〜2029-09-30は50%控除。",
     "invoiceRequired": true,
     "transitionalDeductionRate": 0.8,
+    "applicableEntity": "both",
+    "applicableYear": {
+      "from": "2023-10",
+      "to": "2026-09"
+    },
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -514,6 +534,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -539,6 +560,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5262.htm",
     "notes": "資格更新料は対価性により区分が分かれるため本ルールでは一律分類しない: (A)行政・法定団体への登録更新/法定講習は租税公課・非課税(消費税法別表第一5号, 基通6-5-1) (B)民間資格(FP・簿記検定等)の更新手数料は支払手数料・課税(基通5-5-3) (C)同業者団体の通常会費は諸会費・不課税。摘要だけで判別できないため本ルールの対象は税理士会・商工会等の団体会費に限定する。",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -568,6 +590,11 @@
     "notes": "免税事業者からの課税仕入はインボイス制度の経過措置対象。2023-10-01〜2026-09-30は80%控除、2026-10-01〜2029-09-30は50%控除。クラウドワークス・ランサーズ等のフリーランス・免税個人事業主比率が高い。",
     "invoiceRequired": true,
     "transitionalDeductionRate": 0.8,
+    "applicableEntity": "both",
+    "applicableYear": {
+      "from": "2023-10",
+      "to": "2026-09"
+    },
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -603,6 +630,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2508.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -628,6 +656,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm",
     "notes": "",
+    "applicableEntity": "corporation",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -655,6 +684,7 @@
     "priority": 1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
     "notes": "社会保険料の事業主負担は資産の譲渡等の対価に該当せず不課税",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -681,6 +711,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2502.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -706,6 +737,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2200.htm",
     "notes": "借方:普通預金 / 貸方:売掛金。所得税法第36条（収入金額）に基づく売掛金の回収仕訳",
+    "applicableEntity": "both",
     "citations": [
       {
         "number": "No.2200",
@@ -732,6 +764,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/kojin_jigyo/index.htm",
     "notes": "借方:未払金 / 貸方:普通預金。簿記の一般原則に基づく未払金の精算仕訳",
+    "applicableEntity": "both",
     "citations": [
       {
         "number": "帳簿の記帳",
@@ -762,6 +795,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
     "notes": "高級飲食店ブランド(ステーキハウス/鉄板焼/高級寿司/懐石/会員制クラブ等)は1人1万円超の蓋然性が高く、原則 接待交際費。租税特別措置法61の4(措令37の5)の1人1万円基準を満たさない場合のみ 会議費 に振替する想定。",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -788,6 +822,7 @@
     "confidence": 0.8,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
     "notes": "1人1万円以下の飲食",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -814,6 +849,7 @@
     "confidence": 0.8,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
     "notes": "1人1万円超の飲食",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -840,6 +876,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2200.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -866,6 +903,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -901,6 +939,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "ガソリン・高速道路・駐車場",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -927,6 +966,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
     "notes": "オペレーティングリース",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -953,6 +993,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -981,6 +1022,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5402.htm",
     "notes": "20万円未満は修繕費。資本的支出との判定が必要な場合あり",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -1008,6 +1050,7 @@
     "confidence": 0.95,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
     "notes": "",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -1034,6 +1077,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/09/09_07.htm",
     "notes": "法人が負担する従業員の健康診断費用",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1062,6 +1106,7 @@
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
     "notes": "慶弔見舞金は対価性なし→不課税",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -1089,6 +1134,7 @@
     "confidence": 0.8,
     "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/hojin/02/02_02.htm",
     "notes": "資産科目。役務提供時に経費振替。短期前払費用の特例（法人税法基本通達2-2-14）で1年以内なら支払時に損金算入可。仕入税額控除は役務提供時（費用振替時）に計上する。前払時点では控除しない",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",

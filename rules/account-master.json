@@ -11,6 +11,7 @@
       "記帳代行料"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -34,6 +35,7 @@
       "収入印紙"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -57,6 +59,7 @@
       "ゆうパック"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -80,6 +83,7 @@
       "水道局"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -104,6 +108,7 @@
       "JR"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -129,6 +134,7 @@
       "Slack"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -152,6 +158,7 @@
       "チラシ"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -175,6 +182,7 @@
       "贈答品"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -198,6 +206,7 @@
       "賠償責任保険"
     ],
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -221,6 +230,7 @@
       "PC修理"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -245,6 +255,7 @@
       "トナー"
     ],
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -268,6 +279,7 @@
       "PC（10万円以上）"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -291,6 +303,7 @@
       "慶弔費"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -314,6 +327,7 @@
       "残業手当"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -337,6 +351,7 @@
       "クラウドワークス"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -359,6 +374,7 @@
       "手形割引料"
     ],
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -382,6 +398,7 @@
       "倉庫"
     ],
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -404,6 +421,7 @@
       "貸付金回収不能"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -427,6 +445,7 @@
       "司法書士"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -450,6 +469,7 @@
       "専門誌"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -473,6 +493,7 @@
       "講習"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -495,6 +516,7 @@
       "決済手数料"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -517,6 +539,7 @@
       "商工会"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -540,6 +563,7 @@
       "雇用保険"
     ],
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6209.htm",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -563,6 +587,7 @@
       "機械"
     ],
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5403.htm",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -586,6 +611,7 @@
       "三井住友"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -607,6 +633,7 @@
       "未入金売上"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -629,6 +656,7 @@
       "事業ローン"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -652,6 +680,7 @@
       "タイムズ"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -674,6 +703,7 @@
       "車両リース"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -696,6 +726,7 @@
       "冬季賞与"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -719,6 +750,7 @@
       "通勤手当"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -741,15 +773,17 @@
       "取締役報酬",
       "監査役報酬"
     ],
-    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm",
+    "applicableEntity": "corporation",
     "citations": [
       {
-        "source": "国税庁",
-        "number": "青色申告決算書",
-        "title": "必要経費の科目一覧",
-        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
-        "verified_at": "2026-05-31",
-        "authority_level": "administrative_form"
+        "source": "国税庁タックスアンサー",
+        "number": "No.5211",
+        "title": "役員に対する給与（報酬・賞与）",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5211.htm",
+        "verified_at": "2026-04-02",
+        "reason": "取締役等の役員に支払う報酬を計上する科目。役員は法人固有の概念であり個人事業主には存在しない（青色申告決算書にも科目が無い）",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -765,6 +799,7 @@
       "社会保険料預り"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -788,6 +823,7 @@
       "クレジット未払"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -811,6 +847,7 @@
       "前払サービス料"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -834,6 +871,7 @@
       "オンライン会議ツール"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -857,6 +895,7 @@
       "食材仕入"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -880,6 +919,7 @@
       "設備工事完成"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -903,6 +943,7 @@
       "工事労務費"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -926,6 +967,7 @@
       "デザイン外注"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -949,6 +991,7 @@
       "塗装加工委託"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -972,6 +1015,7 @@
       "木材"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -995,6 +1039,7 @@
       "重油代"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1018,6 +1063,7 @@
       "球根"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1041,6 +1087,7 @@
       "石灰"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1064,6 +1111,7 @@
       "殺虫剤"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1087,6 +1135,7 @@
       "共用部維持費"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1110,6 +1159,7 @@
       "設備レンタル料"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1133,6 +1183,7 @@
       "クラウドサービス初期費用"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",
@@ -1156,6 +1207,7 @@
       "手形割引料"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "applicableEntity": "both",
     "citations": [
       {
         "source": "国税庁",

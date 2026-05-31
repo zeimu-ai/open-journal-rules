@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.5.0] - 2026-05-31
+
+### Added
+
+- `applicableEntity` フィールド（任意・既定 `both`）を journal-rule / account-item スキーマに追加。適用主体を `individual` / `corporation` / `both` で表現（#13 / C-1）
+- `applicableYear` フィールド（任意・`{from, to}`）を journal-rule スキーマに追加。期間限定ルールの適用期間を表現（#14 / G-5）
+- `rules/dataset-meta.json` + `schemas/dataset-meta.schema.json`: データセットの前提メタ（対象主体・課税方式＝原則課税）を宣言（#14 / G-5）
+- `src/entity.ts`: `getApplicableEntity()` / `appliesToEntity()` ヘルパ。エクスポートサブパス `./entity` を追加
+- `match(description, rules, entity?)`: 第3引数で適用主体を指定すると他方専用ルールを除外（未指定は後方互換で全ルール対象）
+- `tests/entity-meta.test.ts`: 適用主体・適用年度・dataset-meta・主体↔典拠整合の回帰テスト
+
+### Changed
+
+- 全 38 ルール・全 51 科目に `applicableEntity` を付与（役員報酬 `rule-20` / 科目 `役員報酬` のみ `corporation`、他は `both`）
+- インボイス経過措置ルール（`rule-15` 税理士等報酬 / `rule-18` 外注費）に `applicableYear: { from: "2023-10", to: "2026-09" }` を付与
+
+### Fixed
+
+- 勘定科目 `役員報酬`(id=62) の典拠を個人様式『青色申告決算書』から法人向け No.5211（役員に対する給与）へ是正。役員は法人固有概念で青色申告決算書に該当科目が無いため（#13 / C-1。既存 `rule-20` の検証済 No.5211 と整合）
+
 ## [0.4.0] - 2026-05-31
 
 ### Added
