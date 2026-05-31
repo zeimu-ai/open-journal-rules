@@ -1553,5 +1553,45 @@
         "authority_level": "tax_answer"
       }
     ]
+  },
+  {
+    "id": 95,
+    "name": "助産費",
+    "category": "expense",
+    "taxDefault": "非課税",
+    "description": "助産(妊婦検診・分娩介助・出産入院等)に係る費用。消費税法別表第二第8号により非課税(消基通6-8-1)",
+    "examples": [],
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/08.htm",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "6-8-1",
+        "title": "助産に係る資産の譲渡等の範囲",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/08.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "name": "埋葬費",
+    "category": "expense",
+    "taxDefault": "非課税",
+    "description": "埋葬・火葬・改葬に係る役務提供の費用。消費税法別表第二第9号により非課税。骨つぼ・棺等の物品販売は課税(消基通6-9-1)",
+    "examples": [],
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/09.htm",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "6-9-1",
+        "title": "埋葬料等に係る資産の譲渡等の範囲",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/09.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
+      }
+    ]
   }
 ]
