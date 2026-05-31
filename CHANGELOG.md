@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.1] - 2026-05-31
+
+Phase 3-B（証憑・帳簿要件ドキュメント）。
+
+### Added
+
+- `docs/evidence-bookkeeping-requirements.md`: 証憑・帳簿要件ガイド
+  - **#32 インボイス保存要件**: 適格請求書の記載事項6項目（No.6625・実装者確認）・帳簿記載事項・経過措置
+  - **#33 交際費の記載要件**: 1人1万円基準の飲食費除外の5記載事項（措規21の18の4／No.5265）
+  - **#44 電子帳簿保存法**: 電子取引データ保存義務（電帳法7条・2024本格義務化）
+- README に証憑・帳簿要件セクションを追加
+
 ## [0.10.0] - 2026-05-31
 
 Phase 3-A（検証可能な税務コンテンツ）。citation は国税庁ページを実装者が WebFetch し逐語確認（No.6551/No.5281/No.5320/No.5501/No.7141）。

@@ -120,6 +120,10 @@ const matched = rules.find(rule =>
 
 [Apache License 2.0](LICENSE)
 
+## 証憑・帳簿要件
+
+インボイス保存要件・交際費の記載要件・電子帳簿保存法は [docs/evidence-bookkeeping-requirements.md](docs/evidence-bookkeeping-requirements.md) を参照。
+
 ## 根拠・リサーチ
 
 全ルールは国税庁等の公式ドキュメントに基づいています。
