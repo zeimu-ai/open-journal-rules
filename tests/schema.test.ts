@@ -3,12 +3,27 @@ import Ajv from "ajv";
 import addFormats from "ajv-formats";
 import { readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import rules from "../rules/journal-rules.json";
-import accounts from "../rules/account-master.json";
+import rulesRaw from "../rules/journal-rules.json";
+import accountsRaw from "../rules/account-master.json";
 import thresholds from "../rules/amount-thresholds.json";
 import ruleSchema from "../schemas/journal-rule.schema.json";
 import accountSchema from "../schemas/account-item.schema.json";
 import thresholdSchema from "../schemas/amount-threshold.schema.json";
+
+interface RuleEntry {
+  id: string;
+  name: string;
+  [key: string]: unknown;
+}
+
+interface AccountEntry {
+  id: string;
+  name: string;
+  [key: string]: unknown;
+}
+
+const rules = rulesRaw as unknown as RuleEntry[];
+const accounts = accountsRaw as unknown as AccountEntry[];
 
 const ajv = new Ajv({ allErrors: true });
 addFormats(ajv);
@@ -56,10 +71,11 @@ describe("JSON Schema validation", () => {
           name: string;
         }>;
         for (const entry of entries) {
+          const { id, name } = entry;
           const valid = validate(entry);
           if (!valid) {
             errors.push(
-              `${entry.id} ${entry.name}: ${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join(", ")}`,
+              `${id} ${name}: ${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join(", ")}`,
             );
           }
         }
