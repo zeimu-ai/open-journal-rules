@@ -121,7 +121,8 @@
       "JR",
       "タクシー",
       "鉄道",
-      "バス"
+      "バス",
+      "新幹線"
     ],
     "excludePatterns": [
       "バスタオル",
@@ -498,7 +499,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
-    "notes": "免税事業者からの課税仕入はインボイス制度の経過措置対象。2023-10-01〜2026-09-30は80%控除、2026-10-01〜2029-09-30は50%控除。",
+    "notes": "免税事業者からの課税仕入はインボイス制度の経過措置対象。2023-10-01〜2026-09-30は80%控除、2026-10-01〜2029-09-30は50%控除。 弁護士・税理士・司法書士等の特定資格者への報酬は源泉徴収が必要（所得税法204条、No.2792）。税率は原則10.21%（同一人に対し1回100万円超の部分は20.42%）。源泉税額は支払時に預り金として計上する。",
     "invoiceRequired": true,
     "transitionalDeductionRate": 0.8,
     "applicableEntity": "both",
@@ -515,6 +516,15 @@
         "verified_at": "2026-04-02",
         "reason": "税理士・弁護士・社労士等の専門家への報酬を計上する科目",
         "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2792",
+        "title": "源泉徴収が必要な報酬・料金等とは",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2792.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "弁護士・税理士等の特定資格者への報酬は源泉徴収の対象（所得税法204条）"
       }
     ]
   },
@@ -794,7 +804,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
-    "notes": "高級飲食店ブランド(ステーキハウス/鉄板焼/高級寿司/懐石/会員制クラブ等)は1人1万円超の蓋然性が高く、原則 接待交際費。租税特別措置法61の4(措令37の5)の1人1万円基準を満たさない場合のみ 会議費 に振替する想定。",
+    "notes": "高級飲食店ブランド(ステーキハウス/鉄板焼/高級寿司/懐石/会員制クラブ等)は1人1万円超の蓋然性が高く、原則 接待交際費。租税特別措置法61の4(措令37の5)の1人1万円基準を満たさない場合のみ 会議費 に振替する想定。 法人は交際費等が原則損金不算入（中小法人は定額控除限度額800万円まで／または接待飲食費の50%のいずれか選択、措置法61の4）。1人当たり1万円以下（令和6年4月1日以後／改正前は5,000円）の一定の飲食費は交際費等から除外。個人事業主には損金不算入規定の適用はなく、事業関連性のある費用は必要経費（所得税法37条）。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -814,7 +824,9 @@
     "patterns": [
       "食堂",
       "レストラン",
-      "カフェ"
+      "カフェ",
+      "会議費",
+      "来客"
     ],
     "matchType": "partial",
     "accountName": "会議費",
@@ -833,6 +845,9 @@
         "reason": "社内打ち合わせの茶菓・弁当代等、会議に関連する少額の飲食費を計上する科目",
         "authority_level": "tax_answer"
       }
+    ],
+    "excludePatterns": [
+      "接待"
     ]
   },
   {
@@ -848,7 +863,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.8,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5265.htm",
-    "notes": "1人1万円超の飲食",
+    "notes": "1人1万円超の飲食 法人は交際費等が原則損金不算入（中小法人は定額控除限度額800万円まで／または接待飲食費の50%のいずれか選択、措置法61の4）。1人当たり1万円以下（令和6年4月1日以後／改正前は5,000円）の一定の飲食費は交際費等から除外。個人事業主には損金不算入規定の適用はなく、事業関連性のある費用は必要経費（所得税法37条）。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -931,7 +946,9 @@
       "Audi 横浜",
       "Audi横浜",
       "Ａｕｄｉ 横浜",
-      "Audi 港北"
+      "Audi 港北",
+      "車両",
+      "ガソリン代"
     ],
     "matchType": "partial",
     "accountName": "車両費",
@@ -1144,6 +1161,296 @@
         "verified_at": "2026-04-02",
         "reason": "翌期以降のサービスに対して前払いした費用を計上する科目。期間按分で費用化する",
         "authority_level": "notice"
+      }
+    ]
+  },
+  {
+    "id": "rule-39",
+    "name": "飲食料品仕入（軽減税率8%）",
+    "patterns": [
+      "飲食料品",
+      "食料品",
+      "食材",
+      "業務用食材",
+      "精肉",
+      "鮮魚",
+      "青果",
+      "食品仕入",
+      "飲料仕入"
+    ],
+    "matchType": "partial",
+    "accountName": "仕入高",
+    "taxCategory": "課税仕入8%（軽減税率）",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+    "notes": "食品表示法に規定する食品（酒類を除く）の仕入れは軽減税率8%。外食・ケータリング等の役務提供は対象外で標準税率10%。No.6102「飲食料品とは、食品表示法に規定する食品（注1）をいい…酒類を除きます。外食やケータリング等は軽減税率の対象には含まれません」。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6102",
+        "title": "消費税の軽減税率制度",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "食品表示法に規定する食品（酒類を除く）の譲渡は軽減税率8%対象。外食・ケータリング等の役務提供は対象外（標準税率10%）"
+      }
+    ],
+    "priority": 1
+  },
+  {
+    "id": "rule-40",
+    "name": "定期購読新聞（軽減税率8%）",
+    "patterns": [
+      "新聞 定期購読",
+      "新聞定期購読",
+      "朝日新聞",
+      "読売新聞",
+      "日経新聞",
+      "毎日新聞",
+      "産経新聞",
+      "日本経済新聞"
+    ],
+    "matchType": "partial",
+    "accountName": "新聞図書費",
+    "taxCategory": "課税仕入8%（軽減税率）",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+    "notes": "定期購読契約に基づき週2回以上発行される新聞は軽減税率8%。都度購入（定期購読契約に基づかないもの）は標準税率10%。No.6102「一定の題号を用い…週2回以上発行されるもの（定期購読契約に基づくものに限ります。）」。",
+    "priority": 1,
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6102",
+        "title": "消費税の軽減税率制度",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "週2回以上発行され定期購読契約に基づく新聞は軽減税率8%対象"
+      }
+    ]
+  },
+  {
+    "id": "rule-41",
+    "name": "土地賃貸借（非課税）",
+    "patterns": [
+      "借地料",
+      "土地賃借料",
+      "土地賃貸料",
+      "借地権設定",
+      "借地権"
+    ],
+    "matchType": "partial",
+    "accountName": "地代家賃",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "notes": "土地の賃貸借（地代・借地料・借地権設定対価）は非課税。No.6201「土地には、借地権などの土地の上に存する権利を含みます。ただし、1か月未満の土地の貸付けおよび駐車場などの施設の利用に伴って土地が使用される場合は、非課税取引には当たりません。」。建物の賃料・駐車場利用料は課税仕入10%のため excludePatterns で除外。",
+    "priority": 2,
+    "excludePatterns": [
+      "家賃",
+      "建物",
+      "事務所",
+      "店舗",
+      "駐車場",
+      "住宅",
+      "マンション",
+      "アパート"
+    ],
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "土地（借地権等を含む）の貸付けは非課税。ただし1か月未満の貸付け・駐車場等の施設利用に伴う土地使用は課税"
+      }
+    ]
+  },
+  {
+    "id": "rule-42",
+    "name": "行政手数料・公的証明（非課税）",
+    "patterns": [
+      "登記手数料",
+      "登録手数料",
+      "住民票",
+      "印鑑証明",
+      "戸籍謄本",
+      "証明書交付手数料",
+      "検査手数料",
+      "検定手数料",
+      "公文書交付"
+    ],
+    "matchType": "partial",
+    "accountName": "租税公課",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "notes": "国・地方公共団体・公共法人等が法令に基づいて行う一定の事務に係る役務提供は非課税。No.6201「登記、登録、特許、免許、許可、検査、検定、試験、証明、公文書の交付などです」。民間機関への手数料（民間資格更新等）は課税仕入10%のため対象外。 ※会計上は租税公課勘定に計上することが多いが、消費税区分は非課税（登録免許税・印紙税等の『税金=不課税』とは区別すること）。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "国・地方公共団体等が法令に基づき行う一定の事務に係る役務提供（登記・登録・許認可・証明等）は非課税"
+      }
+    ]
+  },
+  {
+    "id": "rule-43",
+    "name": "学校授業料・入学金（非課税）",
+    "patterns": [
+      "大学授業料",
+      "大学院授業料",
+      "専門学校授業料",
+      "入学検定料",
+      "入学金",
+      "施設設備費"
+    ],
+    "matchType": "partial",
+    "accountName": "研修費",
+    "taxCategory": "非課税",
+    "confidence": 0.8,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6233.htm",
+    "notes": "学校教育法に規定する学校（大学・高専・専修学校等）の授業料・入学検定料・入学金・施設設備費は非課税。No.6233「学校教育については…授業料、入学検定料、入学金、施設設備費、在学証明書等手数料、検定済教科書などの教科用図書の譲渡を非課税としています」。学習塾・カルチャースクールは課税仕入10%。 ※会計上は研修費勘定に計上するが、消費税区分は非課税（一般の研修・セミナー受講料=課税仕入10%とは区別すること）。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6233",
+        "title": "学校の授業料や入学検定料、教科用図書の譲渡など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6233.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "学校教育法に規定する学校等の授業料・入学検定料・入学金・施設設備費等は非課税"
+      }
+    ]
+  },
+  {
+    "id": "rule-44",
+    "name": "対価性のない収入（補助金・損害賠償金・保険金・寄附金／不課税）",
+    "patterns": [
+      "補助金",
+      "助成金",
+      "給付金",
+      "損害賠償金",
+      "賠償金",
+      "和解金",
+      "示談金",
+      "保険金",
+      "共済金",
+      "寄附金収入"
+    ],
+    "matchType": "partial",
+    "accountName": "雑収入",
+    "taxCategory": "不課税",
+    "confidence": 0.8,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+    "notes": "対価を得て行う取引でない収入は不課税。No.6157「寄附金、祝金、見舞金、国または地方公共団体からの補助金や助成金等」「心身または資産について加えられた損害の発生に伴い受ける損害賠償金」「保険金や共済金」を不課税の具体例として列挙。ただし損害賠償金でも棚卸資産の引渡し・無体財産権の侵害・賃貸料相当額等は課税売上となる例外に注意（No.6157本文参照）。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの(不課税)の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "補助金・助成金、心身/資産への損害賠償金、保険金・共済金、寄附金・祝金・見舞金等は対価性がなく不課税"
+      }
+    ]
+  },
+  {
+    "id": "rule-45",
+    "name": "受取配当金（不課税）",
+    "patterns": [
+      "受取配当金",
+      "配当金収入",
+      "出資分配金",
+      "株式配当",
+      "配当入金"
+    ],
+    "matchType": "partial",
+    "accountName": "受取配当金",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+    "notes": "株式の配当金やその他の出資分配金は不課税。No.6157「株主や出資者の地位に基づいて支払われるものであり、資産の譲渡や貸付け、役務の提供等の取引ではないからです。」。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6157",
+        "title": "課税の対象とならないもの(不課税)の具体例",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "株式の配当金・出資分配金は株主・出資者の地位に基づくもので不課税"
+      }
+    ]
+  },
+  {
+    "id": "rule-46",
+    "name": "売上値引・返品・割戻（課税売上・対価返還）",
+    "patterns": [
+      "売上値引",
+      "返品",
+      "売上割戻",
+      "売上戻り"
+    ],
+    "matchType": "partial",
+    "accountName": "売上高",
+    "taxCategory": "課税売上10%",
+    "confidence": 0.8,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6359.htm",
+    "notes": "課税資産の譲渡等に基因して支払う返品・値引き・割戻しは「売上げに係る対価の返還等」として消費税額の調整対象（売上のマイナス）。No.6359「国内で行った課税資産の譲渡等に該当する取引に基因して支払われる（中略）売上げに係る対価の返還等」。税込みの対価の返還等の金額に110分の7.8を乗じて税額調整する。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6359",
+        "title": "値引き、返品、割戻しなどを行った場合の税額の調整(売上げに係る対価の返還等)",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6359.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "課税資産の譲渡等に基因する返品・値引き・割戻しは『売上げに係る対価の返還等』として税額調整"
+      }
+    ]
+  },
+  {
+    "id": "rule-47",
+    "name": "受取利息（非課税）",
+    "patterns": [
+      "受取利息",
+      "利息収入",
+      "預金利息",
+      "貸付金利息",
+      "定期預金利息"
+    ],
+    "matchType": "partial",
+    "accountName": "受取利息",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "notes": "預貯金・貸付金の利子は非課税取引。No.6201「預貯金や貸付金の利子、信用保証料、合同運用信託や公社債投資信託の信託報酬、保険料」を非課税として明記。課税売上割合の計算では非課税売上として分母に算入する。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer",
+        "reason": "預貯金・貸付金の利子は非課税。課税売上割合の計算では非課税売上として分母に算入"
       }
     ]
   }
