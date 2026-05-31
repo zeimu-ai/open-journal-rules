@@ -15,6 +15,27 @@
     "excludePatterns": { "type": "array", "items": { "type": "string" } },
     "invoiceRequired": { "type": "boolean" },
     "transitionalDeductionRate": { "type": ["number", "null"] },
+    "applicableEntity": {
+      "type": "string",
+      "enum": ["individual", "corporation", "both"],
+      "default": "both",
+      "description": "適用される事業主体。individual=個人事業主のみ / corporation=法人のみ / both=両方。フィールド未存在時はエンジン側で both とみなす。"
+    },
+    "applicableYear": {
+      "type": "object",
+      "required": ["from"],
+      "additionalProperties": false,
+      "properties": {
+        "from": { "type": "string", "pattern": "^[0-9]{4}(-[0-9]{2})?$", "description": "適用開始年月。YYYY または YYYY-MM" },
+        "to": {
+          "oneOf": [
+            { "type": "string", "pattern": "^[0-9]{4}(-[0-9]{2})?$", "description": "適用終了年月。YYYY または YYYY-MM（月は 01–12 を想定）" },
+            { "type": "null", "description": "null = 現在も有効（終端なし）" }
+          ]
+        }
+      },
+      "description": "ルールの適用期間。未存在は全期間有効。経過措置等の期間限定ルールに付与。"
+    },
     "citations": {
       "type": "array",
       "minItems": 1,

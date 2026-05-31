@@ -9,6 +9,12 @@
     "description": { "type": "string" },
     "examples": { "type": "array", "items": { "type": "string" } },
     "sourceUrl": { "type": ["string", "null"] },
+    "applicableEntity": {
+      "type": "string",
+      "enum": ["individual", "corporation", "both"],
+      "default": "both",
+      "description": "適用される事業主体。individual=個人事業主のみ / corporation=法人のみ / both=両方。未存在時はエンジン側で both とみなす。"
+    },
     "citations": {
       "type": "array",
       "items": {
