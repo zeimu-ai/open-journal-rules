@@ -98,6 +98,7 @@ import thresholds from "@zeimu-ai/open-journal-rules/rules/amount-thresholds.jso
 | `@zeimu-ai/open-journal-rules/resolver` | `resolveJournalEntry()` 関数・型定義 |
 | `@zeimu-ai/open-journal-rules/normalize` | `normalizeText()` ユーティリティ |
 | `@zeimu-ai/open-journal-rules/entity` | `getApplicableEntity()` / `appliesToEntity()`（適用主体ヘルパ） |
+| `@zeimu-ai/open-journal-rules/invoice-number` | 適格請求書登録番号(T+13桁)の抽出・検証 |
 | `@zeimu-ai/open-journal-rules/rules/*` | 各データ JSON ファイル |
 | `@zeimu-ai/open-journal-rules/schemas/*` | JSON Schema ファイル |
 

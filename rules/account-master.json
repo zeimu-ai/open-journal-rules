@@ -446,6 +446,7 @@
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "applicableEntity": "both",
+    "withholdingRequired": true,
     "citations": [
       {
         "source": "国税庁",
