@@ -4,8 +4,18 @@
   "description": "日本の税務仕訳ルール オープンソースデータセット",
   "main": "rules/journal-rules.json",
   "files": [
-    "rules/"
+    "rules/",
+    "schemas/",
+    "dist/"
   ],
+  "exports": {
+    ".": "./rules/journal-rules.json",
+    "./rules/*": "./rules/*",
+    "./schemas/*": "./schemas/*"
+  },
+  "engines": {
+    "node": ">=14.13.0"
+  },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
@@ -26,8 +36,10 @@
     "generate-docs": "tsx scripts/generate-sources.ts"
   },
   "devDependencies": {
+    "@types/node": "^20.0.0",
     "ajv": "^8.18.0",
     "ajv-formats": "^3.0.1",
+    "tsx": "^4.0.0",
     "typescript": "^5.0.0",
     "vitest": "^3.0.0"
   }

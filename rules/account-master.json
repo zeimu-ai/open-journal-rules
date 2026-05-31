@@ -624,14 +624,14 @@
       "ETC",
       "タイムズ"
     ],
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "citations": [
       {
         "source": "国税庁",
-        "number": "",
-        "title": "",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
-        "verified_at": "2026-04-02"
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
       }
     ]
   },
@@ -645,14 +645,14 @@
       "複合機リース",
       "車両リース"
     ],
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "citations": [
       {
         "source": "国税庁",
-        "number": "",
-        "title": "",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
-        "verified_at": "2026-04-02"
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
       }
     ]
   },
@@ -666,14 +666,454 @@
       "夏季賞与",
       "冬季賞与"
     ],
-    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm",
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "citations": [
       {
         "source": "国税庁",
-        "number": "",
-        "title": "",
-        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm",
-        "verified_at": "2026-04-02"
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 61,
+    "name": "給料手当",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "従業員への給与・各種手当",
+    "examples": [
+      "基本給",
+      "時間外手当",
+      "通勤手当"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 62,
+    "name": "役員報酬",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "法人役員への報酬",
+    "examples": [
+      "代表取締役報酬",
+      "取締役報酬",
+      "監査役報酬"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 63,
+    "name": "預り金",
+    "category": "liability",
+    "taxDefault": "不課税",
+    "description": "一時的に預かっている金銭（源泉所得税・社会保険料等）",
+    "examples": [
+      "源泉所得税預り",
+      "住民税預り",
+      "社会保険料預り"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 64,
+    "name": "未払金",
+    "category": "liability",
+    "taxDefault": "不課税",
+    "description": "商品・サービスの代金で未払いのもの",
+    "examples": [
+      "未払経費",
+      "未払外注費",
+      "クレジット未払"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "name": "前払費用",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "翌期以降に対応する費用の前払い分",
+    "examples": [
+      "前払保険料",
+      "前払家賃",
+      "前払サービス料"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "name": "会議費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "会議・打合せに要した費用",
+    "examples": [
+      "会議室代",
+      "打合せ飲食代",
+      "オンライン会議ツール"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 67,
+    "name": "仕入高",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "販売目的の商品・製品の仕入原価",
+    "examples": [
+      "商品仕入",
+      "原材料仕入",
+      "食材仕入"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 68,
+    "name": "完成工事高",
+    "category": "income",
+    "taxDefault": "課税売上10%",
+    "description": "建設業における完成工事の売上",
+    "examples": [
+      "建築工事完成",
+      "内装工事完成",
+      "設備工事完成"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 69,
+    "name": "未成工事支出金",
+    "category": "asset",
+    "taxDefault": "課税仕入10%",
+    "description": "建設業における未完成工事への支出累計",
+    "examples": [
+      "工事材料費",
+      "工事外注費",
+      "工事労務費"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "name": "外注費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "外部企業・個人への業務委託費用",
+    "examples": [
+      "システム開発外注",
+      "工事外注",
+      "デザイン外注"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 71,
+    "name": "外注加工費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "製造工程における外部への加工委託費用",
+    "examples": [
+      "部品加工外注",
+      "切削加工委託",
+      "塗装加工委託"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 72,
+    "name": "材料費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "製品製造に使用する原材料費",
+    "examples": [
+      "鉄鋼材料",
+      "化学原料",
+      "木材"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 73,
+    "name": "燃料費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "車両・機械等の燃料費",
+    "examples": [
+      "軽油代",
+      "ガソリン代",
+      "重油代"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "name": "種苗費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "農業における種子・苗木の購入費",
+    "examples": [
+      "野菜種子",
+      "果樹苗木",
+      "球根"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 75,
+    "name": "肥料費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "農業における肥料・堆肥の購入費",
+    "examples": [
+      "化学肥料",
+      "堆肥",
+      "石灰"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 76,
+    "name": "農薬衛生費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "農業における農薬・衛生用品の費用",
+    "examples": [
+      "農薬",
+      "除草剤",
+      "殺虫剤"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "name": "管理諸費",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "不動産管理に伴う諸費用",
+    "examples": [
+      "管理組合費",
+      "清掃費",
+      "共用部維持費"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "name": "賃貸料",
+    "category": "expense",
+    "taxDefault": "課税仕入10%",
+    "description": "機械・設備・不動産等の賃借料（事業用）",
+    "examples": [
+      "機械賃借料",
+      "駐車場賃貸料",
+      "設備レンタル料"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 79,
+    "name": "ソフトウェア",
+    "category": "asset",
+    "taxDefault": "課税仕入10%",
+    "description": "業務用ソフトウェアの取得費用（無形固定資産）",
+    "examples": [
+      "業務システム",
+      "ERP導入費",
+      "クラウドサービス初期費用"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "name": "支払利息",
+    "category": "expense",
+    "taxDefault": "非課税",
+    "description": "借入金等に対する支払利息",
+    "examples": [
+      "銀行借入利息",
+      "社債利息",
+      "手形割引料"
+    ],
+    "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書",
+        "title": "必要経費の科目一覧",
+        "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
+        "verified_at": "2026-05-31"
       }
     ]
   }

@@ -1,4 +1,6 @@
 import { describe, it, expect } from "vitest";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import rules from "../rules/journal-rules.json";
 import accounts from "../rules/account-master.json";
 
@@ -29,6 +31,27 @@ function collectCitations(): { label: string; citation: Citation }[] {
   for (const acc of accounts) {
     for (const c of (acc as { citations: Citation[] }).citations) {
       results.push({ label: `account ${acc.id}: ${acc.name}`, citation: c });
+    }
+  }
+
+  // templates/*.json
+  const templatesDir = new URL("../rules/templates/", import.meta.url).pathname;
+  const templateFiles = readdirSync(templatesDir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => join(templatesDir, f));
+  for (const f of templateFiles) {
+    const entries = JSON.parse(readFileSync(f, "utf-8")) as Array<{
+      id: string;
+      name: string;
+      citations: Citation[];
+    }>;
+    for (const entry of entries) {
+      for (const c of entry.citations) {
+        results.push({
+          label: `template ${entry.id}: ${entry.name}`,
+          citation: c,
+        });
+      }
     }
   }
 

@@ -1,6 +1,8 @@
 import { describe, it, expect } from "vitest";
 import Ajv from "ajv";
 import addFormats from "ajv-formats";
+import { readdirSync, readFileSync } from "node:fs";
+import { join } from "node:path";
 import rules from "../rules/journal-rules.json";
 import accounts from "../rules/account-master.json";
 import thresholds from "../rules/amount-thresholds.json";
@@ -27,6 +29,43 @@ describe("JSON Schema validation", () => {
       }
       if (errors.length > 0) {
         expect.fail(`スキーマ違反:\n${errors.join("\n")}`);
+      }
+    });
+  });
+
+  describe("templates/*.json", () => {
+    const validate = ajv.compile(ruleSchema);
+    const templatesDir = new URL("../rules/templates/", import.meta.url).pathname;
+    const templateFiles = readdirSync(templatesDir)
+      .filter((f) => f.endsWith(".json"))
+      .map((f) => join(templatesDir, f));
+
+    it(`テンプレートファイルが29件存在すること`, () => {
+      const totalEntries = templateFiles.flatMap((f) => {
+        const data = JSON.parse(readFileSync(f, "utf-8")) as unknown[];
+        return data;
+      });
+      expect(totalEntries.length).toBe(29);
+    });
+
+    it("全テンプレートエントリ(29件)がスキーマに適合すること", () => {
+      const errors: string[] = [];
+      for (const f of templateFiles) {
+        const entries = JSON.parse(readFileSync(f, "utf-8")) as Array<{
+          id: string;
+          name: string;
+        }>;
+        for (const entry of entries) {
+          const valid = validate(entry);
+          if (!valid) {
+            errors.push(
+              `${entry.id} ${entry.name}: ${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join(", ")}`,
+            );
+          }
+        }
+      }
+      if (errors.length > 0) {
+        expect.fail(`テンプレート スキーマ違反:\n${errors.join("\n")}`);
       }
     });
   });

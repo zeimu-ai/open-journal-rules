@@ -5,7 +5,9 @@
     "moduleResolution": "bundler",
     "strict": true,
     "resolveJsonModule": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "outDir": "./dist",
+    "declaration": true
   },
   "include": ["tests/"]
 }
