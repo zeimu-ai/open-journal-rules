@@ -2,7 +2,8 @@
   "_meta": {
     "description": "日本の社会保険料率（給与計算・社会保険ドメイン）。各レコードは effectiveFrom(施行日) を持ち、pitto DB の rule_versions.effective_from / effective_to と互換(YYYY-MM-DD)。",
     "prefectureCoverage": "健康保険の都道府県別料率は代表4都府県(東京/大阪/愛知/福岡)のみ収録。47都道府県フル展開は将来課題。",
-    "verifiedNote": "全料率を一次資料(日本年金機構 令和8年度保険料額表PDF / 協会けんぽ 都道府県別料率 / 厚生労働省 雇用保険料率PDF)で逐語確認(2026-05-31)。"
+    "verifiedNote": "全料率を一次資料(日本年金機構 令和8年度保険料額表PDF / 協会けんぽ 都道府県別料率 / 厚生労働省 雇用保険料率PDF)で逐語確認(2026-05-31)。",
+    "rosaiNote": "労災保険率は業種別・全額事業主負担(令和6年4月1日施行,1000分率)。代表15業種(実装者がPDF本文『令和６年４月１日施行』と業種名・率を逐語照合)。出典ファイル名rousaihokenritu_r05.pdfは令和5年公表だが収録内容は令和6年4月施行の現行率(r06版は存在せずr05が現行)。全業種は厚労省 労災保険率表を参照。"
   },
   "rates": [
     {
@@ -226,6 +227,351 @@
           "verified_at": "2026-05-31",
           "authority_level": "statute",
           "evidenceQuote": "子ども・子育て拠出金率（令和8年4月1日〜適用）0.36％"
+        }
+      ]
+    },
+    {
+      "key": "rosai_sonota",
+      "label": "労災保険率（その他の各種事業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "その他の各種事業",
+      "rateTotalPercent": 0.3,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.3,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。3.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "その他の各種事業 3.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_oroshi_kouri_inshoku",
+      "label": "労災保険率（卸売業・小売業、飲食店又は宿泊業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "卸売業・小売業、飲食店又は宿泊業",
+      "rateTotalPercent": 0.3,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.3,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。3.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "卸売業・小売業、飲食店又は宿泊業 3.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_kinyu_hoken_fudosan",
+      "label": "労災保険率（金融業、保険業又は不動産業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "金融業、保険業又は不動産業",
+      "rateTotalPercent": 0.25,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.25,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。2.5/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "金融業、保険業又は不動産業 2.5"
+        }
+      ]
+    },
+    {
+      "key": "rosai_tsushin_hoso",
+      "label": "労災保険率（通信業、放送業、新聞業又は出版業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "通信業、放送業、新聞業又は出版業",
+      "rateTotalPercent": 0.25,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.25,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。2.5/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "通信業、放送業、新聞業又は出版業 2.5"
+        }
+      ]
+    },
+    {
+      "key": "rosai_denki_gas_suido",
+      "label": "労災保険率（電気、ガス、水道又は熱供給の事業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "電気、ガス、水道又は熱供給の事業",
+      "rateTotalPercent": 0.3,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.3,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。3.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "電気、ガス、水道又は熱供給の事業 3.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_bld_maintenance",
+      "label": "労災保険率（ビルメンテナンス業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "ビルメンテナンス業",
+      "rateTotalPercent": 0.6,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.6,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。6.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "ビルメンテナンス業 6.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_seiso_kasou",
+      "label": "労災保険率（清掃、火葬又はと畜の事業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "清掃、火葬又はと畜の事業",
+      "rateTotalPercent": 1.3,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 1.3,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。13.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "清掃、火葬又はと畜の事業 13.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_kotsu_unyu",
+      "label": "労災保険率（交通運輸事業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "交通運輸事業",
+      "rateTotalPercent": 0.4,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.4,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。4.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "交通運輸事業 4.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_kamotsu",
+      "label": "労災保険率（貨物取扱事業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "貨物取扱事業（港湾貨物取扱事業及び港湾荷役業を除く。）",
+      "rateTotalPercent": 0.85,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.85,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。8.5/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "貨物取扱事業（港湾貨物取扱事業及び港湾荷役業を除く。） 8.5"
+        }
+      ]
+    },
+    {
+      "key": "rosai_kowan_yakueki",
+      "label": "労災保険率（港湾荷役業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "港湾荷役業",
+      "rateTotalPercent": 1.2,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 1.2,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。12.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "港湾荷役業 12.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_kenchiku",
+      "label": "労災保険率（建築事業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "建築事業（既設建築物設備工事業を除く。）",
+      "rateTotalPercent": 0.95,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.95,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。9.5/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "建築事業（既設建築物設備工事業を除く。） 9.5"
+        }
+      ]
+    },
+    {
+      "key": "rosai_doro_shinsetsu",
+      "label": "労災保険率（道路新設事業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "道路新設事業",
+      "rateTotalPercent": 1.1,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 1.1,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。11.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "道路新設事業 11.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_denki_kikai_seizo",
+      "label": "労災保険率（電気機械器具製造業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "電気機械器具製造業",
+      "rateTotalPercent": 0.3,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.3,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。3.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "電気機械器具製造業 3.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_senpaku_seizo",
+      "label": "労災保険率（船舶製造又は修理業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "船舶製造又は修理業",
+      "rateTotalPercent": 2.3,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 2.3,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。23.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "船舶製造又は修理業 23.0"
+        }
+      ]
+    },
+    {
+      "key": "rosai_kinzoku_kogyo",
+      "label": "労災保険率（金属鉱業、非金属鉱業）",
+      "insuranceType": "労災保険",
+      "scope": "industry",
+      "industry": "金属鉱業、非金属鉱業（石灰石鉱業又はドロマイト鉱業を除く。）又は石炭鉱業",
+      "rateTotalPercent": 8.8,
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 8.8,
+      "effectiveFrom": "2024-04-01",
+      "effectiveTo": null,
+      "notes": "労災保険率は全額事業主負担。88.0/1000=令和6年4月改定。業種により異なる。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "労災保険率表（令和6年4月1日施行）",
+          "url": "https://www.mhlw.go.jp/content/rousaihokenritu_r05.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "金属鉱業、非金属鉱業（石灰石鉱業又はドロマイト鉱業を除く。）又は石炭鉱業 88.0"
         }
       ]
     }

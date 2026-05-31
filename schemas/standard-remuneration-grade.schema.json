@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "標準報酬月額等級表データセット",
+  "type": "object",
+  "required": ["tables"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["insuranceType", "effectiveFrom", "grades", "citations"],
+        "properties": {
+          "insuranceType": { "type": "string", "enum": ["健康保険", "厚生年金"] },
+          "effectiveFrom": { "type": "string", "format": "date" },
+          "effectiveTo": { "type": ["string", "null"] },
+          "bonusCap": { "type": "string" },
+          "grades": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["grade", "standardMonthly"],
+              "properties": {
+                "grade": { "type": "integer", "minimum": 1 },
+                "standardMonthly": { "type": "integer", "minimum": 1 },
+                "remunerationFrom": { "type": ["integer", "null"] },
+                "remunerationTo": { "type": ["integer", "null"] }
+              }
+            }
+          },
+          "citations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["source", "url", "verified_at"],
+              "properties": {
+                "source": { "type": "string", "minLength": 1 },
+                "title": { "type": "string" },
+                "url": { "type": "string" },
+                "verified_at": { "type": "string", "format": "date" },
+                "evidenceQuote": { "type": "string" },
+                "authority_level": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

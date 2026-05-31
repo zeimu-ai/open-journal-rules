@@ -13,6 +13,10 @@ import socialInsuranceRaw from "../rules/social-insurance-rates.json";
 import withholdingRaw from "../rules/withholding-tax-rates.json";
 import socialInsuranceSchema from "../schemas/social-insurance-rate.schema.json";
 import withholdingSchema from "../schemas/withholding-tax-rate.schema.json";
+import gradesRaw from "../rules/standard-remuneration-grades.json";
+import filingRaw from "../rules/filing-deadlines.json";
+import gradesSchema from "../schemas/standard-remuneration-grade.schema.json";
+import filingSchema from "../schemas/filing-deadline.schema.json";
 
 interface RuleEntry {
   id: string;
@@ -144,6 +148,30 @@ describe("JSON Schema validation", () => {
     const validate = ajv.compile(withholdingSchema);
     it("源泉徴収データセットがスキーマに適合すること", () => {
       const valid = validate(withholdingRaw);
+      if (!valid) {
+        expect.fail(
+          `スキーマ違反:\n${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join("\n")}`,
+        );
+      }
+    });
+  });
+
+  describe("standard-remuneration-grades.json", () => {
+    const validate = ajv.compile(gradesSchema);
+    it("標準報酬月額等級表がスキーマに適合すること", () => {
+      const valid = validate(gradesRaw);
+      if (!valid) {
+        expect.fail(
+          `スキーマ違反:\n${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join("\n")}`,
+        );
+      }
+    });
+  });
+
+  describe("filing-deadlines.json", () => {
+    const validate = ajv.compile(filingSchema);
+    it("申告・納付期限データセットがスキーマに適合すること", () => {
+      const valid = validate(filingRaw);
       if (!valid) {
         expect.fail(
           `スキーマ違反:\n${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join("\n")}`,

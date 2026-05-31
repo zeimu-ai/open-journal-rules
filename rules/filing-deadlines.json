@@ -1,0 +1,97 @@
+{
+  "_meta": {
+    "description": "源泉所得税の納付・法定調書の提出期限(申告ドメイン)。各項目に effectiveFrom と citations(国税庁)。"
+  },
+  "items": [
+    {
+      "key": "gensen_nofu_kigen",
+      "label": "源泉所得税の納付期限",
+      "category": "申告",
+      "value": "源泉徴収した所得税及び復興特別所得税は、給与等を実際に支払った月の翌月10日までに納付する。",
+      "effectiveFrom": "2013-01-01",
+      "effectiveTo": null,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.2505 源泉所得税及び復興特別所得税の納付期限と納期の特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2505.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "源泉徴収した所得税及び復興特別所得税は、原則として、給与などを実際に支払った月の翌月10日までに国に納めなければなりません"
+        }
+      ]
+    },
+    {
+      "key": "noki_tokurei",
+      "label": "納期の特例(源泉所得税)",
+      "category": "申告",
+      "value": "給与の支給人員が常時10人未満の源泉徴収義務者は、申請により年2回にまとめて納付できる。1〜6月分→7月10日、7〜12月分→翌年1月20日。",
+      "effectiveFrom": "2013-01-01",
+      "effectiveTo": null,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.2505 源泉所得税及び復興特別所得税の納付期限と納期の特例",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2505.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "給与の支給人員が常時10人未満である源泉徴収義務者は…1月から6月までに支払った所得から源泉徴収した所得税及び復興特別所得税は7月10日、7月から12月までに支払った所得から源泉徴収した所得税及び復興特別所得税は翌年1月20日が、それぞれ納付期限となります"
+        }
+      ]
+    },
+    {
+      "key": "hotei_chosho",
+      "label": "法定調書(源泉徴収票等)の税務署提出期限",
+      "category": "申告",
+      "value": "支払の確定した年の翌年1月31日までに所轄税務署へ提出する。",
+      "effectiveFrom": "2013-01-01",
+      "effectiveTo": null,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.7411 「給与所得の源泉徴収票」の提出範囲と提出枚数",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hotei/7411.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "給与所得の源泉徴収票…その年の翌年1月31日までに提出"
+        }
+      ]
+    },
+    {
+      "key": "kyuyo_shiharai_hokokusho",
+      "label": "給与支払報告書の市区町村提出期限",
+      "category": "申告",
+      "value": "翌年1月31日までに、受給者の翌年1月1日現在の住所地の市区町村へ提出する。",
+      "effectiveFrom": "2013-01-01",
+      "effectiveTo": null,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.7411 「給与所得の源泉徴収票」の提出範囲と提出枚数",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hotei/7411.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "給与支払報告書…翌年1月31日まで"
+        }
+      ]
+    },
+    {
+      "key": "gensen_choshu_hyo_kofu",
+      "label": "源泉徴収票の本人交付期限",
+      "category": "申告",
+      "value": "在職者(年末調整後)は翌年1月31日まで、年の中途退職者は退職後1か月以内に本人へ交付する。",
+      "effectiveFrom": "2013-01-01",
+      "effectiveTo": null,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.7411 「給与所得の源泉徴収票」の提出範囲と提出枚数",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hotei/7411.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "受給者交付用の給与所得の源泉徴収票…交付"
+        }
+      ]
+    }
+  ]
+}

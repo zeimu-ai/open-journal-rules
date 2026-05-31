@@ -7,6 +7,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.0] - 2026-05-31
+
+給与計算・社保・申告ドメインを拡充。前回追加の社保料率を**実際に計算可能**にする標準報酬月額等級表と、申告（源泉納付・法定調書）・労災保険率を追加。全数値を一次資料で逐語確認、各レコードに effectiveFrom を付与。
+
+### Added
+
+- **`rules/standard-remuneration-grades.json`（健保50等級＋厚年32等級＝82等級）**: 標準報酬月額の等級表。健保 第1=58,000円〜第50=1,390,000円（2026-03-01〜）、厚年 第1=88,000円〜第32=650,000円（2020-09-01〜）。標準賞与額の上限（健保=年573万/厚年=月150万）。社会保険料は「料率 × 標準報酬月額」で算定。← 協会けんぽ東京PDF・日本年金機構 R08保険料額表PDFで境界等級を逐語確認
+- **`rules/filing-deadlines.json`（5件）**: 申告ドメイン。源泉所得税の納付期限（翌月10日）・納期の特例（10人未満は年2回, 7/10・翌年1/20）・法定調書の提出期限（翌年1/31）・給与支払報告書・源泉徴収票交付。← 国税庁 No.2505/7411で逐語確認
+- **`rules/social-insurance-rates.json` に労災保険率15業種を追記**: その他の各種事業0.3%〜金属鉱業8.8%（全額事業主負担, 令和6年4月1日施行）。業種名と率は実装者が厚労省 労災保険率表PDFで逐語照合（workflow が誤った業種ラベルを実装者が修正）
+- `schemas/standard-remuneration-grade.schema.json` / `schemas/filing-deadline.schema.json`、schema.test に2データセットの検証を追加。social-insurance schema に `労災保険`/`scope=industry`/`industry` を追加
+- `tests/phase9-grades-filing.test.ts`（等級の連番・単調増加・境界・労災率変換の検算を含む）
+
+### Notes
+
+- 等級表の各レコードに effectiveFrom（pitto DB `rule_versions.effective_from` 互換）。料率改定に追従可能
+
 ## [0.17.0] - 2026-05-31
 
 **会計ドメインのみだった OJR を給与計算・社会保険ドメインへ拡張**（pitto の月次会計・給与計算・社保ユースケース対応 / ADR-011 マルチドメイン構想）。全料率は一次資料で逐語確認し、各レコードに施行日(effectiveFrom)を必須化（pitto DB `rule_versions.effective_from` 互換）。

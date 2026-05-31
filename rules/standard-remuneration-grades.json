@@ -1,0 +1,536 @@
+{
+  "_meta": {
+    "description": "標準報酬月額の等級表（給与計算・社保）。健康保険50等級・厚生年金32等級。社会保険料は『料率(social-insurance-rates.json) × 標準報酬月額』で算定する。各表に effectiveFrom と標準賞与額の上限(bonusCap)を付す。",
+    "verifiedNote": "境界等級(健保第1=58,000/第50=1,390,000・厚年第1=88,000/第32=650,000)と標準賞与額上限を一次資料(協会けんぽ東京PDF R8_13tokyo.pdf / 日本年金機構 R08保険料額表PDF)で逐語確認(2026-05-31)。"
+  },
+  "tables": [
+    {
+      "insuranceType": "健康保険",
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "bonusCap": "健康保険・介護保険・子ども子育て支援金の標準賞与額の上限は年間累計573万円(毎年4/1〜翌3/31)",
+      "grades": [
+        {
+          "grade": 1,
+          "standardMonthly": 58000,
+          "remunerationFrom": null,
+          "remunerationTo": 63000
+        },
+        {
+          "grade": 2,
+          "standardMonthly": 68000,
+          "remunerationFrom": 63000,
+          "remunerationTo": 73000
+        },
+        {
+          "grade": 3,
+          "standardMonthly": 78000,
+          "remunerationFrom": 73000,
+          "remunerationTo": 83000
+        },
+        {
+          "grade": 4,
+          "standardMonthly": 88000,
+          "remunerationFrom": 83000,
+          "remunerationTo": 93000
+        },
+        {
+          "grade": 5,
+          "standardMonthly": 98000,
+          "remunerationFrom": 93000,
+          "remunerationTo": 101000
+        },
+        {
+          "grade": 6,
+          "standardMonthly": 104000,
+          "remunerationFrom": 101000,
+          "remunerationTo": 107000
+        },
+        {
+          "grade": 7,
+          "standardMonthly": 110000,
+          "remunerationFrom": 107000,
+          "remunerationTo": 114000
+        },
+        {
+          "grade": 8,
+          "standardMonthly": 118000,
+          "remunerationFrom": 114000,
+          "remunerationTo": 122000
+        },
+        {
+          "grade": 9,
+          "standardMonthly": 126000,
+          "remunerationFrom": 122000,
+          "remunerationTo": 130000
+        },
+        {
+          "grade": 10,
+          "standardMonthly": 134000,
+          "remunerationFrom": 130000,
+          "remunerationTo": 138000
+        },
+        {
+          "grade": 11,
+          "standardMonthly": 142000,
+          "remunerationFrom": 138000,
+          "remunerationTo": 146000
+        },
+        {
+          "grade": 12,
+          "standardMonthly": 150000,
+          "remunerationFrom": 146000,
+          "remunerationTo": 155000
+        },
+        {
+          "grade": 13,
+          "standardMonthly": 160000,
+          "remunerationFrom": 155000,
+          "remunerationTo": 165000
+        },
+        {
+          "grade": 14,
+          "standardMonthly": 170000,
+          "remunerationFrom": 165000,
+          "remunerationTo": 175000
+        },
+        {
+          "grade": 15,
+          "standardMonthly": 180000,
+          "remunerationFrom": 175000,
+          "remunerationTo": 185000
+        },
+        {
+          "grade": 16,
+          "standardMonthly": 190000,
+          "remunerationFrom": 185000,
+          "remunerationTo": 195000
+        },
+        {
+          "grade": 17,
+          "standardMonthly": 200000,
+          "remunerationFrom": 195000,
+          "remunerationTo": 210000
+        },
+        {
+          "grade": 18,
+          "standardMonthly": 220000,
+          "remunerationFrom": 210000,
+          "remunerationTo": 230000
+        },
+        {
+          "grade": 19,
+          "standardMonthly": 240000,
+          "remunerationFrom": 230000,
+          "remunerationTo": 250000
+        },
+        {
+          "grade": 20,
+          "standardMonthly": 260000,
+          "remunerationFrom": 250000,
+          "remunerationTo": 270000
+        },
+        {
+          "grade": 21,
+          "standardMonthly": 280000,
+          "remunerationFrom": 270000,
+          "remunerationTo": 290000
+        },
+        {
+          "grade": 22,
+          "standardMonthly": 300000,
+          "remunerationFrom": 290000,
+          "remunerationTo": 310000
+        },
+        {
+          "grade": 23,
+          "standardMonthly": 320000,
+          "remunerationFrom": 310000,
+          "remunerationTo": 330000
+        },
+        {
+          "grade": 24,
+          "standardMonthly": 340000,
+          "remunerationFrom": 330000,
+          "remunerationTo": 350000
+        },
+        {
+          "grade": 25,
+          "standardMonthly": 360000,
+          "remunerationFrom": 350000,
+          "remunerationTo": 370000
+        },
+        {
+          "grade": 26,
+          "standardMonthly": 380000,
+          "remunerationFrom": 370000,
+          "remunerationTo": 395000
+        },
+        {
+          "grade": 27,
+          "standardMonthly": 410000,
+          "remunerationFrom": 395000,
+          "remunerationTo": 425000
+        },
+        {
+          "grade": 28,
+          "standardMonthly": 440000,
+          "remunerationFrom": 425000,
+          "remunerationTo": 455000
+        },
+        {
+          "grade": 29,
+          "standardMonthly": 470000,
+          "remunerationFrom": 455000,
+          "remunerationTo": 485000
+        },
+        {
+          "grade": 30,
+          "standardMonthly": 500000,
+          "remunerationFrom": 485000,
+          "remunerationTo": 515000
+        },
+        {
+          "grade": 31,
+          "standardMonthly": 530000,
+          "remunerationFrom": 515000,
+          "remunerationTo": 545000
+        },
+        {
+          "grade": 32,
+          "standardMonthly": 560000,
+          "remunerationFrom": 545000,
+          "remunerationTo": 575000
+        },
+        {
+          "grade": 33,
+          "standardMonthly": 590000,
+          "remunerationFrom": 575000,
+          "remunerationTo": 605000
+        },
+        {
+          "grade": 34,
+          "standardMonthly": 620000,
+          "remunerationFrom": 605000,
+          "remunerationTo": 635000
+        },
+        {
+          "grade": 35,
+          "standardMonthly": 650000,
+          "remunerationFrom": 635000,
+          "remunerationTo": 665000
+        },
+        {
+          "grade": 36,
+          "standardMonthly": 680000,
+          "remunerationFrom": 665000,
+          "remunerationTo": 695000
+        },
+        {
+          "grade": 37,
+          "standardMonthly": 710000,
+          "remunerationFrom": 695000,
+          "remunerationTo": 730000
+        },
+        {
+          "grade": 38,
+          "standardMonthly": 750000,
+          "remunerationFrom": 730000,
+          "remunerationTo": 770000
+        },
+        {
+          "grade": 39,
+          "standardMonthly": 790000,
+          "remunerationFrom": 770000,
+          "remunerationTo": 810000
+        },
+        {
+          "grade": 40,
+          "standardMonthly": 830000,
+          "remunerationFrom": 810000,
+          "remunerationTo": 855000
+        },
+        {
+          "grade": 41,
+          "standardMonthly": 880000,
+          "remunerationFrom": 855000,
+          "remunerationTo": 905000
+        },
+        {
+          "grade": 42,
+          "standardMonthly": 930000,
+          "remunerationFrom": 905000,
+          "remunerationTo": 955000
+        },
+        {
+          "grade": 43,
+          "standardMonthly": 980000,
+          "remunerationFrom": 955000,
+          "remunerationTo": 1005000
+        },
+        {
+          "grade": 44,
+          "standardMonthly": 1030000,
+          "remunerationFrom": 1005000,
+          "remunerationTo": 1055000
+        },
+        {
+          "grade": 45,
+          "standardMonthly": 1090000,
+          "remunerationFrom": 1055000,
+          "remunerationTo": 1115000
+        },
+        {
+          "grade": 46,
+          "standardMonthly": 1150000,
+          "remunerationFrom": 1115000,
+          "remunerationTo": 1175000
+        },
+        {
+          "grade": 47,
+          "standardMonthly": 1210000,
+          "remunerationFrom": 1175000,
+          "remunerationTo": 1235000
+        },
+        {
+          "grade": 48,
+          "standardMonthly": 1270000,
+          "remunerationFrom": 1235000,
+          "remunerationTo": 1295000
+        },
+        {
+          "grade": 49,
+          "standardMonthly": 1330000,
+          "remunerationFrom": 1295000,
+          "remunerationTo": 1355000
+        },
+        {
+          "grade": 50,
+          "standardMonthly": 1390000,
+          "remunerationFrom": 1355000,
+          "remunerationTo": null
+        }
+      ],
+      "citations": [
+        {
+          "source": "全国健康保険協会（協会けんぽ）",
+          "title": "令和8年度 健康保険・厚生年金保険の保険料額表（東京支部）",
+          "url": "https://www.kyoukaikenpo.or.jp/assets/R8_13tokyo.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "public_rate_table",
+          "evidenceQuote": "1 58,000 〜 63,000 … 50 1,390,000 1,355,000 〜 ／ 標準賞与額の上限は…年間573万円"
+        }
+      ]
+    },
+    {
+      "insuranceType": "厚生年金",
+      "effectiveFrom": "2020-09-01",
+      "effectiveTo": null,
+      "bonusCap": "厚生年金保険・子ども子育て拠出金の標準賞与額の上限は1か月あたり150万円",
+      "grades": [
+        {
+          "grade": 1,
+          "standardMonthly": 88000,
+          "remunerationFrom": null,
+          "remunerationTo": 93000
+        },
+        {
+          "grade": 2,
+          "standardMonthly": 98000,
+          "remunerationFrom": 93000,
+          "remunerationTo": 101000
+        },
+        {
+          "grade": 3,
+          "standardMonthly": 104000,
+          "remunerationFrom": 101000,
+          "remunerationTo": 107000
+        },
+        {
+          "grade": 4,
+          "standardMonthly": 110000,
+          "remunerationFrom": 107000,
+          "remunerationTo": 114000
+        },
+        {
+          "grade": 5,
+          "standardMonthly": 118000,
+          "remunerationFrom": 114000,
+          "remunerationTo": 122000
+        },
+        {
+          "grade": 6,
+          "standardMonthly": 126000,
+          "remunerationFrom": 122000,
+          "remunerationTo": 130000
+        },
+        {
+          "grade": 7,
+          "standardMonthly": 134000,
+          "remunerationFrom": 130000,
+          "remunerationTo": 138000
+        },
+        {
+          "grade": 8,
+          "standardMonthly": 142000,
+          "remunerationFrom": 138000,
+          "remunerationTo": 146000
+        },
+        {
+          "grade": 9,
+          "standardMonthly": 150000,
+          "remunerationFrom": 146000,
+          "remunerationTo": 155000
+        },
+        {
+          "grade": 10,
+          "standardMonthly": 160000,
+          "remunerationFrom": 155000,
+          "remunerationTo": 165000
+        },
+        {
+          "grade": 11,
+          "standardMonthly": 170000,
+          "remunerationFrom": 165000,
+          "remunerationTo": 175000
+        },
+        {
+          "grade": 12,
+          "standardMonthly": 180000,
+          "remunerationFrom": 175000,
+          "remunerationTo": 185000
+        },
+        {
+          "grade": 13,
+          "standardMonthly": 190000,
+          "remunerationFrom": 185000,
+          "remunerationTo": 195000
+        },
+        {
+          "grade": 14,
+          "standardMonthly": 200000,
+          "remunerationFrom": 195000,
+          "remunerationTo": 210000
+        },
+        {
+          "grade": 15,
+          "standardMonthly": 220000,
+          "remunerationFrom": 210000,
+          "remunerationTo": 230000
+        },
+        {
+          "grade": 16,
+          "standardMonthly": 240000,
+          "remunerationFrom": 230000,
+          "remunerationTo": 250000
+        },
+        {
+          "grade": 17,
+          "standardMonthly": 260000,
+          "remunerationFrom": 250000,
+          "remunerationTo": 270000
+        },
+        {
+          "grade": 18,
+          "standardMonthly": 280000,
+          "remunerationFrom": 270000,
+          "remunerationTo": 290000
+        },
+        {
+          "grade": 19,
+          "standardMonthly": 300000,
+          "remunerationFrom": 290000,
+          "remunerationTo": 310000
+        },
+        {
+          "grade": 20,
+          "standardMonthly": 320000,
+          "remunerationFrom": 310000,
+          "remunerationTo": 330000
+        },
+        {
+          "grade": 21,
+          "standardMonthly": 340000,
+          "remunerationFrom": 330000,
+          "remunerationTo": 350000
+        },
+        {
+          "grade": 22,
+          "standardMonthly": 360000,
+          "remunerationFrom": 350000,
+          "remunerationTo": 370000
+        },
+        {
+          "grade": 23,
+          "standardMonthly": 380000,
+          "remunerationFrom": 370000,
+          "remunerationTo": 395000
+        },
+        {
+          "grade": 24,
+          "standardMonthly": 410000,
+          "remunerationFrom": 395000,
+          "remunerationTo": 425000
+        },
+        {
+          "grade": 25,
+          "standardMonthly": 440000,
+          "remunerationFrom": 425000,
+          "remunerationTo": 455000
+        },
+        {
+          "grade": 26,
+          "standardMonthly": 470000,
+          "remunerationFrom": 455000,
+          "remunerationTo": 485000
+        },
+        {
+          "grade": 27,
+          "standardMonthly": 500000,
+          "remunerationFrom": 485000,
+          "remunerationTo": 515000
+        },
+        {
+          "grade": 28,
+          "standardMonthly": 530000,
+          "remunerationFrom": 515000,
+          "remunerationTo": 545000
+        },
+        {
+          "grade": 29,
+          "standardMonthly": 560000,
+          "remunerationFrom": 545000,
+          "remunerationTo": 575000
+        },
+        {
+          "grade": 30,
+          "standardMonthly": 590000,
+          "remunerationFrom": 575000,
+          "remunerationTo": 605000
+        },
+        {
+          "grade": 31,
+          "standardMonthly": 620000,
+          "remunerationFrom": 605000,
+          "remunerationTo": 635000
+        },
+        {
+          "grade": 32,
+          "standardMonthly": 650000,
+          "remunerationFrom": 635000,
+          "remunerationTo": null
+        }
+      ],
+      "citations": [
+        {
+          "source": "日本年金機構",
+          "title": "厚生年金保険料額表（令和8年度版 R08ryougaku.pdf）",
+          "url": "https://www.nenkin.go.jp/service/kounen/hokenryo/ryogaku/ryogakuhyo/20200825.files/R08ryougaku.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "public_rate_table",
+          "evidenceQuote": "1 88,000 〜 93,000 … 32 650,000 635,000 〜 ／ 標準賞与額の上限は1か月あたり150万円"
+        }
+      ]
+    }
+  ]
+}
