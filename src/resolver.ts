@@ -41,6 +41,12 @@ export interface ResolveResult {
   confidence: number;
   /** 金額が閾値に該当する場合の閾値ルール文言 (省略可) */
   thresholdRule?: string;
+  /**
+   * 金額×科目の交互作用による資産科目の提案 (省略可)。
+   * 例: 消耗品費にマッチしても取得価額が10万円以上の場合、資産計上(工具器具備品)を提案する。
+   * accountName 自体は上書きしない（後方互換）。最終判断は消費者側に委ねる情報付加。
+   */
+  suggestedAccountName?: string;
 }
 
 /**
@@ -109,6 +115,14 @@ export function resolveJournalEntry(
 
   if (matchedThreshold !== null) {
     result.thresholdRule = matchedThreshold.rule;
+    // 金額×科目の交互作用: 資産取得閾値のうち下限が10万円以上の帯域(=一括償却資産以上)に
+    // 該当した場合、資産計上科目(工具器具備品)を提案する。10万円未満(全額経費)では提案しない。
+    // 提案科目は帯域(一括償却資産10〜20万/少額減価償却資産20〜30万/固定資産30万〜)によらず
+    // 一律「工具器具備品」に一本化する意図的設計。具体的な償却方法・特例の別は thresholdRule
+    // に帯域別の文言が乗るため、消費者側はそちらで判断できる。
+    if (matchedThreshold.minAmount !== undefined && matchedThreshold.minAmount >= 100000) {
+      result.suggestedAccountName = "工具器具備品";
+    }
   }
 
   return result;

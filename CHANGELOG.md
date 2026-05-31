@@ -7,6 +7,18 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.9.0] - 2026-05-31
+
+Phase 2E（マッチング／金額×科目の交互作用）。
+
+### Added
+
+- **#34 金額×科目の交互作用**: `resolveJournalEntry()` の戻り値に任意フィールド `suggestedAccountName` を追加。消耗品費にマッチしても取得価額が10万円以上（一括償却資産以上の帯域）の場合に資産計上科目（工具器具備品）を提案する。`accountName` 自体は上書きせず情報付加のみ（後方互換）
+
+### Deferred
+
+- **#35 多義ベンダーの曖昧性**: Amazon/楽天/Apple/Google 等は現状 excludePatterns（rule-03 が AWS/Kindle 除外、rule-05 が Apple=SaaS 等）で対応済みでゴールデンコーパス 100%。追加の曖昧性解消は回帰リスクが価値を上回るため、業種コンテキスト導入（#46）と併せて将来対応
+
 ## [0.8.1] - 2026-05-31
 
 Phase 2C（法人税論点の根拠付与・notes のみ）。citation は実装者が国税庁ページを WebFetch し逐語確認。
