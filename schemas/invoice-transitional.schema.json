@@ -1,0 +1,46 @@
+{
+  "type": "object",
+  "required": ["description", "transitionalDeduction", "citation"],
+  "properties": {
+    "description": { "type": "string", "minLength": 1 },
+    "transitionalDeduction": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["rate", "from", "to", "note"],
+        "additionalProperties": false,
+        "properties": {
+          "rate": { "type": "number", "minimum": 0, "maximum": 1 },
+          "from": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "to": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+          "note": { "type": "string" }
+        }
+      }
+    },
+    "largeAmountExclusion": {
+      "type": "object",
+      "required": ["thresholdYen", "from", "note"],
+      "additionalProperties": false,
+      "properties": {
+        "thresholdYen": { "type": "integer", "minimum": 0 },
+        "from": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+        "note": { "type": "string" }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "number", "url", "verified_at"],
+      "properties": {
+        "source": { "type": "string" },
+        "number": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "verified_at": { "type": "string", "format": "date" },
+        "authority_level": { "type": "string", "enum": ["statute", "ministerial_ordinance", "notice", "tax_answer", "administrative_form"] }
+      }
+    }
+  },
+  "additionalProperties": false
+}

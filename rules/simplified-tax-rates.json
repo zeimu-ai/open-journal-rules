@@ -1,0 +1,19 @@
+{
+  "appliesWhen": "基準期間（個人事業者は前々年、法人は原則として前々事業年度）における課税売上高が5,000万円以下で、簡易課税制度選択届出書を提出した課税期間に適用される。",
+  "businessTypes": [
+    { "type": "第1種事業", "description": "卸売業", "deemedPurchaseRate": 0.9 },
+    { "type": "第2種事業", "description": "小売業、農業・林業・漁業（飲食料品の譲渡に係る事業に限る）", "deemedPurchaseRate": 0.8 },
+    { "type": "第3種事業", "description": "農業・林業・漁業（飲食料品の譲渡に係る事業を除く）、鉱業、建設業、製造業、電気業、ガス業、熱供給業および水道業", "deemedPurchaseRate": 0.7 },
+    { "type": "第4種事業", "description": "第1種・第2種・第3種・第5種・第6種事業以外の事業（飲食店業等）", "deemedPurchaseRate": 0.6 },
+    { "type": "第5種事業", "description": "運輸通信業、金融業および保険業、サービス業（飲食店業に該当するものを除く）", "deemedPurchaseRate": 0.5 },
+    { "type": "第6種事業", "description": "不動産業", "deemedPurchaseRate": 0.4 }
+  ],
+  "citation": {
+    "source": "国税庁タックスアンサー",
+    "number": "No.6505",
+    "title": "簡易課税制度",
+    "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6505.htm",
+    "verified_at": "2026-05-31",
+    "authority_level": "tax_answer"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "required": ["appliesWhen", "businessTypes", "citation"],
+  "properties": {
+    "appliesWhen": { "type": "string", "minLength": 1 },
+    "businessTypes": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": ["type", "description", "deemedPurchaseRate"],
+        "additionalProperties": false,
+        "properties": {
+          "type": { "type": "string", "pattern": "^第[1-6]種事業$" },
+          "description": { "type": "string", "minLength": 1 },
+          "deemedPurchaseRate": { "type": "number", "minimum": 0, "maximum": 1 }
+        }
+      }
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "number", "url", "verified_at"],
+      "properties": {
+        "source": { "type": "string" },
+        "number": { "type": "string" },
+        "title": { "type": "string" },
+        "url": { "type": "string" },
+        "verified_at": { "type": "string", "format": "date" },
+        "authority_level": { "type": "string", "enum": ["statute", "ministerial_ordinance", "notice", "tax_answer", "administrative_form"] }
+      }
+    }
+  },
+  "additionalProperties": false
+}
