@@ -7,6 +7,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.8.0] - 2026-05-31
+
+Phase 2B（消費税制度メタ）。citation は国税庁ページを WebFetch し実装者が逐語確認（No.6505/No.6498/No.6118）。
+
+### Added
+
+- **#24 簡易課税**: `rules/simplified-tax-rates.json`（6事業区分のみなし仕入率 90/80/70/60/50/40%、基準期間5,000万円以下要件、No.6505）+ スキーマ
+- **#24 インボイス経過措置**: `rules/invoice-transitional.json`（免税事業者等からの課税仕入れ 80%控除[2023-10〜2026-09]/50%控除[2026-10〜2029-09]、10億円超の適用除外[2024-10〜]、No.6498）+ スキーマ
+- **#23 用途区分**: journal-rule スキーマに任意フィールド `purposeCategory`（taxable_sales/nontaxable_sales/common＝個別対応方式の用途区分、消法30②）を追加
+- **#25 リバースチャージ**: journal-rule スキーマに任意フィールド `reverseChargeApplicable`（boolean、消法5②・No.6118）を追加し、`rule-05`（クラウドSaaS）に付与
+- `tests/phase2b-invoice-meta.test.ts`
+
+### Deferred
+
+- **#24**: 2割特例・少額特例（1万円未満）は本バッチで未検証のため別途エビデンス確定のうえ追加
+- **#23**: `purposeCategory` の既存ルールへの一括付与は事業者の課税/非課税売上構成に依存するため、フィールド導入のみとし値の割当は将来対応
+- **#32 保存要件 / #33 交際費5要件**: ドキュメント整備として別バッチで対応
+
 ## [0.7.0] - 2026-05-31
 
 Phase 2A（勘定科目拡充）。全 citation は国税庁ページ/様式を WebFetch し、独立エージェント照合 + 実装者の最終確認（青色申告決算書 様式FA3076 の貸借対照表 PDF を実際に開いて科目欄の存在を確認）を経ている。
