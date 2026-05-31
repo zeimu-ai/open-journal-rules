@@ -6,11 +6,11 @@
 
 | ファイル | 内容 | 件数 |
 |---------|------|------|
-| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 67パターン |
-| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 75科目 |
+| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 79パターン |
+| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 77科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 7段階 |
-| `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 49科目 |
+| `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 52科目 |
 | `rules/dataset-meta.json` | データセットの前提メタ（対象主体・課税方式） | 1件 |
 | `rules/simplified-tax-rates.json` | 簡易課税の事業区分・みなし仕入率（国税庁 No.6505） | 6区分 |
 | `rules/invoice-transitional.json` | インボイス経過措置（80%/50%控除・国税庁 No.6498） | — |
@@ -172,6 +172,26 @@ import type { MatchRule } from "@zeimu-ai/open-journal-rules/matcher";
 const allRules = [...rules, ...restaurant] as MatchRule[];
 const results = match("食材仕入 築地市場", allRules);
 ```
+
+## 課税仕入の用途区分（`purposeCategory`）
+
+`purposeCategory` は消費税法第30条第2項（個別対応方式）における課税仕入れの**用途区分の既定目安**です。`課税仕入` のルールにのみ付与されます。
+
+| 値 | 意味 | 代表科目例 |
+|---|---|---|
+| `taxable_sales` | 課税売上げにのみ要するもの | 広告宣伝費・荷造運賃・クラウド利用料 |
+| `nontaxable_sales` | 非課税売上げにのみ要するもの | 住宅貸付の修繕・管理費 |
+| `common` | 課税・非課税売上げに共通して要するもの | 通信費・水道光熱費・支払手数料・研修費 |
+
+> **重要**: `purposeCategory` はあくまで**既定の目安**です。最終的な区分判定は事業者の実態（取引内容・事業形態）に基づいて行ってください。同一科目でも業種・用途で区分が変わります。
+
+**仕入税額控除の計算（消法30）**
+
+- 課税売上高5億円以下かつ課税売上割合95%以上: 課税仕入れ等の税額を**全額控除**
+- それ以外: **個別対応方式**（`仕入控除税額 = イ(taxable_sales) + ハ(common) × 課税売上割合`、`ロ(nontaxable_sales)` は控除不可）または**一括比例配分方式**（`課税仕入れ等の税額 × 課税売上割合`）を選択
+- 参考: [No.6401 仕入控除税額の計算方法](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6401.htm) / [No.6405 課税売上割合](https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6405.htm)
+
+非課税取引（消法別表第二）の網羅、リース・割賦・工事進行基準の計上時期区分も収録しています。詳細は各ルールの `notes`・`citations` を参照してください。
 
 ## 貢献
 

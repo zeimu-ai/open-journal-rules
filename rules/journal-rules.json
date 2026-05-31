@@ -56,7 +56,8 @@
         "reason": "電話料金・インターネット接続費・郵便代等の通信に関する費用を計上する科目",
         "authority_level": "tax_answer"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-02",
@@ -110,7 +111,8 @@
         "reason": "電気・ガス・水道等の光熱費および水道料金を計上する科目",
         "authority_level": "tax_answer"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-03",
@@ -145,7 +147,8 @@
         "reason": "使用可能期間1年未満または取得価額10万円未満の消耗品の購入費を計上する科目",
         "authority_level": "tax_answer"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-04",
@@ -201,7 +204,8 @@
         "reason": "電車・バス・タクシー等の交通費、出張旅費を計上する科目",
         "authority_level": "tax_answer"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-05",
@@ -265,7 +269,8 @@
         "authority_level": "tax_answer",
         "reason": "国外事業者の電気通信利用役務(クラウドSaaS)はリバースチャージ方式の対象となる場合がある"
       }
-    ]
+    ],
+    "purposeCategory": "taxable_sales"
   },
   {
     "id": "rule-38",
@@ -322,7 +327,8 @@
         "reason": "事務所・店舗・駐車場等の事業用建物の貸付けは課税対象",
         "authority_level": "tax_answer"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-07",
@@ -369,7 +375,8 @@
         "reason": "商品の梱包資材費や発送運賃を計上する科目",
         "authority_level": "tax_answer"
       }
-    ]
+    ],
+    "purposeCategory": "taxable_sales"
   },
   {
     "id": "rule-08",
@@ -416,7 +423,8 @@
         "reason": "チラシ・Web広告・看板等の広告宣伝に関する費用を計上する科目",
         "authority_level": "tax_answer"
       }
-    ]
+    ],
+    "purposeCategory": "taxable_sales"
   },
   {
     "id": "rule-09",
@@ -480,7 +488,8 @@
         "reason": "債務確定の3要件(年末までに債務成立/給付原因事実発生/金額を合理的に算定可能)",
         "authority_level": "notice"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-10",
@@ -647,7 +656,8 @@
         "reason": "事業者の研修費は必要経費",
         "authority_level": "administrative_form"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-15",
@@ -717,7 +727,8 @@
         "reason": "弁護士・税理士等への報酬・料金は支払時に源泉徴収義務(科目固有の補助根拠)",
         "authority_level": "statute"
       }
-    ]
+    ],
+    "purposeCategory": "common"
   },
   {
     "id": "rule-16",
@@ -1253,7 +1264,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5704.htm",
-    "notes": "リース料。所有権移転外ファイナンス・リース取引は売買があったものとして取り扱い、リース期間定額法で償却する（法人税。No.5704）。オペレーティング・リース取引の賃借料は、賃貸借期間の経過に応じて対応する金額を損金算入する（No.5705）。消費税は原則として課税仕入れ10%。",
+    "notes": "リース料。所有権移転外ファイナンス・リース取引は売買があったものとして取り扱い、リース期間定額法で償却する（法人税。No.5704）。オペレーティング・リース取引の賃借料は、賃貸借期間の経過に応じて対応する金額を損金算入する（No.5705）。消費税は原則として課税仕入れ10%。 【消費税の計上時期】所有権移転外ファイナンスリースの賃借人はリース資産の引渡し時に一括仕入税額控除が原則（分割控除も可）。オペレーティングリースは役務提供の都度課税（rule-76/rule-77 参照）。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -1272,6 +1283,14 @@
         "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5705.htm",
         "verified_at": "2026-05-31",
         "reason": "オペレーティング・リース取引の賃借料は賃貸借期間の経過に応じて損金算入する",
+        "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5702",
+        "title": "リース取引についての取扱いの概要(平成20年4月1日以後契約分)",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5702.htm",
+        "verified_at": "2026-06-01",
         "authority_level": "tax_answer"
       }
     ]
@@ -1570,7 +1589,7 @@
     "taxCategory": "非課税",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
-    "notes": "国・地方公共団体・公共法人等が法令に基づいて行う一定の事務に係る役務提供は非課税。No.6201「登記、登録、特許、免許、許可、検査、検定、試験、証明、公文書の交付などです」。民間機関への手数料（民間資格更新等）は課税仕入10%のため対象外。 ※会計上は租税公課勘定に計上することが多いが、消費税区分は非課税（登録免許税・印紙税等の『税金=不課税』とは区別すること）。",
+    "notes": "国・地方公共団体・公共法人等が法令に基づいて行う一定の事務に係る役務提供は非課税。No.6201「登記、登録、特許、免許、許可、検査、検定、試験、証明、公文書の交付などです」。民間機関への手数料（民間資格更新等）は課税仕入10%のため対象外。 ※会計上は租税公課勘定に計上することが多いが、消費税区分は非課税（登録免許税・印紙税等の『税金=不課税』とは区別すること）。 行政手数料が非課税となるのは、国・地方公共団体等が法令に基づいて行う事務につき法令に基づいて徴収する手数料に限る（消法別表第二5号）。法令の根拠なく徴収される手数料は課税仕入10%。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -1991,7 +2010,7 @@
     "taxCategory": "不課税",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/inshi/7141.htm",
-    "notes": "課税文書(契約書・第17号の領収書等)に貼付する収入印紙=印紙税。租税公課に計上し消費税は不課税(郵便局等での収入印紙の購入自体は非課税)。領収書(第17号文書)は記載受取金額5万円未満が非課税、5万円以上は段階的に課税(No.7141)。",
+    "notes": "課税文書(契約書・第17号の領収書等)に貼付する収入印紙=印紙税。租税公課に計上し消費税は不課税(郵便局等での収入印紙の購入自体は非課税)。領収書(第17号文書)は記載受取金額5万円未満が非課税、5万円以上は段階的に課税(No.7141)。 収入印紙は不課税（租税公課）。一方、郵便切手の購入は消法別表第二4号により非課税（通信費・rule-70）で区分が異なるため混同しないこと。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -2317,6 +2336,424 @@
         "url": "https://laws.e-gov.go.jp/law/328AC0000000006",
         "verified_at": "2026-05-31",
         "authority_level": "statute"
+      }
+    ]
+  },
+  {
+    "id": "rule-68",
+    "name": "土地の譲渡・売却（非課税）",
+    "patterns": [
+      "土地 売却",
+      "土地 譲渡",
+      "土地代金 受取",
+      "土地 売却収入",
+      "土地売却益"
+    ],
+    "matchType": "partial",
+    "accountName": "固定資産売却損益",
+    "taxCategory": "非課税",
+    "confidence": 0.9,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "土地の譲渡は消費税非課税（消法別表第二1号）。1か月未満の土地貸付や駐車場などの施設利用に伴う土地使用は非課税に当たらない。土地の譲渡対価は課税売上割合の分母に算入される。",
+    "excludePatterns": [
+      "土地賃借料",
+      "土地賃貸料",
+      "借地料"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-69",
+    "name": "土地の取得（非課税仕入れ）",
+    "patterns": [
+      "土地 購入",
+      "土地 取得",
+      "土地代金 支払",
+      "土地代 取得"
+    ],
+    "matchType": "partial",
+    "accountName": "土地",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "土地の購入（取得）は非課税仕入れ。課税仕入れに該当しないため仕入税額控除の対象外。課税売上割合の計算上は分母に算入される。土地付建物の場合は土地部分と建物部分を按分する必要あり。",
+    "excludePatterns": [
+      "土地賃借料",
+      "土地賃貸料"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-70",
+    "name": "郵便切手類・ハガキの購入（非課税）",
+    "patterns": [
+      "切手 購入",
+      "郵便切手",
+      "ハガキ 購入",
+      "葉書 購入",
+      "切手代",
+      "郵便切手 代"
+    ],
+    "matchType": "partial",
+    "accountName": "通信費",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "郵便切手類の譲渡（売渡し場所における購入）は消費税非課税（消法別表第二4号）。購入時は非課税仕入れのため仕入税額控除の対象外（継続適用を条件に課税仕入れとして処理する特例あり）。日本郵便の郵便料金（配送サービスの対価）は課税仕入10%であり混同しないこと。収入印紙の購入は不課税（租税公課・rule-57）で別扱い。",
+    "excludePatterns": [
+      "収入印紙",
+      "印紙税",
+      "印紙代",
+      "日本郵便 配送",
+      "日本郵便 ゆうパック"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-71",
+    "name": "信用保証料・債務保証料（非課税）",
+    "patterns": [
+      "信用保証料",
+      "保証料 支払",
+      "保証料 信用",
+      "債務保証料",
+      "保証協会 保証料"
+    ],
+    "matchType": "partial",
+    "accountName": "支払手数料",
+    "taxCategory": "非課税",
+    "confidence": 0.9,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "信用保証料は消費税非課税（消法別表第二3号）。損害保険料（rule-10）と同様に金融・保証役務として非課税。信用保証協会への保証料が典型例。",
+    "excludePatterns": [
+      "損害保険料",
+      "生命保険料"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6221",
+        "title": "預金や貸付金の利子など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6221.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-72",
+    "name": "商品券・ギフト券・物品切手の購入（非課税）",
+    "patterns": [
+      "商品券 購入",
+      "ギフト券 購入",
+      "旅行券",
+      "プリペイドカード 購入",
+      "ギフトカード 購入",
+      "図書券",
+      "図書カード 購入"
+    ],
+    "matchType": "partial",
+    "accountName": "接待交際費",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "商品券・ギフト券・旅行券・プリペイドカード等（物品切手等）の譲渡は消費税非課税（消法別表第二4号）。購入時は非課税で、実際に商品・サービスの提供を受けた時が課税仕入れの時期。贈答目的の購入は接待交際費が一般的だが、自社使用は消耗品費等で処理する場合もある。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6229.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6229",
+        "title": "商品券やプリペイドカードなど",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6229.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-73",
+    "name": "介護保険サービス費用（非課税）",
+    "patterns": [
+      "デイサービス",
+      "訪問介護",
+      "介護サービス利用料",
+      "居宅介護サービス",
+      "介護保険サービス",
+      "ショートステイ",
+      "老人ホーム 利用料"
+    ],
+    "matchType": "partial",
+    "accountName": "福利厚生費",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "介護保険法に基づく保険給付の対象となる居宅サービス・施設サービスは消費税非課税（消法別表第二7号）。ただし利用者の選択による特別な居室の提供（差額ベッド相当）や送迎の対価等は非課税に当たらない。",
+    "excludePatterns": [
+      "美容",
+      "整形"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-74",
+    "name": "教科用図書の譲渡（非課税）",
+    "patterns": [
+      "教科書代",
+      "教科用図書",
+      "検定教科書",
+      "文部科学省検定 教科書",
+      "学校教科書"
+    ],
+    "matchType": "partial",
+    "accountName": "新聞図書費",
+    "taxCategory": "非課税",
+    "confidence": 0.9,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "文部科学大臣の検定を経た教科用図書（検定教科書）および文部科学省が著作の名義を有する教科用図書の譲渡は消費税非課税（消法別表第二12号）。一般の参考書・問題集・教材は非課税対象外（課税仕入10%）。学校教育の授業料等は rule-43 で対応済み。",
+    "excludePatterns": [
+      "参考書",
+      "問題集",
+      "テキスト",
+      "ドリル"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-75",
+    "name": "住宅貸付関連仕入（非課税売上対応）",
+    "patterns": [
+      "住宅管理費",
+      "住宅修繕費",
+      "賃貸住宅修繕",
+      "住宅向け仲介手数料"
+    ],
+    "matchType": "partial",
+    "accountName": "修繕費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.8,
+    "priority": 2,
+    "purposeCategory": "nontaxable_sales",
+    "applicableEntity": "both",
+    "notes": "住宅の貸付け（非課税売上）にのみ直接対応する修繕・管理費用の例。個別対応方式では「非課税売上げにのみ要するもの」に区分され仕入税額控除は不可。ただし事業者の実態によって共通対応となる場合もある（最終判定は事業者）。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6401.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6401",
+        "title": "仕入控除税額の計算方法",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6401.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6225",
+        "title": "地代、家賃や権利金、敷金など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-76",
+    "name": "所有権移転外ファイナンスリース（賃借人）",
+    "patterns": [
+      "ファイナンスリース",
+      "所有権移転外リース",
+      "ファイナンス・リース 取得"
+    ],
+    "matchType": "partial",
+    "accountName": "ファイナンスリース資産",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.9,
+    "priority": 2,
+    "purposeCategory": "taxable_sales",
+    "applicableEntity": "both",
+    "notes": "所有権移転外ファイナンスリース取引は法人税法上「売買」として扱われ、賃借人は引渡し時にリース資産を計上する（No.5702）。消費税はリース資産の引渡し時に一括して仕入税額控除を行うのが原則（継続適用を条件に分割控除も可）。法人税上はリース期間定額法で償却。法人税法上のリース取引に該当しない賃貸借（オペレーティングリース）は rule-77 で扱う。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5702.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5702",
+        "title": "リース取引についての取扱いの概要(平成20年4月1日以後契約分)",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5702.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-77",
+    "name": "オペレーティングリース料",
+    "patterns": [
+      "オペレーティングリース",
+      "オペレーティング・リース",
+      "OLリース料"
+    ],
+    "matchType": "partial",
+    "accountName": "リース料",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.9,
+    "priority": 2,
+    "purposeCategory": "taxable_sales",
+    "applicableEntity": "both",
+    "notes": "法人税法上のリース取引（ファイナンスリース）に該当しない通常の賃貸借（オペレーティングリース）。法人税上は賃貸借期間の経過に応じて損金算入（No.5705）。消費税は役務提供の対価として各支払期日（賃貸借期間の経過）ごとに課税仕入れとなる。売買処理は行わない。",
+    "excludePatterns": [
+      "ファイナンスリース",
+      "所有権移転外リース"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5705.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5705",
+        "title": "賃貸借取引（オペレーティング・リース取引）についての取扱いの概要",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5705.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5702",
+        "title": "リース取引についての取扱いの概要(平成20年4月1日以後契約分)",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5702.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-78",
+    "name": "割賦販売売上",
+    "patterns": [
+      "割賦販売",
+      "割賦売上",
+      "割賦売掛",
+      "延払販売"
+    ],
+    "matchType": "partial",
+    "accountName": "売上高",
+    "taxCategory": "課税売上10%",
+    "confidence": 0.8,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "割賦条件付き売買の消費税上の課税時期は、原則として資産の引渡し時（No.6165）。代金の分割回収時期とは関係なく、引渡し完了時に課税売上げを認識する。法人税・所得税上の延払基準・割賦基準は平成30年度改正で廃止され、令和2年4月1日以後開始事業年度から収益認識基準に統一。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6165.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6165",
+        "title": "前受金や前払金などがあるとき",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6165.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-79",
+    "name": "工事進行基準売上",
+    "patterns": [
+      "工事進行基準",
+      "進行基準売上",
+      "部分完成 売上"
+    ],
+    "matchType": "partial",
+    "accountName": "完成工事高",
+    "taxCategory": "課税売上10%",
+    "confidence": 0.8,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "工事請負契約に基づく収益。消費税上の課税時期は目的物の引渡し時点が原則（No.6165）。長期大規模工事（法法64）では法人税上は工事進行基準が強制適用されるが、消費税上は部分引渡し・検収の都度または完成引渡し時に課税売上げを計上する。進行基準・完成基準のいずれでも消費税は課税売上10%。",
+    "excludePatterns": [
+      "修繕",
+      "修理",
+      "メンテナンス"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6165.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6165",
+        "title": "前受金や前払金などがあるとき",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6165.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
       }
     ]
   }
