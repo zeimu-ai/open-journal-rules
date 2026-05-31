@@ -166,7 +166,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
-    "notes": "",
+    "notes": "国外事業者から購入する電気通信利用役務(事業者向け)はリバースチャージ方式の対象になる場合がある(消費税法第5条2項)。国内登録国外事業者経由は通常の課税仕入10%。",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
@@ -420,7 +420,7 @@
     "taxCategory": "課税仕入10%",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
-    "notes": "",
+    "notes": "Amazon.co.jp経由のKindle購入は課税仕入10%。海外Kindleストア等の外国法人直接請求は要検討。",
     "citations": [
       {
         "source": "国税庁タックスアンサー",
