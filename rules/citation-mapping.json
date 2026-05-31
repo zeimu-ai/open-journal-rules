@@ -43,5 +43,7 @@
   "寄附金": { "tax": "不課税", "expectedNumbers": ["No.5281"] },
   "貸倒金": { "tax": "不課税", "expectedNumbers": ["No.5320"] },
   "貸倒引当金": { "tax": "不課税", "expectedNumbers": ["No.5501"] },
-  "貸倒引当金繰入額": { "tax": "不課税", "expectedNumbers": ["No.5501"] }
+  "貸倒引当金繰入額": { "tax": "不課税", "expectedNumbers": ["No.5501"] },
+  "固定資産売却損益": { "tax": "課税売上10%", "expectedNumbers": ["No.6105"] },
+  "有価証券売却損益": { "tax": "非課税", "expectedNumbers": ["No.6201"] }
 }

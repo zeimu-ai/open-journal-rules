@@ -28,6 +28,46 @@
         "note": { "type": "string" }
       }
     },
+    "twoRatioSpecial": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "deductionRatio", "applicablePeriod", "note", "citation"],
+      "properties": {
+        "description": { "type": "string" },
+        "deductionRatio": { "type": "number", "minimum": 0, "maximum": 1 },
+        "applicablePeriod": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to"],
+          "properties": {
+            "from": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+            "to": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+          }
+        },
+        "note": { "type": "string" },
+        "citation": { "$ref": "#/properties/citation" }
+      }
+    },
+    "smallAmountException": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["description", "thresholdYen", "applicablePeriod", "note", "citation"],
+      "properties": {
+        "description": { "type": "string" },
+        "thresholdYen": { "type": "integer", "minimum": 0 },
+        "applicablePeriod": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["from", "to"],
+          "properties": {
+            "from": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" },
+            "to": { "type": "string", "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$" }
+          }
+        },
+        "note": { "type": "string" },
+        "citation": { "$ref": "#/properties/citation" }
+      }
+    },
     "citation": {
       "type": "object",
       "additionalProperties": false,
