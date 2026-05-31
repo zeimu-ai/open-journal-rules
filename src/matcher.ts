@@ -10,6 +10,7 @@
  *   3. confidence (降順)
  */
 import { normalizeText } from "./normalize";
+import { appliesToEntity, type ConcreteEntity } from "./entity";
 
 /** マッチングルールの型定義 (journal-rules.json の構造と互換) */
 export interface MatchRule {
@@ -24,6 +25,8 @@ export interface MatchRule {
   priority?: number;
   /** これらの文字列が説明文に含まれていた場合、このルールを除外する */
   excludePatterns?: string[];
+  /** 適用主体 (省略時 = both)。individual/corporation 専用ルールの絞り込みに使う */
+  applicableEntity?: "individual" | "corporation" | "both";
   // journal-rules.json に存在するその他フィールドは任意
   [key: string]: unknown;
 }
@@ -46,13 +49,22 @@ export interface MatchResult {
  *
  * @param description - 照合対象の説明文字列（摘要等）
  * @param rules       - 照合対象のルール配列
+ * @param entity      - 任意。指定すると当該主体(individual/corporation)に適用されない
+ *                      ルール(applicableEntity が他方専用)を除外する。未指定なら全ルールが対象。
  * @returns マッチしたルールの配列（ベストマッチが先頭）
  */
-export function match(description: string, rules: MatchRule[]): MatchResult[] {
+export function match(
+  description: string,
+  rules: MatchRule[],
+  entity?: ConcreteEntity,
+): MatchResult[] {
   const normalizedDesc = normalizeText(description);
   const results: MatchResult[] = [];
 
   for (const rule of rules) {
+    // entity 指定時: 当該主体に適用されないルール(他方専用)をスキップ
+    if (entity && !appliesToEntity(rule, entity)) continue;
+
     // excludePatterns チェック: 正規化後の説明文に除外パターンが含まれたらスキップ
     if (rule.excludePatterns && rule.excludePatterns.length > 0) {
       const shouldExclude = rule.excludePatterns.some((ep) =>
