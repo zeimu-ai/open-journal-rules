@@ -1594,5 +1594,193 @@
         "authority_level": "notice"
       }
     ]
+  },
+  {
+    "id": 97,
+    "name": "創立費",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "法人の設立のために支出する費用（発起人に支払う報酬、設立登記の登録免許税その他法人の負担に帰すべきもの）。損金経理を条件に未償却残額の全額を任意償却できる（法人税法第32条第1項・施行令第64条第1項第1号）。消費税は支出の構成要素ごとに判定する。",
+    "examples": [
+      "発起人報酬",
+      "設立登記の登録免許税",
+      "定款認証費用"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+    "applicableEntity": "corporation",
+    "citations": [
+      {
+        "source": "法人税法施行令",
+        "number": "第14条第1項第1号",
+        "title": "繰延資産の範囲（創立費）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "創立費の定義（発起人報酬・設立登記登録免許税その他法人の設立のために支出する費用で当該法人の負担に帰すべきもの）",
+        "authority_level": "cabinet_order"
+      },
+      {
+        "source": "法人税法施行令",
+        "number": "第64条第1項第1号",
+        "title": "繰延資産の償却限度額（任意償却）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "令14条1項1〜5号の繰延資産の償却限度額は未償却残額の全額＝任意償却",
+        "authority_level": "cabinet_order"
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "name": "開業費",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "事業開始までの開業準備のために特別に支出する費用。法人は任意償却（施行令第64条第1項第1号）、個人は60月均等償却が原則だが確定申告書に記載した金額により任意償却も可（所得税法施行令第137条第3項）。消費税は支出の構成要素ごとに判定する。",
+    "examples": [
+      "開業前の広告宣伝費",
+      "開業準備の賃借料",
+      "開業前の使用人給与"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "法人税法施行令",
+        "number": "第14条第1項第2号",
+        "title": "繰延資産の範囲（開業費・法人）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "法人の開業費の定義（設立後事業開始までの開業準備のための特別支出）",
+        "authority_level": "cabinet_order"
+      },
+      {
+        "source": "所得税法施行令",
+        "number": "第7条第1項第1号",
+        "title": "繰延資産の範囲（開業費・個人）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000096",
+        "verified_at": "2026-05-31",
+        "reason": "個人の開業費の定義（不動産・事業・山林所得を生ずべき事業の開業準備のための特別支出）",
+        "authority_level": "cabinet_order"
+      },
+      {
+        "source": "所得税法施行令",
+        "number": "第137条第3項",
+        "title": "繰延資産の償却費（任意償却・個人）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000096",
+        "verified_at": "2026-05-31",
+        "reason": "確定申告書に繰延資産の額の範囲内の金額を記載した場合はその金額を償却費とする（任意償却）",
+        "authority_level": "cabinet_order"
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "name": "開発費",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "新たな技術・新たな経営組織の採用、資源の開発又は市場の開拓のために特別に支出する費用。法人は任意償却、個人は60月均等償却（確定申告書記載により任意償却も可）。消費税は支出の構成要素ごとに判定する。",
+    "examples": [
+      "新技術開発の特別費用",
+      "新経営組織採用の特別費用",
+      "新市場開拓の特別調査費"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "法人税法施行令",
+        "number": "第14条第1項第3号",
+        "title": "繰延資産の範囲（開発費・法人）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "法人の開発費の定義（新技術・新経営組織の採用、資源開発、市場開拓のための特別支出）",
+        "authority_level": "cabinet_order"
+      },
+      {
+        "source": "所得税法施行令",
+        "number": "第7条第1項第2号",
+        "title": "繰延資産の範囲（開発費・個人）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000096",
+        "verified_at": "2026-05-31",
+        "reason": "個人の開発費の定義（法人と同一文言）",
+        "authority_level": "cabinet_order"
+      },
+      {
+        "source": "所得税法施行令",
+        "number": "第137条第3項",
+        "title": "繰延資産の償却費（任意償却・個人）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000096",
+        "verified_at": "2026-05-31",
+        "reason": "137条1項1号(第7条1項1号・2号＝開業費・開発費)の繰延資産は確定申告書に記載した範囲内の金額を償却費とできる（任意償却）。e-Gov法令で逐語確認済み。",
+        "authority_level": "cabinet_order"
+      }
+    ]
+  },
+  {
+    "id": 100,
+    "name": "株式交付費",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "株券等の印刷費、資本金の増加の登記の登録免許税その他自己の株式（出資を含む）の交付のために支出する費用。任意償却（施行令第64条第1項第1号）。増資時の公募費用等が代表例。消費税は支出の構成要素ごとに判定する。",
+    "examples": [
+      "増資時の株券印刷費",
+      "資本金増加登記の登録免許税",
+      "株式公募費用"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+    "applicableEntity": "corporation",
+    "citations": [
+      {
+        "source": "法人税法施行令",
+        "number": "第14条第1項第4号",
+        "title": "繰延資産の範囲（株式交付費）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "株式交付費の定義（株券等印刷費・資本金増加登記の登録免許税その他自己株式の交付のための支出）",
+        "authority_level": "cabinet_order"
+      },
+      {
+        "source": "法人税法施行令",
+        "number": "第64条第1項第1号",
+        "title": "繰延資産の償却限度額（任意償却）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "令14条1項1〜5号の繰延資産は未償却残額の全額を任意償却可能",
+        "authority_level": "cabinet_order"
+      }
+    ]
+  },
+  {
+    "id": 101,
+    "name": "社債等発行費",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "社債券等の印刷費その他債券（新株予約権を含む）の発行のために支出する費用。任意償却（施行令第64条第1項第1号）。消費税は支出の構成要素ごとに判定する。",
+    "examples": [
+      "社債券印刷費",
+      "社債発行の登記費用",
+      "新株予約権発行費用"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+    "applicableEntity": "corporation",
+    "citations": [
+      {
+        "source": "法人税法施行令",
+        "number": "第14条第1項第5号",
+        "title": "繰延資産の範囲（社債等発行費）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "社債等発行費の定義（社債券等の印刷費その他債券（新株予約権を含む）の発行のための支出）",
+        "authority_level": "cabinet_order"
+      },
+      {
+        "source": "法人税法施行令",
+        "number": "第64条第1項第1号",
+        "title": "繰延資産の償却限度額（任意償却）",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340CO0000000097",
+        "verified_at": "2026-05-31",
+        "reason": "令14条1項1〜5号の繰延資産は未償却残額の全額を任意償却可能",
+        "authority_level": "cabinet_order"
+      }
+    ]
   }
 ]
