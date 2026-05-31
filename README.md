@@ -6,8 +6,8 @@
 
 | ファイル | 内容 | 件数 |
 |---------|------|------|
-| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 52パターン |
-| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 60科目 |
+| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 57パターン |
+| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 63科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 7段階 |
 | `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 38科目 |

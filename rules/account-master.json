@@ -1439,5 +1439,71 @@
         "authority_level": "tax_answer"
       }
     ]
+  },
+  {
+    "id": 90,
+    "name": "寄附金",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "国・地方公共団体・公益法人等への寄附。法人は損金算入限度額あり(No.5281)、個人は寄附金控除。対価性がなく消費税不課税",
+    "examples": [
+      "義援金",
+      "指定寄附金"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5281.htm",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5281",
+        "title": "寄附金の損金算入限度額の計算",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5281.htm",
+        "verified_at": "2026-05-31",
+        "reason": "法人の寄附金は一般寄附金/公益法人等/指定寄附金等の区分で損金算入限度額を計算",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": 91,
+    "name": "貸倒引当金",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "金銭債権の貸倒れに備える評価性引当金（資産のマイナス科目／貸方残高）。個別評価/一括評価に区分(No.5501)。会計上の見積りで消費税不課税",
+    "examples": [],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5501.htm",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5501",
+        "title": "一括評価金銭債権に係る貸倒引当金の設定",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5501.htm",
+        "verified_at": "2026-05-31",
+        "reason": "貸倒引当金は個別評価・一括評価に区分。中小法人等は法定繰入率(業種別1000分の3〜10)が選択可",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": 92,
+    "name": "貸倒引当金繰入額",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "貸倒引当金の繰入額（P/L費用）。借方:貸倒引当金繰入額 / 貸方:貸倒引当金。中小法人等は法定繰入率を選択可(No.5501)。会計上の見積りで消費税不課税",
+    "examples": [],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5501.htm",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5501",
+        "title": "一括評価金銭債権に係る貸倒引当金の設定",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5501.htm",
+        "verified_at": "2026-05-31",
+        "reason": "貸倒引当金は個別評価・一括評価に区分。中小法人等は法定繰入率(業種別1000分の3〜10)が選択可",
+        "authority_level": "tax_answer"
+      }
+    ]
   }
 ]

@@ -12,6 +12,7 @@ const VALID_TAX_CATEGORIES = [
   "非課税",
   "不課税",
   "課税仕入8%（軽減税率）",
+  "免税",
 ];
 
 describe("journal-rules.json", () => {

@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.0] - 2026-05-31
+
+Phase 3-A（検証可能な税務コンテンツ）。citation は国税庁ページを実装者が WebFetch し逐語確認（No.6551/No.5281/No.5320/No.5501/No.7141）。
+
+### Added
+
+- **#38 輸出免税**: `rule-53` 輸出売上（売上高・**免税**、No.6551）。rules テストの有効税区分に「免税」を追加
+- **#40 寄附金・貸倒・引当金**: `rule-54` 寄附金（不課税・No.5281、損金算入限度/寄附金控除を notes 化）/ `rule-55` 貸倒損失（貸倒金・3区分・No.5320）/ `rule-56` 貸倒引当金繰入（No.5501）。科目 `寄附金`(expense)・`貸倒引当金繰入額`(expense)・`貸倒引当金`(asset=評価性引当金) を追加
+- **#42 印紙税**: `rule-57` 収入印紙・印紙税（租税公課・不課税・No.7141、領収書5万円未満非課税・課税文書を notes 化）
+- `tests/phase3a-content.test.ts`
+
 ## [0.9.0] - 2026-05-31
 
 Phase 2E（マッチング／金額×科目の交互作用）。
