@@ -3074,5 +3074,196 @@
       }
     ],
     "id": "rule-88"
+  },
+  {
+    "name": "減価償却費",
+    "patterns": [
+      "減価償却費"
+    ],
+    "matchType": "partial",
+    "accountName": "減価償却費",
+    "taxCategory": "不課税",
+    "confidence": 0.95,
+    "applicableEntity": "both",
+    "notes": "固定資産の取得価額を耐用年数にわたり費用配分する内部計算。第三者への対価支払を伴わないため消費税は不課税（資産取得時に課税仕入として控除済み）。個人は定額法が法定、法人は建物・建物附属設備・構築物を除き定率法が法定（届出で選択可）。詳細は rules/depreciation-methods.json 参照。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2106.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2106",
+        "title": "定額法と定率法による減価償却（平成19年4月1日以後に取得する場合）",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2106.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-89"
+  },
+  {
+    "name": "家事按分（地代家賃・自宅兼事務所）",
+    "patterns": [
+      "地代家賃 按分",
+      "自宅兼事務所 家賃",
+      "事務所家賃 按分",
+      "家事按分 家賃",
+      "家賃 按分",
+      "按分 家賃"
+    ],
+    "matchType": "partial",
+    "accountName": "地代家賃",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.8,
+    "priority": 1,
+    "applicableEntity": "individual",
+    "notes": "個人事業主が自宅兼事務所等の家賃を事業用と家事用に合理的基準で按分し、事業按分相当のみ必要経費算入（所法45①一・所令96・所基通45-2）。家事使用分は事業主貸へ振替。なお居住用契約の家賃は消費税非課税（rule-38）、事業用契約は課税仕入10%で、按分対象の税区分は元の契約に従う。",
+    "excludePatterns": [
+      "専用事務所",
+      "事業専用"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+    "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第45条第1項第1号",
+        "title": "家事関連費等の必要経費不算入",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-06-01",
+        "authority_level": "statute"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2210",
+        "title": "必要経費の知識",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-90"
+  },
+  {
+    "name": "家事按分（水道光熱費・自宅兼事務所）",
+    "patterns": [
+      "水道光熱費 按分",
+      "電気代 按分",
+      "ガス代 按分",
+      "家事按分 光熱費",
+      "光熱費 按分",
+      "按分 電気"
+    ],
+    "matchType": "partial",
+    "accountName": "水道光熱費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.8,
+    "priority": 1,
+    "applicableEntity": "individual",
+    "notes": "自宅兼事務所の水道光熱費を事業割合で按分し事業按分相当のみ必要経費算入（所法45①一・所基通45-2）。床面積・使用時間等の合理的基準による。家事使用分は事業主貸へ振替。",
+    "excludePatterns": [
+      "専用事務所"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+    "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第45条第1項第1号",
+        "title": "家事関連費等の必要経費不算入",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-06-01",
+        "authority_level": "statute"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2210",
+        "title": "必要経費の知識",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-91"
+  },
+  {
+    "name": "家事按分（通信費・自宅兼用回線）",
+    "patterns": [
+      "通信費 按分",
+      "インターネット 按分",
+      "携帯 按分",
+      "家事按分 通信",
+      "回線 按分",
+      "電話代 按分"
+    ],
+    "matchType": "partial",
+    "accountName": "通信費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.8,
+    "priority": 1,
+    "applicableEntity": "individual",
+    "notes": "自宅兼用の電話・インターネット等の通信費を事業割合で按分（所法45①一・所基通45-2）。使用時間・業務利用割合等の合理的基準による。家事使用分は事業主貸へ振替。",
+    "excludePatterns": [
+      "専用回線",
+      "業務専用"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+    "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第45条第1項第1号",
+        "title": "家事関連費等の必要経費不算入",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-06-01",
+        "authority_level": "statute"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2210",
+        "title": "必要経費の知識",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-92"
+  },
+  {
+    "name": "家事按分（車両費・事業兼プライベート）",
+    "patterns": [
+      "車両費 按分",
+      "ガソリン代 按分",
+      "駐車場 按分",
+      "家事按分 車",
+      "自動車 按分",
+      "車 按分"
+    ],
+    "matchType": "partial",
+    "accountName": "車両費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.8,
+    "priority": 1,
+    "applicableEntity": "individual",
+    "notes": "事業とプライベート兼用の車両に係る費用（ガソリン・駐車場・車検等）を走行距離・使用日数等の合理的基準で按分（所法45①一・所基通45-2）。家事使用分は事業主貸へ振替。",
+    "excludePatterns": [
+      "専用車両",
+      "業務専用車"
+    ],
+    "sourceUrl": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+    "citations": [
+      {
+        "source": "所得税法",
+        "number": "所得税法第45条第1項第1号",
+        "title": "家事関連費等の必要経費不算入",
+        "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+        "verified_at": "2026-06-01",
+        "authority_level": "statute"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2210",
+        "title": "必要経費の知識",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-93"
   }
 ]

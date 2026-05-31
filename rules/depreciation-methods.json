@@ -1,0 +1,76 @@
+{
+  "description": "減価償却の償却方法（定額法・定率法）の主体別法定方法と、中古資産の簡便法による耐用年数の算定。No.2100・No.2106・No.5404 で逐語確認。少額減価償却資産・一括償却資産・少額特例の金額閾値は amount-thresholds.json を参照。",
+  "methods": [
+    {
+      "name": "定額法",
+      "description": "毎年同額の償却費を計上する方法。計算式: 取得価額 × 定額法の償却率",
+      "note": "平成19年4月1日以後取得資産について適用。残存簿価1円まで償却可能。"
+    },
+    {
+      "name": "定率法",
+      "description": "期首未償却残高に一定率を乗じて償却費を計算する方法。初年度が最大で年々減少する。調整前償却額が償却保証額（取得価額×保証率）を下回った年以降は改定取得価額×改定償却率による均等償却に切り替わる。"
+    }
+  ],
+  "entityDefaults": {
+    "individual": {
+      "defaultMethod": "定額法",
+      "note": "個人事業主の法定償却方法は定額法。届出により定率法を選択可。",
+      "buildingRule": "建物（平成10年4月1日以後取得）・建物附属設備および構築物（平成28年4月1日以後取得）は定額法のみ。"
+    },
+    "corporation": {
+      "defaultMethod": "定率法",
+      "note": "法人の法定償却方法は、建物・建物附属設備・構築物を除く有形減価償却資産について定率法。届出により定額法を選択可。",
+      "buildingRule": "建物（平成10年4月1日以後取得）・建物附属設備および構築物（平成28年4月1日以後取得）は定額法のみ。"
+    }
+  },
+  "usedAssetSimplified": {
+    "description": "中古資産を事業用に取得し、残存使用可能期間の見積りが困難なときに使用できる簡便法による耐用年数の算定（耐用年数省令第3条・No.5404）。",
+    "formulaPartial": "（法定耐用年数 − 経過年数） ＋ 経過年数 × 20%",
+    "formulaFull": "法定耐用年数 × 20%（法定耐用年数の全部を経過している場合）",
+    "rules": [
+      "1年未満の端数は切り捨てる",
+      "算出年数が2年未満の場合は2年とする",
+      "取得後に支出した資本的支出が再取得価額の50%を超える場合は簡便法を適用できない",
+      "事業の用に供した事業年度においてのみ算定できる（後年度での算定は不可）"
+    ],
+    "examplePartial": "法定耐用年数30年・経過年数10年 → (30−10) + 10×20% = 22年",
+    "exampleFull": "法定耐用年数30年・全部経過 → 30×20% = 6年"
+  },
+  "citations": [
+    {
+      "source": "国税庁タックスアンサー",
+      "number": "No.2106",
+      "title": "定額法と定率法による減価償却（平成19年4月1日以後に取得する場合）",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2106.htm",
+      "verified_at": "2026-06-01",
+      "authority_level": "tax_answer",
+      "evidenceQuote": "償却費の額が原則として毎年同額となる（定額法）／償却費の額は初めの年ほど多く、年とともに減少する（定率法）"
+    },
+    {
+      "source": "国税庁タックスアンサー",
+      "number": "No.2100",
+      "title": "減価償却のあらまし",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2100.htm",
+      "verified_at": "2026-06-01",
+      "authority_level": "tax_answer",
+      "evidenceQuote": "平成28年4月1日以後に取得した建物附属設備および構築物の償却方法は定額法となります"
+    },
+    {
+      "source": "国税庁タックスアンサー",
+      "number": "No.5404",
+      "title": "中古資産の耐用年数",
+      "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5404.htm",
+      "verified_at": "2026-06-01",
+      "authority_level": "tax_answer",
+      "evidenceQuote": "その法定耐用年数から経過した年数を差し引いた年数に、経過年数の20パーセントに相当する年数を加えた年数／その年数が2年に満たない場合には2年とします"
+    },
+    {
+      "source": "減価償却資産の耐用年数等に関する省令",
+      "number": "耐用年数省令第3条",
+      "title": "中古資産の耐用年数",
+      "url": "https://laws.e-gov.go.jp/api/1/lawdata/340M50000040015",
+      "verified_at": "2026-06-01",
+      "authority_level": "ministerial_ordinance"
+    }
+  ]
+}

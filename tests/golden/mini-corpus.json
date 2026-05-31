@@ -483,5 +483,25 @@
     "input": "繰越利益 振替",
     "expectedAccountName": "繰越利益剰余金",
     "expectedTaxCategory": "不課税"
+  },
+  {
+    "input": "減価償却費 計上 5月",
+    "expectedAccountName": "減価償却費",
+    "expectedTaxCategory": "不課税"
+  },
+  {
+    "input": "水道光熱費 按分 事業分",
+    "expectedAccountName": "水道光熱費",
+    "expectedTaxCategory": "課税仕入10%"
+  },
+  {
+    "input": "通信費 按分",
+    "expectedAccountName": "通信費",
+    "expectedTaxCategory": "課税仕入10%"
+  },
+  {
+    "input": "車両費 按分",
+    "expectedAccountName": "車両費",
+    "expectedTaxCategory": "課税仕入10%"
   }
 ]
