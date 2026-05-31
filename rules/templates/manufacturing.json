@@ -2,7 +2,7 @@
   {
     "id": "tmpl-manufacturing-01",
     "name": "材料費",
-    "patterns": ["材料仕入", "原材料", "素材仕入", "部品仕入"],
+    "patterns": ["原材料", "素材仕入", "部品仕入"],
     "matchType": "partial",
     "accountName": "材料費",
     "taxCategory": "課税仕入10%",

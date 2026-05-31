@@ -2,7 +2,7 @@
   {
     "id": "tmpl-logistics-01",
     "name": "燃料費",
-    "patterns": ["燃料", "軽油", "ガソリン", "ENEOS", "出光", "コスモ"],
+    "patterns": ["燃料", "軽油", "ガソリン", "コスモ"],
     "matchType": "partial",
     "accountName": "燃料費",
     "taxCategory": "課税仕入10%",

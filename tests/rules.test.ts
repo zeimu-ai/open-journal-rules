@@ -158,3 +158,48 @@ describe("amount-thresholds.json", () => {
     }
   });
 });
+
+describe("excludePatterns", () => {
+  type RuleWithExclude = {
+    id: string;
+    excludePatterns?: string[];
+  };
+
+  it("rule-02(水道光熱費) は excludePatterns を持つこと", () => {
+    const rule = (rules as RuleWithExclude[]).find((r) => r.id === "rule-02");
+    expect(rule?.excludePatterns).toBeDefined();
+    expect(Array.isArray(rule?.excludePatterns)).toBe(true);
+    expect(rule?.excludePatterns).toContain("ガスター");
+    expect(rule?.excludePatterns).toContain("ガスコンロ");
+    expect(rule?.excludePatterns).toContain("ガスケット");
+  });
+
+  it("rule-04(旅費交通費) は excludePatterns を持つこと", () => {
+    const rule = (rules as RuleWithExclude[]).find((r) => r.id === "rule-04");
+    expect(rule?.excludePatterns).toBeDefined();
+    expect(Array.isArray(rule?.excludePatterns)).toBe(true);
+    expect(rule?.excludePatterns).toContain("バスタオル");
+    expect(rule?.excludePatterns).toContain("バスマット");
+    expect(rule?.excludePatterns).toContain("バスソルト");
+    expect(rule?.excludePatterns).toContain("バスケット");
+  });
+
+  it("rule-03(消耗品費EC) は excludePatterns を持つこと", () => {
+    const rule = (rules as RuleWithExclude[]).find((r) => r.id === "rule-03");
+    expect(rule?.excludePatterns).toBeDefined();
+    expect(Array.isArray(rule?.excludePatterns)).toBe(true);
+    expect(rule?.excludePatterns).toContain("Amazon Web Services");
+    expect(rule?.excludePatterns).toContain("AWS");
+    expect(rule?.excludePatterns).toContain("Kindle");
+  });
+
+  it("excludePatterns の各要素は string であること", () => {
+    for (const rule of rules as RuleWithExclude[]) {
+      if (rule.excludePatterns) {
+        for (const p of rule.excludePatterns) {
+          expect(typeof p).toBe("string");
+        }
+      }
+    }
+  });
+});
