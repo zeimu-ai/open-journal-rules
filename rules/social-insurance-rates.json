@@ -1,0 +1,233 @@
+{
+  "_meta": {
+    "description": "日本の社会保険料率（給与計算・社会保険ドメイン）。各レコードは effectiveFrom(施行日) を持ち、pitto DB の rule_versions.effective_from / effective_to と互換(YYYY-MM-DD)。",
+    "prefectureCoverage": "健康保険の都道府県別料率は代表4都府県(東京/大阪/愛知/福岡)のみ収録。47都道府県フル展開は将来課題。",
+    "verifiedNote": "全料率を一次資料(日本年金機構 令和8年度保険料額表PDF / 協会けんぽ 都道府県別料率 / 厚生労働省 雇用保険料率PDF)で逐語確認(2026-05-31)。"
+  },
+  "rates": [
+    {
+      "key": "kosei_nenkin",
+      "label": "厚生年金保険料率（一般・坑内員・船員）",
+      "insuranceType": "厚生年金",
+      "scope": "national",
+      "rateTotalPercent": 18.3,
+      "rateEmployeePercent": 9.15,
+      "rateEmployerPercent": 9.15,
+      "effectiveFrom": "2017-09-01",
+      "effectiveTo": null,
+      "notes": "平成29年(2017年)9月1日以降18.3%で固定(厚生年金保険法の法定上限)。被保険者・事業主が各9.15%を折半負担。標準報酬月額は第1等級(88,000円)〜第32等級(650,000円)。",
+      "citations": [
+        {
+          "source": "日本年金機構",
+          "title": "厚生年金保険料額表（令和8年度版 R08ryougaku.pdf）",
+          "url": "https://www.nenkin.go.jp/service/kounen/hokenryo/ryogaku/ryogakuhyo/20200825.files/R08ryougaku.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "statute",
+          "evidenceQuote": "厚生年金保険料率 全額 18.300％ ／ 折半 9.150％（平成29年9月1日〜適用）"
+        }
+      ]
+    },
+    {
+      "key": "kenko_hoken_tokyo",
+      "label": "健康保険料率（東京都・令和8年度）",
+      "insuranceType": "健康保険",
+      "scope": "prefecture",
+      "prefecture": "東京都",
+      "rateTotalPercent": 9.85,
+      "rateEmployeePercent": 4.925,
+      "rateEmployerPercent": 4.925,
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "notes": "協会けんぽ 令和8年度料率。3月分(4月納付分)から適用。被保険者・事業主で折半。令和7年度9.91%から改定。40〜64歳は介護保険料率(kaigo_hoken)を加算。",
+      "citations": [
+        {
+          "source": "全国健康保険協会（協会けんぽ）",
+          "title": "令和8年度 都道府県毎の保険料率",
+          "url": "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08/",
+          "verified_at": "2026-05-31",
+          "authority_level": "public_rate_table",
+          "evidenceQuote": "東京都 9.91％ → 9.85％（令和7年度→令和8年度）／令和8年度の協会けんぽの保険料率は3月分（4月納付分）から改定されます"
+        }
+      ]
+    },
+    {
+      "key": "kenko_hoken_osaka",
+      "label": "健康保険料率（大阪府・令和8年度）",
+      "insuranceType": "健康保険",
+      "scope": "prefecture",
+      "prefecture": "大阪府",
+      "rateTotalPercent": 10.13,
+      "rateEmployeePercent": 5.065,
+      "rateEmployerPercent": 5.065,
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "notes": "協会けんぽ 令和8年度料率。3月分(4月納付分)から適用。被保険者・事業主で折半。令和7年度10.24%から改定。40〜64歳は介護保険料率(kaigo_hoken)を加算。",
+      "citations": [
+        {
+          "source": "全国健康保険協会（協会けんぽ）",
+          "title": "令和8年度 都道府県毎の保険料率",
+          "url": "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08/",
+          "verified_at": "2026-05-31",
+          "authority_level": "public_rate_table",
+          "evidenceQuote": "大阪府 10.24％ → 10.13％（令和7年度→令和8年度）／令和8年度の協会けんぽの保険料率は3月分（4月納付分）から改定されます"
+        }
+      ]
+    },
+    {
+      "key": "kenko_hoken_aichi",
+      "label": "健康保険料率（愛知県・令和8年度）",
+      "insuranceType": "健康保険",
+      "scope": "prefecture",
+      "prefecture": "愛知県",
+      "rateTotalPercent": 9.93,
+      "rateEmployeePercent": 4.965,
+      "rateEmployerPercent": 4.965,
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "notes": "協会けんぽ 令和8年度料率。3月分(4月納付分)から適用。被保険者・事業主で折半。令和7年度10.03%から改定。40〜64歳は介護保険料率(kaigo_hoken)を加算。",
+      "citations": [
+        {
+          "source": "全国健康保険協会（協会けんぽ）",
+          "title": "令和8年度 都道府県毎の保険料率",
+          "url": "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08/",
+          "verified_at": "2026-05-31",
+          "authority_level": "public_rate_table",
+          "evidenceQuote": "愛知県 10.03％ → 9.93％（令和7年度→令和8年度）／令和8年度の協会けんぽの保険料率は3月分（4月納付分）から改定されます"
+        }
+      ]
+    },
+    {
+      "key": "kenko_hoken_fukuoka",
+      "label": "健康保険料率（福岡県・令和8年度）",
+      "insuranceType": "健康保険",
+      "scope": "prefecture",
+      "prefecture": "福岡県",
+      "rateTotalPercent": 10.11,
+      "rateEmployeePercent": 5.055,
+      "rateEmployerPercent": 5.055,
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "notes": "協会けんぽ 令和8年度料率。3月分(4月納付分)から適用。被保険者・事業主で折半。令和7年度10.31%から改定。40〜64歳は介護保険料率(kaigo_hoken)を加算。",
+      "citations": [
+        {
+          "source": "全国健康保険協会（協会けんぽ）",
+          "title": "令和8年度 都道府県毎の保険料率",
+          "url": "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/rate_prefectures/r08/",
+          "verified_at": "2026-05-31",
+          "authority_level": "public_rate_table",
+          "evidenceQuote": "福岡県 10.31％ → 10.11％（令和7年度→令和8年度）／令和8年度の協会けんぽの保険料率は3月分（4月納付分）から改定されます"
+        }
+      ]
+    },
+    {
+      "key": "kaigo_hoken",
+      "label": "介護保険料率（全国一律・令和8年度）",
+      "insuranceType": "介護保険",
+      "scope": "national",
+      "rateTotalPercent": 1.62,
+      "rateEmployeePercent": 0.81,
+      "rateEmployerPercent": 0.81,
+      "effectiveFrom": "2026-03-01",
+      "effectiveTo": null,
+      "notes": "40歳〜64歳(介護保険第2号被保険者)に適用。健康保険料率に加算。被保険者・事業主で折半。令和7年度1.59%から引上げ。",
+      "citations": [
+        {
+          "source": "全国健康保険協会（協会けんぽ）",
+          "title": "介護保険料率について",
+          "url": "https://www.kyoukaikenpo.or.jp/about/business/insurance_rate/002",
+          "verified_at": "2026-05-31",
+          "authority_level": "public_rate_table",
+          "evidenceQuote": "一般被保険者 令和8年3月分（4月30日納付期限分）から 1.62％／40歳から64歳までの介護保険第2号被保険者に該当する方の…健康保険料率に…介護保険料率を加えたものになります"
+        }
+      ]
+    },
+    {
+      "key": "koyo_hoken_ippan",
+      "label": "雇用保険料率（一般の事業・令和8年度）",
+      "insuranceType": "雇用保険",
+      "scope": "national",
+      "rateEmployeePercent": 0.5,
+      "rateEmployerPercent": 0.85,
+      "rateTotalPercent": 1.35,
+      "effectiveFrom": "2026-04-01",
+      "effectiveTo": "2027-03-31",
+      "notes": "労働者5/1000＋事業主8.5/1000(失業等給付・育休給付5/1000＋雇用保険二事業3.5/1000)＝合計13.5/1000。令和7年度は労5.5/事9/計14.5。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "令和8年度 雇用保険料率のご案内",
+          "url": "https://www.mhlw.go.jp/content/001692566.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "一般の事業 5/1,000 8.5/1,000 5/1,000 3.5/1,000 13.5/1,000（令和8年4月1日〜令和9年3月31日）"
+        }
+      ]
+    },
+    {
+      "key": "koyo_hoken_norin",
+      "label": "雇用保険料率（農林水産・清酒製造の事業・令和8年度）",
+      "insuranceType": "雇用保険",
+      "scope": "national",
+      "rateEmployeePercent": 0.6,
+      "rateEmployerPercent": 0.95,
+      "rateTotalPercent": 1.55,
+      "effectiveFrom": "2026-04-01",
+      "effectiveTo": "2027-03-31",
+      "notes": "失業等給付等は労使各6/1000、雇用保険二事業3.5/1000。園芸サービス・酪農等一部は一般の事業の率を適用。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "令和8年度 雇用保険料率のご案内",
+          "url": "https://www.mhlw.go.jp/content/001692566.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "農林水産・清酒製造の事業 6/1,000 9.5/1,000 6/1,000 3.5/1,000 15.5/1,000"
+        }
+      ]
+    },
+    {
+      "key": "koyo_hoken_kensetsu",
+      "label": "雇用保険料率（建設の事業・令和8年度）",
+      "insuranceType": "雇用保険",
+      "scope": "national",
+      "rateEmployeePercent": 0.6,
+      "rateEmployerPercent": 1.05,
+      "rateTotalPercent": 1.65,
+      "effectiveFrom": "2026-04-01",
+      "effectiveTo": "2027-03-31",
+      "notes": "失業等給付等は労使各6/1000、雇用保険二事業4.5/1000(建設のみ高率)。",
+      "citations": [
+        {
+          "source": "厚生労働省",
+          "title": "令和8年度 雇用保険料率のご案内",
+          "url": "https://www.mhlw.go.jp/content/001692566.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "建設の事業 6/1,000 10.5/1,000 6/1,000 4.5/1,000 16.5/1,000"
+        }
+      ]
+    },
+    {
+      "key": "kodomo_kosodate",
+      "label": "子ども・子育て拠出金率",
+      "insuranceType": "子ども子育て拠出金",
+      "scope": "national",
+      "rateEmployeePercent": 0.0,
+      "rateEmployerPercent": 0.36,
+      "rateTotalPercent": 0.36,
+      "effectiveFrom": "2026-04-01",
+      "effectiveTo": null,
+      "notes": "全額事業主負担(被保険者負担なし)。厚生年金保険の被保険者を使用する事業主が負担。標準報酬月額・標準賞与額(上限150万円/月)に乗じる。令和7年度も0.36%で据え置き。",
+      "citations": [
+        {
+          "source": "日本年金機構",
+          "title": "厚生年金保険料額表（令和8年度版 R08ryougaku.pdf）",
+          "url": "https://www.nenkin.go.jp/service/kounen/hokenryo/ryogaku/ryogakuhyo/20200825.files/R08ryougaku.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "statute",
+          "evidenceQuote": "子ども・子育て拠出金率（令和8年4月1日〜適用）0.36％"
+        }
+      ]
+    }
+  ]
+}

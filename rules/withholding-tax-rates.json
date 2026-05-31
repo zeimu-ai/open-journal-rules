@@ -1,0 +1,127 @@
+{
+  "_meta": {
+    "description": "日本の源泉徴収の税率・算出方式（給与計算・申告ドメイン）。各レコードは effectiveFrom を持ち pitto DB と互換。給与所得の源泉徴収税額表(月額表)そのものは巨大なため外部参照に留める。",
+    "verifiedNote": "報酬源泉(10.21%/20.42%)・復興特別所得税(2.1%)・賞与算出率方式は国税庁タックスアンサーで逐語確認(2026-05-31)。給与月額表は据え置き(verified=false)。"
+  },
+  "rates": [
+    {
+      "key": "gensen_hoshu_shiho",
+      "label": "報酬・料金の源泉徴収（士業・原稿料・講演料等）",
+      "insuranceType": "源泉所得税",
+      "scope": "national",
+      "effectiveFrom": "2013-01-01",
+      "effectiveTo": null,
+      "method": "tiered_rate",
+      "statuteNumber": "所得税法第204条第1項",
+      "brackets": [
+        {
+          "label": "支払金額100万円以下",
+          "upperBound": 1000000,
+          "rate": 10.21,
+          "formula": "A×10.21%"
+        },
+        {
+          "label": "支払金額100万円超の部分",
+          "lowerBound": 1000000,
+          "rate": 20.42,
+          "formula": "(A-100万円)×20.42%＋102,100円"
+        }
+      ],
+      "notes": "所得税10%＋復興特別所得税0.21%＝10.21%(100万円超部分は20%＋0.42%＝20.42%)。対象:原稿料・講演料・弁護士・税理士・司法書士等の報酬等(所得税法204条)。1回5万円以下の賞金・謝金等は源泉不要の特例あり。弁護士・税理士等はNo.2792も参照。",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.2795 原稿料や講演料等を支払ったとき",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2795.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "100万円以下 A×10.21％ ／ 100万円超 （A-100万円）×20.42％＋102,100円"
+        },
+        {
+          "source": "所得税法",
+          "number": "所得税法第204条第1項",
+          "title": "報酬・料金等の源泉徴収",
+          "url": "https://laws.e-gov.go.jp/api/1/lawdata/340AC0000000033",
+          "verified_at": "2026-05-31",
+          "authority_level": "statute",
+          "evidenceQuote": "居住者に対し国内において次に掲げる報酬若しくは料金…の支払をする者は、その支払の際、…所得税を徴収し"
+        }
+      ]
+    },
+    {
+      "key": "fukko_tokubetsu",
+      "label": "復興特別所得税",
+      "insuranceType": "復興特別所得税",
+      "scope": "national",
+      "effectiveFrom": "2013-01-01",
+      "effectiveTo": "2037-12-31",
+      "rateTotalPercent": 2.1,
+      "method": "surcharge_on_income_tax",
+      "combinedExamples": [
+        {
+          "baseIncomeTaxPercent": 10,
+          "combinedPercent": 10.21
+        },
+        {
+          "baseIncomeTaxPercent": 20,
+          "combinedPercent": 20.42
+        }
+      ],
+      "notes": "基準所得税額×2.1%を上乗せ。源泉徴収では所得税と合算して徴収(例 10%→10.21%)。平成25年(2013)〜令和19年(2037)。",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.2260 所得税の税率（復興特別所得税）",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2260.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "平成25年から令和19年までの各年分…所得税と復興特別所得税（原則としてその年分の基準所得税額の2.1パーセント）を併せて申告・納付"
+        }
+      ]
+    },
+    {
+      "key": "gensen_shoyo",
+      "label": "賞与に対する源泉徴収税額の算出率の表",
+      "insuranceType": "源泉所得税",
+      "scope": "national",
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": null,
+      "method": "rate_table_lookup",
+      "notes": "①前月給与から社会保険料等を控除 ②甲欄の算出率表で前月給与額帯と扶養親族数から率を特定 ③(賞与-社保料等)×率＝源泉税額。賞与が前月給与の10倍超は月額表逆算方式。令和8年分税額表に収録。",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "No.2523 賞与に対する源泉徴収",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2523.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "tax_answer",
+          "evidenceQuote": "（1）前月の給与から社会保険料等を差し引きます。（2）算出率の表の甲欄の…「賞与の金額に乗ずべき率」欄との交わるところに記載されている税率を求めます。（3）（賞与から社会保険料等を差し引いた金額）×上記（2）の税率"
+        }
+      ]
+    },
+    {
+      "key": "gensen_kyuyo_gakuhyo",
+      "label": "給与所得の源泉徴収税額表（月額表・甲乙欄）",
+      "insuranceType": "源泉所得税",
+      "scope": "national",
+      "effectiveFrom": "2026-01-01",
+      "effectiveTo": null,
+      "method": "tax_table_lookup",
+      "notes": "【据え置き】税額表本体は巨大かつ毎年改定のため本データセットには収録せず外部参照のみ。甲欄=扶養控除等申告書提出者(扶養人数別)、乙欄=未提出者。逐語確認は税額表PDFが必要なため verified=false。将来 effectiveFrom 付きで構造化収録を検討。",
+      "verified": false,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "令和8年分 源泉徴収税額表（給与所得の源泉徴収税額表）",
+          "url": "https://www.nta.go.jp/users/gensen/zeigaku/index.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "reference",
+          "evidenceQuote": "給与所得の源泉徴収税額表(月額表・日額表)。甲欄・乙欄"
+        }
+      ]
+    }
+  ]
+}

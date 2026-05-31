@@ -9,6 +9,10 @@ import thresholds from "../rules/amount-thresholds.json";
 import ruleSchema from "../schemas/journal-rule.schema.json";
 import accountSchema from "../schemas/account-item.schema.json";
 import thresholdSchema from "../schemas/amount-threshold.schema.json";
+import socialInsuranceRaw from "../rules/social-insurance-rates.json";
+import withholdingRaw from "../rules/withholding-tax-rates.json";
+import socialInsuranceSchema from "../schemas/social-insurance-rate.schema.json";
+import withholdingSchema from "../schemas/withholding-tax-rate.schema.json";
 
 interface RuleEntry {
   id: string;
@@ -120,6 +124,30 @@ describe("JSON Schema validation", () => {
       }
       if (errors.length > 0) {
         expect.fail(`スキーマ違反:\n${errors.join("\n")}`);
+      }
+    });
+  });
+
+  describe("social-insurance-rates.json", () => {
+    const validate = ajv.compile(socialInsuranceSchema);
+    it("社会保険料率データセットがスキーマに適合すること", () => {
+      const valid = validate(socialInsuranceRaw);
+      if (!valid) {
+        expect.fail(
+          `スキーマ違反:\n${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join("\n")}`,
+        );
+      }
+    });
+  });
+
+  describe("withholding-tax-rates.json", () => {
+    const validate = ajv.compile(withholdingSchema);
+    it("源泉徴収データセットがスキーマに適合すること", () => {
+      const valid = validate(withholdingRaw);
+      if (!valid) {
+        expect.fail(
+          `スキーマ違反:\n${validate.errors?.map((e) => `${e.instancePath} ${e.message}`).join("\n")}`,
+        );
       }
     });
   });

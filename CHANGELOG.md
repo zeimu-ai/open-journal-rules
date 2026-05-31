@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.17.0] - 2026-05-31
+
+**会計ドメインのみだった OJR を給与計算・社会保険ドメインへ拡張**（pitto の月次会計・給与計算・社保ユースケース対応 / ADR-011 マルチドメイン構想）。全料率は一次資料で逐語確認し、各レコードに施行日(effectiveFrom)を必須化（pitto DB `rule_versions.effective_from` 互換）。
+
+### Added
+
+- **`rules/social-insurance-rates.json`（10件）**: 社会保険料率
+  - 厚生年金 18.3%（折半9.15%, 2017-09-01〜固定）/ 子ども・子育て拠出金 0.36%（全額事業主）← 日本年金機構 令和8年度保険料額表PDFで逐語確認
+  - 健康保険 協会けんぽ令和8年度（東京9.85/大阪10.13/愛知9.93/福岡10.11%, 2026-03-01〜）+ 介護保険1.62%（全国一律）← 協会けんぽで逐語確認。47都道府県フル展開は将来課題
+  - 雇用保険 令和8年度（一般0.5/0.85/1.35%・農林水産0.6/0.95/1.55%・建設0.6/1.05/1.65%, 2026-04-01〜2027-03-31）← 厚生労働省 雇用保険料率PDFで逐語確認
+- **`rules/withholding-tax-rates.json`（4件）**: 源泉徴収の税率・算出方式
+  - 報酬・料金の源泉徴収 10.21%/20.42%（所得税法204条）・復興特別所得税 2.1%（〜2037-12-31）・賞与の算出率方式 ← 国税庁タックスアンサーで逐語確認
+  - 給与所得の源泉徴収税額表（月額表）は巨大かつ毎年改定のため外部参照に留め、`verified: false` で据え置き（捏造回避）
+- `schemas/social-insurance-rate.schema.json` / `schemas/withholding-tax-rate.schema.json`（effectiveFrom 必須・citations に evidenceQuote）
+- `tests/phase8-payroll-shaho.test.ts`（料率の内部整合・折半検算を含む）。schema.test に2データセットの検証を追加
+
+### Notes
+
+- 全レコードに `effectiveFrom`（施行日, YYYY-MM-DD）と任意 `effectiveTo` を付与。料率は年度改定されるため、コンシューマ(pitto等)は対象期間と突き合わせて当時有効な料率を取得する想定
+- 料率の出典SPA/PDFは URL到達性テスト対象外（外部サイトのflakiness回避）。provenance は citations の source/url/verified_at/evidenceQuote で担保
+
 ## [0.16.0] - 2026-05-31
 
 #47（No.2210 catch-all）と #36（タックスアンサー偏重の是正）を法令へ遡及し、#29 繰延資産6号系を追加。全エビデンスは e-Gov 法令API・国税庁通達(curl+iconv で Shift_JIS 逐語確認)から取得し、実装者が一次資料で最終確認。
