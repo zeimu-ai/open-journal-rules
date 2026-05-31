@@ -7,11 +7,21 @@
 | ファイル | 内容 | 件数 |
 |---------|------|------|
 | `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 38パターン |
-| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 31科目 |
+| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 51科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 7段階 |
 | `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 32科目 |
+| `rules/dataset-meta.json` | データセットの前提メタ（対象主体・課税方式） | 1件 |
 | `rules/templates/*.json` | 業種別テンプレート | 13業種 |
+
+### 適用主体・課税方式の前提（v0.5.0〜）
+
+本データセットは**個人事業主・法人の両方**を主対象とします。各ルール／科目は任意フィールド `applicableEntity`（`individual` / `corporation` / `both`、既定 `both`）で適用主体を表します。フィールドが無い場合はエンジン側で `both` とみなします（後方互換）。
+
+- 例: 役員報酬（`rule-20` / 科目 `役員報酬`）は法人固有概念のため `corporation`。
+- `match(description, rules, "individual")` のように第3引数で主体を渡すと、他方専用ルールを除外できます（未指定なら従来通り全ルールが対象）。
+- 期間限定ルール（インボイス経過措置等）は任意フィールド `applicableYear`（`{from, to}`）で適用期間を表します。
+- 消費税は**原則課税**を既定の前提とします（`rules/dataset-meta.json`）。簡易課税・2割特例の控除計算はコンシューマ側の責務です。
 
 ## 使い方
 
@@ -84,6 +94,7 @@ import thresholds from "@zeimu-ai/open-journal-rules/rules/amount-thresholds.jso
 | `@zeimu-ai/open-journal-rules/matcher` | `match()` 関数・型定義 |
 | `@zeimu-ai/open-journal-rules/resolver` | `resolveJournalEntry()` 関数・型定義 |
 | `@zeimu-ai/open-journal-rules/normalize` | `normalizeText()` ユーティリティ |
+| `@zeimu-ai/open-journal-rules/entity` | `getApplicableEntity()` / `appliesToEntity()`（適用主体ヘルパ） |
 | `@zeimu-ai/open-journal-rules/rules/*` | 各データ JSON ファイル |
 | `@zeimu-ai/open-journal-rules/schemas/*` | JSON Schema ファイル |
 
