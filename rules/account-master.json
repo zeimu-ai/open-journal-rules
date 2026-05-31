@@ -1192,6 +1192,15 @@
         "url": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
         "verified_at": "2026-05-31",
         "authority_level": "administrative_form"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.5461",
+        "title": "ソフトウエアの取得価額と耐用年数",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5461.htm",
+        "verified_at": "2026-05-31",
+        "reason": "ソフトウエアは無形固定資産（減価償却資産）。耐用年数は複写販売原本・研究開発用3年、その他（自社利用）5年",
+        "authority_level": "tax_answer"
       }
     ]
   },
@@ -1290,6 +1299,144 @@
         "verified_at": "2026-05-31",
         "authority_level": "tax_answer",
         "reason": "預貯金・貸付金の利子は非課税"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "name": "買掛金",
+    "category": "liability",
+    "taxDefault": "不課税",
+    "description": "仕入・外注等の原価性を有する未払債務",
+    "examples": [
+      "仕入未払",
+      "掛仕入"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表の負債科目として『買掛金』欄が存在"
+      }
+    ]
+  },
+  {
+    "id": 85,
+    "name": "前受金",
+    "category": "liability",
+    "taxDefault": "不課税",
+    "description": "商品・サービス提供前に受領した前受代金（受領時は資金移動で課税対象外）",
+    "examples": [
+      "内金",
+      "手付金"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表の負債科目として『前受金』欄が存在"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "name": "元入金",
+    "category": "equity",
+    "taxDefault": "不課税",
+    "description": "個人事業の純資産（期首資産合計−期首負債合計）。資本取引のため不課税",
+    "examples": [],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "individual",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資本の部に『元入金』欄が存在。元入金=期首資産総額−期首負債総額"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "name": "事業主貸",
+    "category": "asset",
+    "taxDefault": "不課税",
+    "description": "事業資金を私的目的で引き出した際の資本控除科目。資本取引のため不課税",
+    "examples": [
+      "生活費引出"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "individual",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資産側に『事業主貸』欄が存在"
+      }
+    ]
+  },
+  {
+    "id": 88,
+    "name": "事業主借",
+    "category": "equity",
+    "taxDefault": "不課税",
+    "description": "私費を事業に充当した際の資本加算科目。資本取引のため不課税",
+    "examples": [
+      "私費補填"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "applicableEntity": "individual",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資本の部に『事業主借』欄が存在"
+      }
+    ]
+  },
+  {
+    "id": 89,
+    "name": "専従者給与",
+    "category": "expense",
+    "taxDefault": "不課税",
+    "description": "青色事業専従者（生計を一にする配偶者・親族）に支払う給与。届出額の範囲で必要経費算入可（所得税法57条）。給与支払は消費税不課税",
+    "examples": [
+      "青色専従者給与"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2075.htm",
+    "applicableEntity": "individual",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2075",
+        "title": "青色事業専従者給与と事業専従者控除",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2075.htm",
+        "verified_at": "2026-05-31",
+        "reason": "生計を一にする配偶者・親族で専ら事業に従事する者への給与は、届出額の範囲で必要経費に算入できる",
+        "authority_level": "tax_answer"
       }
     ]
   }
