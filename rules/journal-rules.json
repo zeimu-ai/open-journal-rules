@@ -531,15 +531,14 @@
     "name": "会費",
     "patterns": [
       "税理士会",
-      "商工会",
-      "資格更新"
+      "商工会"
     ],
     "matchType": "partial",
     "accountName": "諸会費",
     "taxCategory": "不課税",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5262.htm",
-    "notes": "",
+    "notes": "資格更新料は対価性により区分が分かれるため本ルールでは一律分類しない: (A)行政・法定団体への登録更新/法定講習は租税公課・非課税(消費税法別表第一5号, 基通6-5-1) (B)民間資格(FP・簿記検定等)の更新手数料は支払手数料・課税(基通5-5-3) (C)同業者団体の通常会費は諸会費・不課税。摘要だけで判別できないため本ルールの対象は税理士会・商工会等の団体会費に限定する。",
     "citations": [
       {
         "source": "国税庁タックスアンサー",

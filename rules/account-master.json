@@ -514,8 +514,7 @@
     "description": "会費",
     "examples": [
       "税理士会",
-      "商工会",
-      "資格更新"
+      "商工会"
     ],
     "sourceUrl": "https://www.keisan.nta.go.jp/r5yokuaru/aoiroshinkoku/hitsuyokeihi/index.html",
     "citations": [
