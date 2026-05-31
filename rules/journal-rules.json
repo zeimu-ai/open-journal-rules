@@ -1453,5 +1453,134 @@
         "reason": "預貯金・貸付金の利子は非課税。課税売上割合の計算では非課税売上として分母に算入"
       }
     ]
+  },
+  {
+    "id": "rule-48",
+    "name": "専従者給与",
+    "patterns": [
+      "専従者給与",
+      "青色専従者",
+      "事業専従者給与"
+    ],
+    "matchType": "partial",
+    "accountName": "専従者給与",
+    "taxCategory": "不課税",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2075.htm",
+    "notes": "青色事業専従者（生計を一にする配偶者・親族で専ら事業に従事する者）への給与。事前に『青色事業専従者給与に関する届出書』を提出し、届出額の範囲・労務の対価として相当な金額が必要経費（No.2075）。給与のため消費税は不課税、源泉徴収の対象。",
+    "applicableEntity": "individual",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.2075",
+        "title": "青色事業専従者給与と事業専従者控除",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2075.htm",
+        "verified_at": "2026-05-31",
+        "reason": "生計を一にする配偶者・親族で専ら事業に従事する者への給与は、届出額の範囲で必要経費に算入できる",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-49",
+    "name": "事業主貸",
+    "patterns": [
+      "事業主貸",
+      "事業主貸し"
+    ],
+    "matchType": "partial",
+    "accountName": "事業主貸",
+    "taxCategory": "不課税",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "notes": "個人事業主が事業資金を私的に引き出した際の資本控除科目。資本取引のため消費税不課税。",
+    "applicableEntity": "individual",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資産側『事業主貸』"
+      }
+    ]
+  },
+  {
+    "id": "rule-50",
+    "name": "事業主借",
+    "patterns": [
+      "事業主借",
+      "事業主借り"
+    ],
+    "matchType": "partial",
+    "accountName": "事業主借",
+    "taxCategory": "不課税",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "notes": "個人事業主が私費を事業に充当した際の資本加算科目。資本取引のため消費税不課税。",
+    "applicableEntity": "individual",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資本の部『事業主借』"
+      }
+    ]
+  },
+  {
+    "id": "rule-51",
+    "name": "買掛金",
+    "patterns": [
+      "買掛金"
+    ],
+    "matchType": "partial",
+    "accountName": "買掛金",
+    "taxCategory": "不課税",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "notes": "仕入・外注等の原価性を有する未払債務。発生・決済は資金/債務の移動で消費税不課税（課税は仕入計上時に認識）。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 負債『買掛金』"
+      }
+    ]
+  },
+  {
+    "id": "rule-52",
+    "name": "前受金",
+    "patterns": [
+      "前受金"
+    ],
+    "matchType": "partial",
+    "accountName": "前受金",
+    "taxCategory": "不課税",
+    "confidence": 0.9,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "notes": "商品・サービス提供前に受領した前受代金。受領時は資金移動で不課税（課税は役務提供・引渡し時に認識）。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-05-31",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 負債『前受金』"
+      }
+    ]
   }
 ]

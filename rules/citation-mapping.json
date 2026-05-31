@@ -33,5 +33,11 @@
   "前払費用": { "tax": "不課税", "expectedNumbers": ["法人税基本通達2-2-14"] },
   "雑収入": { "tax": "不課税", "expectedNumbers": ["No.6157"] },
   "受取配当金": { "tax": "不課税", "expectedNumbers": ["No.6157"] },
-  "受取利息": { "tax": "非課税", "expectedNumbers": ["No.6201"] }
+  "受取利息": { "tax": "非課税", "expectedNumbers": ["No.6201"] },
+  "専従者給与": { "tax": "不課税", "expectedNumbers": ["No.2075"] },
+  "事業主貸": { "tax": "不課税", "expectedNumbers": ["青色申告決算書（一般用・貸借対照表）"] },
+  "事業主借": { "tax": "不課税", "expectedNumbers": ["青色申告決算書（一般用・貸借対照表）"] },
+  "買掛金": { "tax": "不課税", "expectedNumbers": ["青色申告決算書（一般用・貸借対照表）"] },
+  "前受金": { "tax": "不課税", "expectedNumbers": ["青色申告決算書（一般用・貸借対照表）"] },
+  "元入金": { "tax": "不課税", "expectedNumbers": ["青色申告決算書（一般用・貸借対照表）"] }
 }
