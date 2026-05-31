@@ -19,10 +19,81 @@
 npm install @zeimu-ai/open-journal-rules
 ```
 
-```typescript
-import rules from "@zeimu-ai/open-journal-rules/rules/journal-rules.json";
+### 正典マッチャー（推奨）
 
-// 摘要からルールを検索
+v1.0.0 以降は組み込みの `match()` / `resolveJournalEntry()` を使ってください。
+正規化・最長マッチ・優先度解決・除外パターンを自動で処理します。
+
+```typescript
+import { match } from "@zeimu-ai/open-journal-rules/matcher";
+import rules from "@zeimu-ai/open-journal-rules/rules/journal-rules.json";
+import type { MatchRule } from "@zeimu-ai/open-journal-rules/matcher";
+
+const description = "AWS利用料 5月分";
+const results = match(description, rules as MatchRule[]);
+
+if (results.length > 0) {
+  const best = results[0];
+  console.log(best.rule.accountName); // "通信費"
+  console.log(best.rule.taxCategory); // "課税仕入10%"
+  console.log(best.rule.confidence);  // 0.95
+}
+```
+
+### 摘要 + 金額 → 仕訳解決（`resolveJournalEntry`）
+
+金額閾値（消耗品費の10万円・30万円ルール等）も考慮した統合APIです。
+
+```typescript
+import { resolveJournalEntry } from "@zeimu-ai/open-journal-rules/resolver";
+import rules from "@zeimu-ai/open-journal-rules/rules/journal-rules.json";
+import type { MatchRule } from "@zeimu-ai/open-journal-rules/matcher";
+
+const result = resolveJournalEntry(
+  "ノートPC購入 Dell XPS",  // 摘要
+  95000,                     // 金額（円）
+  rules as MatchRule[]
+);
+
+console.log(result.accountName);   // "消耗品費"
+console.log(result.taxCategory);   // "課税仕入10%"
+console.log(result.confidence);    // 0.9
+console.log(result.thresholdRule); // "取得価額10万円未満は消耗品費として損金算入可"
+```
+
+### データ JSON の直接 import
+
+生データを独自処理したい場合は各 JSON を直接 import できます。
+
+```typescript
+// 仕訳ルール
+import rules from "@zeimu-ai/open-journal-rules/rules/journal-rules.json";
+// 勘定科目マスタ
+import accounts from "@zeimu-ai/open-journal-rules/rules/account-master.json";
+// 消費税区分
+import taxCategories from "@zeimu-ai/open-journal-rules/rules/tax-categories.json";
+// 金額閾値ルール
+import thresholds from "@zeimu-ai/open-journal-rules/rules/amount-thresholds.json";
+```
+
+### エクスポートサブパス一覧
+
+| サブパス | 内容 |
+|---------|------|
+| `@zeimu-ai/open-journal-rules` | `rules/journal-rules.json`（デフォルト） |
+| `@zeimu-ai/open-journal-rules/matcher` | `match()` 関数・型定義 |
+| `@zeimu-ai/open-journal-rules/resolver` | `resolveJournalEntry()` 関数・型定義 |
+| `@zeimu-ai/open-journal-rules/normalize` | `normalizeText()` ユーティリティ |
+| `@zeimu-ai/open-journal-rules/rules/*` | 各データ JSON ファイル |
+| `@zeimu-ai/open-journal-rules/schemas/*` | JSON Schema ファイル |
+
+### v0 系からの移行
+
+> **破壊的変更があります。** [MIGRATION.md](MIGRATION.md) を参照してください。
+
+```typescript
+// ❌ 非推奨（v0 系）: 正規化・衝突解決がされないため match() を使うこと
+import rules from "@zeimu-ai/open-journal-rules/rules/journal-rules.json";
 const matched = rules.find(rule =>
   rule.patterns.some(p => description.includes(p))
 );
@@ -69,9 +140,14 @@ const matched = rules.find(rule =>
 | `beauty.json` | 美容・サービス（美容材料・講習費） | 2 |
 
 ```typescript
-// 業種別テンプレートの読み込み
+import { match } from "@zeimu-ai/open-journal-rules/matcher";
+import rules from "@zeimu-ai/open-journal-rules/rules/journal-rules.json";
 import restaurant from "@zeimu-ai/open-journal-rules/rules/templates/restaurant.json";
-const allRules = [...rules, ...restaurant];
+import type { MatchRule } from "@zeimu-ai/open-journal-rules/matcher";
+
+// ベースルールと業種別テンプレートを結合してマッチング
+const allRules = [...rules, ...restaurant] as MatchRule[];
+const results = match("食材仕入 築地市場", allRules);
 ```
 
 ## 貢献
