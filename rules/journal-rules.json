@@ -172,6 +172,7 @@
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shotoku/2210.htm",
     "notes": "国外事業者から購入する電気通信利用役務(事業者向け)はリバースチャージ方式の対象になる場合がある(消費税法第5条2項)。国内登録国外事業者経由は通常の課税仕入10%。",
+    "reverseChargeApplicable": true,
     "applicableEntity": "both",
     "citations": [
       {

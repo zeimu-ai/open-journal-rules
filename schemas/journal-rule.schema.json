@@ -15,6 +15,15 @@
     "excludePatterns": { "type": "array", "items": { "type": "string" } },
     "invoiceRequired": { "type": "boolean" },
     "transitionalDeductionRate": { "type": ["number", "null"] },
+    "purposeCategory": {
+      "type": "string",
+      "enum": ["taxable_sales", "nontaxable_sales", "common"],
+      "description": "課税仕入れの用途区分（個別対応方式：消法30②）。taxable_sales=課税売上対応 / nontaxable_sales=非課税売上対応 / common=共通対応。未存在は用途未確定（事業者側で判定）。"
+    },
+    "reverseChargeApplicable": {
+      "type": "boolean",
+      "description": "国外事業者からの事業者向け電気通信利用役務等でリバースチャージ方式（特定課税仕入れ）の対象になり得る場合 true（消法5②、No.6118）。taxCategory が課税仕入のルールにのみ付与すること。課税売上割合95%以上または簡易課税の課税期間は申告対象外。"
+    },
     "applicableEntity": {
       "type": "string",
       "enum": ["individual", "corporation", "both"],

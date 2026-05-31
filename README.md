@@ -6,12 +6,14 @@
 
 | ファイル | 内容 | 件数 |
 |---------|------|------|
-| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 38パターン |
-| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 51科目 |
+| `rules/journal-rules.json` | 摘要パターン→勘定科目マッピング | 52パターン |
+| `rules/account-master.json` | 勘定科目マスタ（国税庁 青色申告決算書ベース） | 60科目 |
 | `rules/tax-categories.json` | 消費税区分マッピング | 17科目 |
 | `rules/amount-thresholds.json` | 金額閾値ルール（国税庁 No.5403/5408） | 7段階 |
-| `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 32科目 |
+| `rules/citation-mapping.json` | 勘定科目→根拠番号マッピング | 38科目 |
 | `rules/dataset-meta.json` | データセットの前提メタ（対象主体・課税方式） | 1件 |
+| `rules/simplified-tax-rates.json` | 簡易課税の事業区分・みなし仕入率（国税庁 No.6505） | 6区分 |
+| `rules/invoice-transitional.json` | インボイス経過措置（80%/50%控除・国税庁 No.6498） | — |
 | `rules/templates/*.json` | 業種別テンプレート | 13業種 |
 
 ### 適用主体・課税方式の前提（v0.5.0〜）
