@@ -443,5 +443,45 @@
     "input": "工事進行基準 部分検収",
     "expectedAccountName": "完成工事高",
     "expectedTaxCategory": "課税売上10%"
+  },
+  {
+    "input": "事務所 家賃収入 5月分",
+    "expectedAccountName": "受取家賃",
+    "expectedTaxCategory": "課税売上10%"
+  },
+  {
+    "input": "住宅 家賃収入 アパート",
+    "expectedAccountName": "受取家賃",
+    "expectedTaxCategory": "非課税"
+  },
+  {
+    "input": "仲介手数料 受取",
+    "expectedAccountName": "受取手数料",
+    "expectedTaxCategory": "課税売上10%"
+  },
+  {
+    "input": "建物 購入 事務所",
+    "expectedAccountName": "建物",
+    "expectedTaxCategory": "課税仕入10%"
+  },
+  {
+    "input": "社用車 購入",
+    "expectedAccountName": "車両運搬具",
+    "expectedTaxCategory": "課税仕入10%"
+  },
+  {
+    "input": "国債 購入",
+    "expectedAccountName": "有価証券",
+    "expectedTaxCategory": "非課税"
+  },
+  {
+    "input": "資本金 払込 増資",
+    "expectedAccountName": "資本金",
+    "expectedTaxCategory": "不課税"
+  },
+  {
+    "input": "繰越利益 振替",
+    "expectedAccountName": "繰越利益剰余金",
+    "expectedTaxCategory": "不課税"
   }
 ]

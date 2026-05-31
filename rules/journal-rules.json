@@ -2756,5 +2756,323 @@
         "authority_level": "tax_answer"
       }
     ]
+  },
+  {
+    "name": "受取家賃（事業用建物/課税売上）",
+    "patterns": [
+      "事務所 家賃収入",
+      "店舗 家賃収入",
+      "テナント家賃",
+      "貸室収入",
+      "事業用 賃料収入",
+      "店舗 賃料収入",
+      "オフィス賃料 収入"
+    ],
+    "matchType": "partial",
+    "accountName": "受取家賃",
+    "taxCategory": "課税売上10%",
+    "confidence": 0.85,
+    "priority": 1,
+    "applicableEntity": "both",
+    "notes": "事業用建物（事務所・店舗・倉庫等）の貸付けによる家賃収入は課税売上10%。住宅の貸付けは非課税（rule次番）のため住宅系パターンは除外。 裸の「家賃収入/賃料収入」は住宅(非課税)と事業用(課税)で割れるため本ルールは事業用を明示するパターンに限定。",
+    "excludePatterns": [
+      "住宅",
+      "アパート",
+      "マンション",
+      "社宅",
+      "賃貸住宅"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6225",
+        "title": "地代、家賃や権利金、敷金など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-80"
+  },
+  {
+    "name": "受取家賃（住宅用/非課税）",
+    "patterns": [
+      "住宅 家賃収入",
+      "アパート 家賃収入",
+      "マンション 家賃収入",
+      "賃貸住宅 収入"
+    ],
+    "matchType": "partial",
+    "accountName": "受取家賃",
+    "taxCategory": "非課税",
+    "confidence": 0.9,
+    "priority": 2,
+    "applicableEntity": "both",
+    "notes": "住宅の貸付けは消費税非課税（貸付期間が1か月に満たない場合等を除く、消法別表第二13号）。課税売上割合の分母に算入。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6225",
+        "title": "地代、家賃や権利金、敷金など",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-81"
+  },
+  {
+    "name": "受取手数料（課税売上）",
+    "patterns": [
+      "手数料収入",
+      "仲介手数料 受取",
+      "紹介手数料 受取",
+      "受取手数料"
+    ],
+    "matchType": "partial",
+    "accountName": "受取手数料",
+    "taxCategory": "課税売上10%",
+    "confidence": 0.85,
+    "applicableEntity": "both",
+    "notes": "仲介・代理・管理等の役務提供の対価として受け取る手数料は課税売上10%。支払側の手数料（支払手数料・振込手数料）と混同しない。",
+    "excludePatterns": [
+      "振込手数料",
+      "支払手数料"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6105.htm",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6105",
+        "title": "課税の対象",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6105.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-82"
+  },
+  {
+    "name": "建物の取得（固定資産）",
+    "patterns": [
+      "建物 取得",
+      "建物 購入",
+      "事務所 購入",
+      "店舗 購入",
+      "工場 購入"
+    ],
+    "matchType": "partial",
+    "accountName": "建物",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "applicableEntity": "both",
+    "notes": "事業用建物の取得は課税仕入10%。土地は非課税のため土地付建物は土地・建物を按分する。修繕は修繕費（rule-32）で別処理。",
+    "excludePatterns": [
+      "修繕",
+      "修理",
+      "メンテナンス",
+      "賃借",
+      "家賃"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資産の部に『建物』欄が存在"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6105",
+        "title": "課税の対象",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6105.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-83"
+  },
+  {
+    "name": "機械装置の取得（固定資産）",
+    "patterns": [
+      "機械装置 取得",
+      "機械 購入",
+      "生産設備 購入",
+      "工作機械 購入"
+    ],
+    "matchType": "partial",
+    "accountName": "機械装置",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "applicableEntity": "both",
+    "notes": "製造・生産用機械装置の取得は課税仕入10%。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資産の部に『機械装置』欄が存在"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6105",
+        "title": "課税の対象",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6105.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-84"
+  },
+  {
+    "name": "車両運搬具の取得（固定資産）",
+    "patterns": [
+      "車両運搬具 取得",
+      "社用車 購入",
+      "営業車 購入",
+      "トラック 購入"
+    ],
+    "matchType": "partial",
+    "accountName": "車両運搬具",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "applicableEntity": "both",
+    "notes": "社用車・営業車・トラック等の取得は課税仕入10%。燃料・車検等の維持費は車両費で別処理。",
+    "excludePatterns": [
+      "ガソリン",
+      "車検",
+      "整備",
+      "保険"
+    ],
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資産の部に『車両運搬具』欄が存在"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6105",
+        "title": "課税の対象",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6105.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-85"
+  },
+  {
+    "name": "有価証券の取得（非課税仕入れ）",
+    "patterns": [
+      "有価証券 取得",
+      "株式 取得 投資",
+      "国債 購入",
+      "社債 購入"
+    ],
+    "matchType": "partial",
+    "accountName": "有価証券",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "applicableEntity": "both",
+    "notes": "有価証券の譲渡は消費税非課税（消法別表第二2号）のため取得も非課税仕入れ。売買手数料は別途課税仕入。",
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+    "citations": [
+      {
+        "source": "国税庁",
+        "number": "青色申告決算書（一般用・貸借対照表）",
+        "title": "所得税青色申告決算書（一般用）貸借対照表（資産負債調）／様式FA3076",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/shinkoku/yoshiki/01/shinkokusho/pdf/r05/10.pdf",
+        "verified_at": "2026-06-01",
+        "authority_level": "administrative_form",
+        "reason": "貸借対照表 資産の部に『有価証券』欄が存在"
+      },
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6201",
+        "title": "非課税となる取引",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6201.htm",
+        "verified_at": "2026-06-01",
+        "authority_level": "tax_answer"
+      }
+    ],
+    "id": "rule-86"
+  },
+  {
+    "name": "資本金の払込（増資）",
+    "patterns": [
+      "資本金 払込",
+      "資本金 増資",
+      "株式 払込",
+      "増資 払込"
+    ],
+    "matchType": "partial",
+    "accountName": "資本金",
+    "taxCategory": "不課税",
+    "confidence": 0.88,
+    "applicableEntity": "corporation",
+    "notes": "株主からの出資・増資の払込は資本取引であり消費税不課税。資本金は会社計算規則76条2項の株主資本の区分。",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/418M60000010013",
+    "citations": [
+      {
+        "source": "会社計算規則",
+        "number": "会社計算規則第76条第2項",
+        "title": "純資産の部の区分（株主資本に係る項目）",
+        "url": "https://laws.e-gov.go.jp/law/418M60000010013",
+        "verified_at": "2026-06-01",
+        "authority_level": "ministerial_ordinance",
+        "reason": "純資産の部「株主資本」の区分として資本金を掲げる"
+      }
+    ],
+    "id": "rule-87"
+  },
+  {
+    "name": "繰越利益剰余金への振替",
+    "patterns": [
+      "繰越利益剰余金",
+      "繰越利益 振替",
+      "当期純利益 振替"
+    ],
+    "matchType": "partial",
+    "accountName": "繰越利益剰余金",
+    "taxCategory": "不課税",
+    "confidence": 0.9,
+    "applicableEntity": "corporation",
+    "notes": "当期純利益の繰越・剰余金の振替は資本取引であり消費税不課税（会社計算規則76条2項のその他利益剰余金）。",
+    "sourceUrl": "https://laws.e-gov.go.jp/law/418M60000010013",
+    "citations": [
+      {
+        "source": "会社計算規則",
+        "number": "会社計算規則第76条第2項",
+        "title": "純資産の部の区分（株主資本に係る項目）",
+        "url": "https://laws.e-gov.go.jp/law/418M60000010013",
+        "verified_at": "2026-06-01",
+        "authority_level": "ministerial_ordinance",
+        "reason": "純資産の部「株主資本」その他利益剰余金の区分として繰越利益剰余金を掲げる"
+      }
+    ],
+    "id": "rule-88"
   }
 ]
