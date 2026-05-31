@@ -211,7 +211,7 @@
     "confidence": 0.9,
     "priority": 1,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6225.htm",
-    "notes": "住宅の貸付けは消費税非課税（貸付期間1か月未満等を除く）",
+    "notes": "住宅の貸付けは消費税非課税（貸付期間1か月未満等を除く） 共益費・敷金等のうち返還しない部分も住宅の家賃として非課税に含まれる(消基通6-13-9)。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -580,7 +580,7 @@
     "taxCategory": "不課税",
     "confidence": 0.9,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hojin/5262.htm",
-    "notes": "資格更新料は対価性により区分が分かれるため本ルールでは一律分類しない: (A)行政・法定団体への登録更新/法定講習は租税公課・非課税(消費税法別表第一5号, 基通6-5-1) (B)民間資格(FP・簿記検定等)の更新手数料は支払手数料・課税(基通5-5-3) (C)同業者団体の通常会費は諸会費・不課税。摘要だけで判別できないため本ルールの対象は税理士会・商工会等の団体会費に限定する。",
+    "notes": "資格更新料は対価性により区分が分かれるため本ルールでは一律分類しない: (A)行政・法定団体への登録更新/法定講習は租税公課・非課税(消費税法別表第一5号, 基通6-5-1) (B)民間資格(FP・簿記検定等)の更新手数料は支払手数料・課税(基通5-5-3) (C)同業者団体の通常会費は諸会費・不課税。摘要だけで判別できないため本ルールの対象は税理士会・商工会等の団体会費に限定する。 同業者団体・組合の通常会費は、明白な対価関係の判定が困難で団体側が対価に該当しないものとし支払側も課税仕入れとしない場合に不課税(消基通5-5-3)。会費が実質的に出版物・情報提供等の対価と認められる場合は課税仕入れ。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -591,6 +591,14 @@
         "verified_at": "2026-04-02",
         "reason": "業界団体・商工会議所等の会費・年会費を計上する科目",
         "authority_level": "tax_answer"
+      },
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "5-5-3",
+        "title": "同業者団体等の会費等",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/05/05.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
       }
     ]
   },
@@ -1203,7 +1211,7 @@
     "taxCategory": "課税仕入8%（軽減税率）",
     "confidence": 0.85,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
-    "notes": "食品表示法に規定する食品（酒類を除く）の仕入れは軽減税率8%。外食・ケータリング等の役務提供は対象外で標準税率10%。No.6102「飲食料品とは、食品表示法に規定する食品（注1）をいい…酒類を除きます。外食やケータリング等は軽減税率の対象には含まれません」。",
+    "notes": "食品表示法に規定する食品（酒類を除く）の仕入れは軽減税率8%。外食・ケータリング等の役務提供は対象外で標準税率10%。No.6102「飲食料品とは、食品表示法に規定する食品（注1）をいい…酒類を除きます。外食やケータリング等は軽減税率の対象には含まれません」。 【No.6102注記】(注1)食品表示法の「食品」に医薬品・医薬部外品・再生医療等製品は含まれない(10%)が食品衛生法上の添加物は含む。(注2)一体資産は税抜1万円以下かつ食品割合2/3以上で全体8%。(注3)飲食設備のある場所での飲食(外食)は10%、持帰り用容器・包装での譲渡は8%対象。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -1340,7 +1348,7 @@
     "taxCategory": "非課税",
     "confidence": 0.8,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6233.htm",
-    "notes": "学校教育法に規定する学校（大学・高専・専修学校等）の授業料・入学検定料・入学金・施設設備費は非課税。No.6233「学校教育については…授業料、入学検定料、入学金、施設設備費、在学証明書等手数料、検定済教科書などの教科用図書の譲渡を非課税としています」。学習塾・カルチャースクールは課税仕入10%。 ※会計上は研修費勘定に計上するが、消費税区分は非課税（一般の研修・セミナー受講料=課税仕入10%とは区別すること）。",
+    "notes": "学校教育法に規定する学校（大学・高専・専修学校等）の授業料・入学検定料・入学金・施設設備費は非課税。No.6233「学校教育については…授業料、入学検定料、入学金、施設設備費、在学証明書等手数料、検定済教科書などの教科用図書の譲渡を非課税としています」。学習塾・カルチャースクールは課税仕入10%。 ※会計上は研修費勘定に計上するが、消費税区分は非課税（一般の研修・セミナー受講料=課税仕入10%とは区別すること）。 非課税となる教科用図書は学校教育法34条の検定済教科書・文部科学省著作名義のものに限られ、問題集・参考書等の補助教材や配送手数料は10%(消基通6-12-1)。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -1374,7 +1382,7 @@
     "taxCategory": "不課税",
     "confidence": 0.8,
     "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6157.htm",
-    "notes": "対価を得て行う取引でない収入は不課税。No.6157「寄附金、祝金、見舞金、国または地方公共団体からの補助金や助成金等」「心身または資産について加えられた損害の発生に伴い受ける損害賠償金」「保険金や共済金」を不課税の具体例として列挙。ただし損害賠償金でも棚卸資産の引渡し・無体財産権の侵害・賃貸料相当額等は課税売上となる例外に注意（No.6157本文参照）。",
+    "notes": "対価を得て行う取引でない収入は不課税。No.6157「寄附金、祝金、見舞金、国または地方公共団体からの補助金や助成金等」「心身または資産について加えられた損害の発生に伴い受ける損害賠償金」「保険金や共済金」を不課税の具体例として列挙。ただし損害賠償金でも棚卸資産の引渡し・無体財産権の侵害・賃貸料相当額等は課税売上となる例外に注意（No.6157本文参照）。 心身・資産への損害賠償金が対価に該当しない(不課税)根拠は消基通5-2-5。ただし棚卸資産の引渡し・無体財産権使用料相当超過部分・不当利得返還等は実質が対価として課税。",
     "applicableEntity": "both",
     "citations": [
       {
@@ -1385,6 +1393,14 @@
         "verified_at": "2026-05-31",
         "authority_level": "tax_answer",
         "reason": "補助金・助成金、心身/資産への損害賠償金、保険金・共済金、寄附金・祝金・見舞金等は対価性がなく不課税"
+      },
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "5-2-5",
+        "title": "損害賠償金",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/05/02.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
       }
     ]
   },
@@ -1817,6 +1833,238 @@
         "verified_at": "2026-05-31",
         "reason": "有価証券等の譲渡対価はその5%相当額を課税売上割合の分母に算入",
         "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-60",
+    "name": "助産関連費用（非課税）",
+    "patterns": [
+      "助産",
+      "分娩",
+      "出産費用",
+      "妊婦検診",
+      "産科診療",
+      "助産院"
+    ],
+    "matchType": "partial",
+    "accountName": "助産費",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/08.htm",
+    "notes": "助産に係る資産の譲渡等(妊娠検査・検診・入院・分娩介助・出産後2月以内の母体回復検診・新生児検診等)は非課税(消費税法別表第二第8号、消基通6-8-1)。差額ベッド料・特別給食費・大学病院等の初診料も全額非課税(消基通6-8-3)。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "6-8-1",
+        "title": "助産に係る資産の譲渡等の範囲",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/08.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
+      }
+    ]
+  },
+  {
+    "id": "rule-61",
+    "name": "埋葬・火葬費用（非課税）",
+    "patterns": [
+      "埋葬料",
+      "火葬料",
+      "埋葬費",
+      "火葬費",
+      "火葬場",
+      "改葬"
+    ],
+    "matchType": "partial",
+    "accountName": "埋葬費",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/09.htm",
+    "notes": "埋葬・火葬(墓地埋葬法2条の埋葬・火葬)に係る役務提供は非課税(消費税法別表第二第9号、消基通6-9-1)。改葬も含む。骨つぼ・棺・祭壇等の物品販売は課税仕入10%。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "6-9-1",
+        "title": "埋葬料等に係る資産の譲渡等の範囲",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/09.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
+      }
+    ]
+  },
+  {
+    "id": "rule-62",
+    "name": "身体障害者用物品（非課税）",
+    "patterns": [
+      "義手",
+      "義足",
+      "義眼",
+      "車椅子",
+      "補聴器",
+      "点字器",
+      "身体障害者用",
+      "視覚障害者用",
+      "聴覚障害者用"
+    ],
+    "matchType": "partial",
+    "accountName": "消耗品費",
+    "taxCategory": "非課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/10.htm",
+    "notes": "身体障害者用物品として厚生労働大臣等が指定するものに限り非課税(消費税法別表第二第10号、消費税法施行令14条の4、消基通6-10-1)。指定外の物品は身体障害者が購入しても課税。部分品・修理用部品は原則対象外。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "6-10-1",
+        "title": "身体障害者用物品の範囲",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/06/10.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
+      }
+    ]
+  },
+  {
+    "id": "rule-63",
+    "name": "同業者団体入会金（不課税）",
+    "patterns": [
+      "協会入会金",
+      "組合入会金",
+      "商工会議所入会金",
+      "業界団体入会金",
+      "同業組合入会金"
+    ],
+    "matchType": "partial",
+    "accountName": "諸会費",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/05/05.htm",
+    "notes": "同業者団体・組合等が構成員から収受する入会金(返還しないもの)は、団体側が資産の譲渡等の対価に該当しないものとし支払側も課税仕入れとしない場合に不課税(消基通5-5-4)。ゴルフクラブ・宿泊施設等レジャー施設の入会金は役務提供の対価として課税仕入10%(5-5-5)。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "5-5-4",
+        "title": "同業者団体等の入会金",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/05/05.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
+      }
+    ]
+  },
+  {
+    "id": "rule-64",
+    "name": "共同施設負担金（不課税）",
+    "patterns": [
+      "共同施設負担金",
+      "施設負担金",
+      "共同設備負担金",
+      "工業団地負担金"
+    ],
+    "matchType": "partial",
+    "accountName": "諸会費",
+    "taxCategory": "不課税",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/05/05.htm",
+    "notes": "国・地方公共団体・同業者団体等が有する公共的・共同的施設の設置改良のための負担金で、団体側が対価に該当しないものとし支払側も課税仕入れとしない場合は不課税(消基通5-5-6)。専用側線利用権等の権利設定の対価は課税仕入10%。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁消費税法基本通達",
+        "number": "5-5-6",
+        "title": "共同的施設の設置または改良のための負担金等",
+        "url": "https://www.nta.go.jp/law/tsutatsu/kihon/shohi/05/05.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "notice"
+      }
+    ]
+  },
+  {
+    "id": "rule-65",
+    "name": "一体資産（軽減税率8%）",
+    "patterns": [
+      "おもちゃ付きお菓子",
+      "景品付き食品",
+      "おまけ付き食品",
+      "食品付きセット"
+    ],
+    "matchType": "partial",
+    "accountName": "仕入高",
+    "taxCategory": "課税仕入8%（軽減税率）",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+    "notes": "食品と食品以外が一体となった「一体資産」は、税抜価額が1万円以下かつ食品の価額割合が3分の2以上の場合に限り全体が軽減税率8%。1万円超または食品割合2/3未満は全体が標準税率10%(No.6102注2)。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6102",
+        "title": "消費税の軽減税率制度",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-66",
+    "name": "医薬品・医薬部外品（標準税率10%）",
+    "patterns": [
+      "医薬部外品",
+      "市販薬",
+      "常備薬",
+      "整腸剤",
+      "消毒薬",
+      "湿布",
+      "風邪薬"
+    ],
+    "matchType": "partial",
+    "accountName": "消耗品費",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+    "notes": "食品表示法の「食品」には医薬品・医薬部外品・再生医療等製品は含まれないため、これらの仕入れは軽減税率対象外で標準税率10%(No.6102注1)。サプリメント・栄養補助食品でも薬機法上の医薬品等に該当するものは10%、食品に該当するものは8%で個別判定を要する。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "国税庁タックスアンサー",
+        "number": "No.6102",
+        "title": "消費税の軽減税率制度",
+        "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/shohi/6102.htm",
+        "verified_at": "2026-05-31",
+        "authority_level": "tax_answer"
+      }
+    ]
+  },
+  {
+    "id": "rule-67",
+    "name": "酒類仕入（標準税率10%）",
+    "patterns": [
+      "酒類仕入",
+      "ビール仕入",
+      "日本酒仕入",
+      "ワイン仕入",
+      "焼酎仕入",
+      "清酒仕入",
+      "ウイスキー仕入"
+    ],
+    "matchType": "partial",
+    "accountName": "仕入高",
+    "taxCategory": "課税仕入10%",
+    "confidence": 0.85,
+    "sourceUrl": "https://laws.e-gov.go.jp/law/328AC0000000006",
+    "notes": "酒税法2条1項の酒類(アルコール分1度以上の飲料)は飲食料品の定義から除外され、仕入れは軽減税率対象外で標準税率10%。ノンアルコール飲料(アルコール分1度未満)は酒類に該当せず軽減税率8%対象(外食等を除く)。",
+    "applicableEntity": "both",
+    "citations": [
+      {
+        "source": "e-Gov法令（酒税法）",
+        "number": "酒税法第2条第1項",
+        "title": "酒税法（昭和28年法律第6号）第2条第1項",
+        "url": "https://laws.e-gov.go.jp/law/328AC0000000006",
+        "verified_at": "2026-05-31",
+        "authority_level": "statute"
       }
     ]
   }
