@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.10.2] - 2026-05-31
+
+### Added
+
+- **#48 税制改正の追従プロセス**: `docs/maintenance-calendar.md`（インボイス経過措置 80%→50%→全廃の期日[2026-09-30 / 2026-10-01 / 2029-09-30]、鮮度テスト・URL生存テストの運用ルール）
+
 ## [0.10.1] - 2026-05-31
 
 Phase 3-B（証憑・帳簿要件ドキュメント）。
