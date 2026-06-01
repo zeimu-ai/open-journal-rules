@@ -15,8 +15,10 @@
 | `rules/simplified-tax-rates.json` | 簡易課税の事業区分・みなし仕入率（国税庁 No.6505） | 6区分 |
 | `rules/invoice-transitional.json` | インボイス経過措置（80%/50%控除・国税庁 No.6498） | — |
 | `rules/useful-life.json` | 主な減価償却資産の法定耐用年数（国税庁 耐用年数表） | 10項目 |
-| `rules/social-insurance-rates.json` | 社会保険料率（厚年/健保/介護/雇用保険/拠出金・年金機構/協会けんぽ/厚労省） | 10件 |
+| `rules/social-insurance-rates.json` | 社会保険料率（厚年/健保/介護/雇用保険/拠出金/労災・年金機構/協会けんぽ/厚労省） | 27件 |
 | `rules/withholding-tax-rates.json` | 源泉徴収の税率・算出方式（報酬源泉/復興特別/賞与/給与税額表参照） | 4件 |
+| `rules/standard-remuneration-grades.json` | 標準報酬月額等級表（健保50等級＋厚年32等級＋標準賞与額上限・協会けんぽ/年金機構） | 82等級 |
+| `rules/filing-deadlines.json` | 給与計算・源泉徴収の申告/提出期限（翌月10日/納期特例/翌年1月31日・国税庁） | 5件 |
 | `rules/templates/*.json` | 業種別テンプレート | 13業種 |
 
 ### 適用主体・課税方式の前提（v0.5.0〜）

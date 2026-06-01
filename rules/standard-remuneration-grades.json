@@ -65,7 +65,7 @@
         { "grade": 41, "standardMonthly": 880000,  "remunerationFrom": 855000,  "remunerationTo": 905000 },
         { "grade": 42, "standardMonthly": 930000,  "remunerationFrom": 905000,  "remunerationTo": 955000 },
         { "grade": 43, "standardMonthly": 980000,  "remunerationFrom": 955000,  "remunerationTo": 1005000 },
-        { "grade": 44, "standardMonthly": 1040000, "remunerationFrom": 1005000, "remunerationTo": 1055000 },
+        { "grade": 44, "standardMonthly": 1030000, "remunerationFrom": 1005000, "remunerationTo": 1055000 },
         { "grade": 45, "standardMonthly": 1090000, "remunerationFrom": 1055000, "remunerationTo": 1115000 },
         { "grade": 46, "standardMonthly": 1150000, "remunerationFrom": 1115000, "remunerationTo": 1175000 },
         { "grade": 47, "standardMonthly": 1210000, "remunerationFrom": 1175000, "remunerationTo": 1235000 },
