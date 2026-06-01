@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "標準報酬月額等級表データセット",
+  "type": "object",
+  "required": ["tables"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["insuranceType", "scope", "gradeCount", "effectiveFrom", "verified", "grades", "citations"],
+        "properties": {
+          "insuranceType": {
+            "type": "string",
+            "enum": ["健康保険", "厚生年金"]
+          },
+          "scope": { "type": "string", "enum": ["national", "prefecture"] },
+          "prefecture": { "type": "string" },
+          "gradeCount": { "type": "integer", "minimum": 1 },
+          "bonusCap": { "type": "string", "description": "標準賞与額の上限（人間可読）" },
+          "effectiveFrom": { "type": "string", "format": "date", "description": "適用開始日 YYYY-MM-DD" },
+          "effectiveTo": { "type": ["string", "null"], "description": "適用終了日 YYYY-MM-DD（無期限は null）" },
+          "verified": { "type": "boolean", "description": "一次資料で逐語確認済みか" },
+          "grades": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["grade", "standardMonthly", "remunerationFrom", "remunerationTo"],
+              "properties": {
+                "grade": { "type": "integer", "minimum": 1 },
+                "standardMonthly": { "type": "number", "minimum": 0, "description": "標準報酬月額（円）" },
+                "remunerationFrom": { "type": ["number", "null"], "description": "報酬月額の下限（円・以上）。null は下限なし" },
+                "remunerationTo": { "type": ["number", "null"], "description": "報酬月額の上限（円・未満）。null は上限なし" }
+              }
+            }
+          },
+          "citations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["source", "url", "verified_at"],
+              "properties": {
+                "source": { "type": "string", "minLength": 1 },
+                "number": { "type": "string" },
+                "title": { "type": "string" },
+                "url": { "type": "string" },
+                "verified_at": { "type": "string", "format": "date" },
+                "evidenceQuote": { "type": "string" },
+                "authority_level": {
+                  "type": "string",
+                  "enum": ["statute", "cabinet_order", "ministerial_ordinance", "notice", "public_rate_table", "tax_answer", "official_pamphlet", "reference"]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

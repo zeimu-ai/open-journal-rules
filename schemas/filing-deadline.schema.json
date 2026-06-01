@@ -1,0 +1,73 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "申告・提出期限データセット",
+  "type": "object",
+  "required": ["deadlines"],
+  "properties": {
+    "_meta": { "type": "object" },
+    "deadlines": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["key", "label", "category", "rule", "effectiveFrom", "verified", "citations"],
+        "properties": {
+          "key": { "type": "string", "minLength": 1 },
+          "label": { "type": "string", "minLength": 1 },
+          "category": {
+            "type": "string",
+            "enum": ["源泉納付", "法定調書", "給与支払報告書"]
+          },
+          "rule": { "type": "string", "minLength": 1, "description": "期限の本文（人間可読）" },
+          "applicableCondition": { "type": "string", "description": "適用条件（特例等の適用要件）" },
+          "legalBasis": { "type": "string", "description": "根拠法令の条文番号" },
+          "periodRules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["dueDate"],
+              "properties": {
+                "period": { "type": "string" },
+                "condition": { "type": "string" },
+                "dueDate": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "exceptionRules": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["condition", "rule"],
+              "properties": {
+                "condition": { "type": "string", "minLength": 1 },
+                "rule": { "type": "string", "minLength": 1 }
+              }
+            }
+          },
+          "effectiveFrom": { "type": "string", "format": "date", "description": "適用開始日 YYYY-MM-DD（根拠資料の適用基準日）" },
+          "effectiveTo": { "type": ["string", "null"], "description": "適用終了日 YYYY-MM-DD（無期限は null）" },
+          "verified": { "type": "boolean", "description": "一次資料で逐語確認済みか" },
+          "citations": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["source", "url", "verified_at", "evidenceQuote"],
+              "properties": {
+                "source": { "type": "string", "minLength": 1 },
+                "number": { "type": "string" },
+                "title": { "type": "string" },
+                "url": { "type": "string" },
+                "verified_at": { "type": "string", "format": "date" },
+                "evidenceQuote": { "type": "string", "minLength": 1 },
+                "authority_level": {
+                  "type": "string",
+                  "enum": ["statute", "cabinet_order", "ministerial_ordinance", "notice", "public_rate_table", "tax_answer", "official_pamphlet", "reference"]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
