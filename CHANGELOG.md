@@ -7,6 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.1] - 2026-06-01
+
+### Fixed
+
+- **`rules/standard-remuneration-grades.json`**: 健康保険 第44級の標準報酬月額を `1,040,000` → **`1,030,000`** に修正（報酬月額 1,005,000〜1,055,000 に対応）。協会けんぽ/各健保組合の標準報酬月額表で一次確認。v0.18.0 で誤記混入。区間連続性・単調増加テストは通過していたため検出できなかった
+
+### Added
+
+- `tests/phase9-payroll-grades-deadlines.test.ts`: 健保50等級・厚年32等級の標準報酬月額を**全等級実値でピン留め**する回帰テストを追加（中間等級の金額誤記を検出可能に）
+- `README.md`: データセット一覧に `standard-remuneration-grades.json`（82等級）・`filing-deadlines.json`（5件）を追記し、`social-insurance-rates.json` を「労災含む27件」に更新（v0.18.0 の記載漏れを補完）
+
 ## [0.18.0] - 2026-06-01
 
 **給与計算・社保ドメインの拡充**（v0.17.0 の続き / pitto 月次給与計算・社保ユースケース対応）。労災保険率・申告提出期限・標準報酬月額等級表を追加し、各料率・期限・等級を一次資料で逐語確認した。
