@@ -7,6 +7,26 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.18.0] - 2026-06-01
+
+**給与計算・社保ドメインの拡充**（v0.17.0 の続き / pitto 月次給与計算・社保ユースケース対応）。労災保険率・申告提出期限・標準報酬月額等級表を追加し、各料率・期限・等級を一次資料で逐語確認した。
+
+### Added
+
+- **`rules/social-insurance-rates.json` に労災保険率 17業種を追加**: 業種別の労災保険料率（`industryCode` 業種番号付き・全額事業主負担・単位は1/1,000）。「その他の各種事業（業種番号94）0.3%」等 ← 厚生労働省 労災保険率表（令和6年4月1日施行）で逐語確認
+- **`rules/filing-deadlines.json`（新規・5件）**: 給与計算・源泉徴収に関する申告・提出期限（全て verified=true）
+  - 源泉所得税の納付期限（原則: 翌月10日）/ 納期の特例（常時10人未満・1〜6月分→7/10・7〜12月分→翌1/20）← 国税庁 No.2505
+  - 法定調書（源泉徴収票等）の税務署提出期限（翌年1/31）/ 受給者本人への交付期限 ← 国税庁 源泉徴収のあらまし（所法226①・所規93①）
+  - 給与支払報告書の市区町村提出期限（翌年1/31）← 国税庁 No.7411
+- **`rules/standard-remuneration-grades.json`（新規）**: 標準報酬月額等級表 — 健康保険（協会けんぽ東京都・令和8年度）50等級 + 厚生年金保険 32等級。`remunerationFrom`/`To` で報酬月額の区間、`bonusCap` で標準賞与額の上限 ← 協会けんぽ 令和8年度東京都保険料額表 / 日本年金機構 厚生年金保険料額表で逐語確認
+- `schemas/filing-deadline.schema.json` / `schemas/standard-remuneration-grade.schema.json`（effectiveFrom 必須・verified フラグ）。`social-insurance-rate.schema.json` の insuranceType enum に「労災保険」を追加し `industryCode`/`verified` を定義
+- `tests/phase9-payroll-grades-deadlines.test.ts`（労災17業種の全額事業主検算・期限の category 検証・等級表の連番/単調増加/報酬区間の連続性検算）。schema.test に2データセットの検証を追加
+
+### Notes
+
+- 等級表の報酬月額区間は「前等級の上限 == 次等級の下限」で連続することをテストで保証（境界の取りこぼし・重複を検出）。先頭等級は下限なし(null)、最終等級は上限なし(null)
+- 料率・等級表PDFは URL到達性テスト対象外（外部サイトのflakiness回避）。provenance は citations の source/url/verified_at/（任意 evidenceQuote）で担保
+
 ## [0.17.0] - 2026-05-31
 
 **会計ドメインのみだった OJR を給与計算・社会保険ドメインへ拡張**（pitto の月次会計・給与計算・社保ユースケース対応 / ADR-011 マルチドメイン構想）。全料率は一次資料で逐語確認し、各レコードに施行日(effectiveFrom)を必須化（pitto DB `rule_versions.effective_from` 互換）。
