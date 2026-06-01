@@ -1,0 +1,116 @@
+{
+  "_meta": {
+    "description": "給与計算・源泉徴収に関する申告・提出期限。verified=true のもののみ収録。effectiveFrom は根拠資料の適用基準日。",
+    "verifiedNote": "全項目を国税庁タックスアンサー・一次資料PDFで逐語確認済み（verified=true）。",
+    "scope": "源泉所得税の納付・法定調書・給与支払報告書"
+  },
+  "deadlines": [
+    {
+      "key": "gensen_nofu_kigen",
+      "label": "源泉所得税の納付期限（原則）",
+      "category": "源泉納付",
+      "rule": "給与等を実際に支払った月の翌月10日まで",
+      "effectiveFrom": "2025-04-01",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "タックスアンサー No.2505 給与等の源泉徴収事務と源泉徴収義務者",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2505.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "給与などを実際に支払った月の翌月10日までに国に納めなければなりません"
+        }
+      ]
+    },
+    {
+      "key": "noki_tokurei",
+      "label": "源泉所得税の納期の特例（給与支給人員常時10人未満）",
+      "category": "源泉納付",
+      "rule": "1〜6月分は7月10日まで、7〜12月分は翌年1月20日まで",
+      "applicableCondition": "給与の支給人員が常時10人未満の源泉徴収義務者",
+      "periodRules": [
+        { "period": "1月〜6月分", "dueDate": "当年7月10日" },
+        { "period": "7月〜12月分", "dueDate": "翌年1月20日" }
+      ],
+      "effectiveFrom": "2025-04-01",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "タックスアンサー No.2505 給与等の源泉徴収事務と源泉徴収義務者",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/gensen/2505.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "その年の1月から6月までに源泉徴収した所得税および復興特別所得税は7月10日、7月から12月までに源泉徴収した所得税および復興特別所得税は翌年1月20日が、それぞれ納付期限となります。"
+        }
+      ]
+    },
+    {
+      "key": "hotei_chosho_teishutsu_kigen",
+      "label": "法定調書（給与所得の源泉徴収票等）の税務署提出期限",
+      "category": "法定調書",
+      "rule": "支払の確定した年の翌年1月31日まで",
+      "exceptionRules": [
+        {
+          "condition": "年の中途で退職した受給者",
+          "rule": "退職後1か月以内（または退職の翌年1月31日までに他の受給者分と併せて提出も可）"
+        }
+      ],
+      "effectiveFrom": "2025-04-01",
+      "legalBasis": "所得税法第226条第1項・所得税規則第93条第1項",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "源泉徴収のあらまし（令和6年分）第11章 Ⅰ給与所得の源泉徴収票（aramashi2024/pdf/13.pdf p.339）",
+          "url": "https://www.nta.go.jp/publication/pamph/gensen/aramashi2024/pdf/13.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "official_pamphlet",
+          "evidenceQuote": "１部を合計表とともに翌年１月31日まで（年の中途で退職した受給者については、退職後１か月以内）に税務署長に提出し、他の１部を受給者に交付しなければなりません（所法226①、所規93①）。"
+        }
+      ]
+    },
+    {
+      "key": "gensen_choshu_hyo_kofu_kigen",
+      "label": "給与所得の源泉徴収票の受給者本人への交付期限",
+      "category": "法定調書",
+      "rule": "【在職者・年末調整後】翌年1月31日まで。【年の中途退職者】退職後1か月以内（翌年1月31日まとめ交付も可）",
+      "periodRules": [
+        { "condition": "在職者（年末調整後）", "dueDate": "翌年1月31日" },
+        { "condition": "年の中途退職者", "dueDate": "退職後1か月以内（翌年1月31日まとめ可）" }
+      ],
+      "effectiveFrom": "2025-04-01",
+      "legalBasis": "所得税法第226条第1項・第4項・第5項",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "源泉徴収のあらまし（令和6年分）第11章 Ⅰ給与所得の源泉徴収票（aramashi2024/pdf/13.pdf p.339-340）",
+          "url": "https://www.nta.go.jp/publication/pamph/gensen/aramashi2024/pdf/13.pdf",
+          "verified_at": "2026-05-31",
+          "authority_level": "official_pamphlet",
+          "evidenceQuote": "１部を合計表とともに翌年１月31日まで（年の中途で退職した受給者については、退職後１か月以内）に税務署長に提出し、他の１部を受給者に交付しなければなりません（所法226①、所規93①）。"
+        }
+      ]
+    },
+    {
+      "key": "kyuyo_shiharai_hokokusho_kigen",
+      "label": "給与支払報告書の市区町村提出期限",
+      "category": "給与支払報告書",
+      "rule": "支払の確定した年の翌年1月31日まで（翌年1月1日現在で給与等の支給を受けている全受給者分を、受給者の翌年1月1日現在の住所地の市区町村へ提出）",
+      "effectiveFrom": "2025-04-01",
+      "verified": true,
+      "citations": [
+        {
+          "source": "国税庁",
+          "title": "タックスアンサー No.7411 給与所得の源泉徴収票の提出範囲と提出枚数",
+          "url": "https://www.nta.go.jp/taxes/shiraberu/taxanswer/hotei/7411.htm",
+          "verified_at": "2026-05-31",
+          "authority_level": "notice",
+          "evidenceQuote": "その年の翌年の１月1日現在において給与等の支給を受けているすべての受給者の給与支払報告書を、受給者のその年の翌年の1月1日現在の住所地の市区町村へ、その年の翌年の1月31日までに提出しなければなりません。"
+        }
+      ]
+    }
+  ]
+}

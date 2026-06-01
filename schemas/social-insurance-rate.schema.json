@@ -15,10 +15,12 @@
           "label": { "type": "string" },
           "insuranceType": {
             "type": "string",
-            "enum": ["厚生年金", "健康保険", "介護保険", "雇用保険", "子ども子育て拠出金"]
+            "enum": ["厚生年金", "健康保険", "介護保険", "雇用保険", "子ども子育て拠出金", "労災保険"]
           },
           "scope": { "type": "string", "enum": ["national", "prefecture"] },
           "prefecture": { "type": "string" },
+          "industryCode": { "type": "integer", "description": "労災保険の業種番号（労災保険率表の事業の種類の分類番号）" },
+          "verified": { "type": "boolean", "description": "一次資料で逐語確認済みか" },
           "rateTotalPercent": { "type": ["number", "null"] },
           "rateEmployeePercent": { "type": ["number", "null"] },
           "rateEmployerPercent": { "type": ["number", "null"] },
